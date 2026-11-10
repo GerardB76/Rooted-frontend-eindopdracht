@@ -1,0 +1,34 @@
+# Lokale dependencies, gegenereerde bestanden en editorinstellingen
+node_modules/
+dist/
+.idea/
+*.log
+
+# Configuratie met geheime waarden; een leeg voorbeeld mag wel in Git
+.env
+.env.*
+!.env.example
+
+# Opleidingsmateriaal en persoonlijke docentfeedback lokaal bewaren
+/bronnen/
+
+# Inleverpakketten apart van de openbare broncode bewaren
+/oplevering/
+
+# Tijdelijke werkbestanden
+/tmp/
+~$*
+
+# Persoonlijke kluis- en assistentinstellingen
+.obsidian/
+.codex/
+.agents/
+/Eindopdracht Codex/
+
+# Oude plek voor oorspronkelijke opdrachtbestanden
+/ontwerp/Opdracht/
+
+# Persoonlijke lokale API-configuratie en sleutelbestanden
+/api/*.local.json
+*.pem
+*.key

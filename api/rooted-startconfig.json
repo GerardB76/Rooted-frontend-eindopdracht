@@ -1,0 +1,580 @@
+{
+  "collections": [
+    {
+      "name": "blogs",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 200
+        },
+        {
+          "name": "summary",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 500
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 20000
+        },
+        {
+          "name": "theme",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "name": "publishedAt",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "isFeatured",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "name": "isExample",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "name": "imageUrl",
+          "type": "image",
+          "required": false
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "user",
+          "admin"
+        ],
+        "POST": [
+          "admin"
+        ],
+        "PUT": [
+          "admin"
+        ],
+        "PATCH": [
+          "admin"
+        ],
+        "DELETE": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "books",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 200
+        },
+        {
+          "name": "author",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 150
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 5000
+        },
+        {
+          "name": "price",
+          "type": "number",
+          "required": true,
+          "min": 0
+        },
+        {
+          "name": "publicationYear",
+          "type": "number",
+          "required": true,
+          "min": 1000,
+          "max": 2100
+        },
+        {
+          "name": "isExample",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "name": "imageUrl",
+          "type": "image",
+          "required": false
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "user",
+          "admin"
+        ],
+        "POST": [
+          "admin"
+        ],
+        "PUT": [
+          "admin"
+        ],
+        "PATCH": [
+          "admin"
+        ],
+        "DELETE": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "quotes",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 1000
+        },
+        {
+          "name": "author",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 150
+        },
+        {
+          "name": "isExample",
+          "type": "boolean",
+          "required": true
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "user",
+          "admin"
+        ],
+        "POST": [
+          "admin"
+        ],
+        "PUT": [
+          "admin"
+        ],
+        "PATCH": [
+          "admin"
+        ],
+        "DELETE": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "workshops",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 200
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 5000
+        },
+        {
+          "name": "price",
+          "type": "number",
+          "required": false,
+          "min": 0
+        },
+        {
+          "name": "isExample",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "name": "imageUrl",
+          "type": "image",
+          "required": false
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "user",
+          "admin"
+        ],
+        "POST": [
+          "admin"
+        ],
+        "PUT": [
+          "admin"
+        ],
+        "PATCH": [
+          "admin"
+        ],
+        "DELETE": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "documents",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 200
+        },
+        {
+          "name": "fileUrl",
+          "type": "string",
+          "required": false,
+          "min": 1,
+          "max": 2048
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "min": 1,
+          "max": 30
+        },
+        {
+          "name": "onlyForCustomers",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "name": "isExample",
+          "type": "boolean",
+          "required": true
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "user",
+          "admin"
+        ],
+        "POST": [
+          "admin"
+        ],
+        "PUT": [
+          "admin"
+        ],
+        "PATCH": [
+          "admin"
+        ],
+        "DELETE": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "favorites",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "userId",
+          "type": "reference:users",
+          "required": true
+        },
+        {
+          "name": "bookId",
+          "type": "reference:books",
+          "required": true
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "user",
+          "admin"
+        ],
+        "POST": [
+          "user",
+          "admin"
+        ],
+        "PUT": [
+          "admin"
+        ],
+        "PATCH": [
+          "admin"
+        ],
+        "DELETE": [
+          "user",
+          "admin"
+        ]
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "beheer@rooted.example",
+      "password": "RootedOefenBeheer1!",
+      "roles": [
+        "admin"
+      ]
+    },
+    {
+      "id": 2,
+      "email": "lezer1@rooted.example",
+      "password": "RootedOefenLezer1!",
+      "roles": [
+        "user"
+      ]
+    },
+    {
+      "id": 3,
+      "email": "lezer2@rooted.example",
+      "password": "RootedOefenLezer2!",
+      "roles": [
+        "user"
+      ]
+    }
+  ],
+  "data": {
+    "blogs": [
+      {
+        "id": 1,
+        "title": "Het grotere geheel zien",
+        "summary": "Voorbeeldartikel. Een eerste kennismaking met het bekijken van een vraag in samenhang met de omgeving.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nEen eerste kennismaking met het bekijken van een vraag in samenhang met de omgeving.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Systemisch werk",
+        "publishedAt": "2026-10-01T12:00:00Z",
+        "isFeatured": true,
+        "isExample": true
+      },
+      {
+        "id": 2,
+        "title": "Welke plek neem jij in?",
+        "summary": "Voorbeeldartikel. Een voorbeeldartikel over rollen en verwachtingen binnen relaties.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nEen voorbeeldartikel over rollen en verwachtingen binnen relaties.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Familie en relaties",
+        "publishedAt": "2026-10-02T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 3,
+        "title": "Patronen leren herkennen",
+        "summary": "Voorbeeldartikel. Stilstaan bij terugkerende situaties en de vragen die ze oproepen.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nStilstaan bij terugkerende situaties en de vragen die ze oproepen.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Persoonlijke ontwikkeling",
+        "publishedAt": "2026-10-03T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 4,
+        "title": "Een vraag vanuit meerdere kanten bekijken",
+        "summary": "Voorbeeldartikel. Verschillende perspectieven op dezelfde situatie naast elkaar zetten.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nVerschillende perspectieven op dezelfde situatie naast elkaar zetten.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Systemisch werk",
+        "publishedAt": "2026-10-04T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 5,
+        "title": "Ruimte voor ieders verhaal",
+        "summary": "Voorbeeldartikel. Een voorbeeld van luisteren naar verschillende ervaringen binnen een familie.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nEen voorbeeld van luisteren naar verschillende ervaringen binnen een familie.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Familie en relaties",
+        "publishedAt": "2026-10-05T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 6,
+        "title": "Samenwerken met duidelijke rollen",
+        "summary": "Voorbeeldartikel. Verkennen welke taken en verwachtingen in een team bestaan.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nVerkennen welke taken en verwachtingen in een team bestaan.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Werk en organisaties",
+        "publishedAt": "2026-10-06T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 7,
+        "title": "Een nieuwe collega in het team",
+        "summary": "Voorbeeldartikel. Een aanleiding om afspraken en rolverdeling opnieuw te bekijken.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nEen aanleiding om afspraken en rolverdeling opnieuw te bekijken.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Werk en organisaties",
+        "publishedAt": "2026-10-07T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 8,
+        "title": "Een moment om stil te staan",
+        "summary": "Voorbeeldartikel. Ruimte maken om een eigen vraag onder woorden te brengen.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nRuimte maken om een eigen vraag onder woorden te brengen.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Persoonlijke ontwikkeling",
+        "publishedAt": "2026-10-08T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 9,
+        "title": "Wat hoort bij de context?",
+        "summary": "Voorbeeldartikel. Een situatie beschrijven met aandacht voor mensen en omstandigheden.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nEen situatie beschrijven met aandacht voor mensen en omstandigheden.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Systemisch werk",
+        "publishedAt": "2026-10-09T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      },
+      {
+        "id": 10,
+        "title": "Van eerste vraag naar verder lezen",
+        "summary": "Voorbeeldartikel. Onderwerpen verzamelen waarover je meer zou willen lezen.",
+        "content": "Voorbeeldtekst voor het ontwikkelen van Rooted; geen definitieve publicatie.\n\nOnderwerpen verzamelen waarover je meer zou willen lezen.\n\nIn dit voorbeeld beschrijven we eerst een situatie en verzamelen we de vragen die daarbij passen. Daarna bekijken we welke mensen, rollen en omstandigheden onderdeel zijn van het verhaal. Dit is oefeninhoud om de artikelpagina, zoekfunctie en thema-indeling te kunnen testen.\n\nDe definitieve tekst en bijbehorende bronvermelding worden later toegevoegd. Via het blogoverzicht kun je verder lezen binnen hetzelfde thema.",
+        "theme": "Systemisch werk",
+        "publishedAt": "2026-10-10T12:00:00Z",
+        "isFeatured": false,
+        "isExample": true
+      }
+    ],
+    "books": [
+      {
+        "id": 1,
+        "title": "Het grotere geheel",
+        "author": "Voorbeeldschrijver",
+        "description": "Fictief oefenboek voor Rooted. Deze beschrijving, auteur, prijs en het uitgavejaar zijn voorbeeldgegevens. Definitieve boekinformatie volgt later.",
+        "price": 22.5,
+        "publicationYear": 2024,
+        "isExample": true
+      },
+      {
+        "id": 2,
+        "title": "Ruimte voor verbinding",
+        "author": "Voorbeeldschrijver",
+        "description": "Fictief oefenboek om het boekenoverzicht en het opslaan van favorieten te testen. Geen werkelijk te bestellen product; alle gegevens zijn voorlopig.",
+        "price": 19.95,
+        "publicationYear": 2023,
+        "isExample": true
+      },
+      {
+        "id": 3,
+        "title": "Patronen in beweging",
+        "author": "Voorbeeldschrijver",
+        "description": "Fictief oefenboek voor de boekdetailpagina. Later te vervangen door een boek uit Gerards eigen selectie met gecontroleerde gegevens en een omslag.",
+        "price": 24.5,
+        "publicationYear": 2025,
+        "isExample": true
+      }
+    ],
+    "quotes": [
+      {
+        "id": 1,
+        "text": "Voorbeeldtekst: Neem even de tijd om naar het grotere geheel te kijken.",
+        "author": "Rooted-voorbeeldtekst (AI)",
+        "isExample": true
+      },
+      {
+        "id": 2,
+        "text": "Voorbeeldtekst: Een vraag kan vanuit meerdere kanten worden bekeken.",
+        "author": "Rooted-voorbeeldtekst (AI)",
+        "isExample": true
+      },
+      {
+        "id": 3,
+        "text": "Voorbeeldtekst: Er is ruimte om stil te staan en opnieuw te kijken.",
+        "author": "Rooted-voorbeeldtekst (AI)",
+        "isExample": true
+      }
+    ],
+    "workshops": [
+      {
+        "id": 1,
+        "title": "Kennismaken met systemisch werk",
+        "description": "Voorbeeldworkshop voor Rooted. Maak kennis met de onderwerpen op deze website. Inhoud, duur en eventuele prijs worden later bepaald. Bestellen en aanmelden zijn niet beschikbaar.",
+        "isExample": true
+      },
+      {
+        "id": 2,
+        "title": "Patronen in verbinding",
+        "description": "Voorbeeldtraining voor de openbare Shop. De titel en beschrijving zijn oefengegevens; dit is geen bestaand of te boeken aanbod. Bestellen en aanmelden zijn niet beschikbaar.",
+        "isExample": true
+      },
+      {
+        "id": 3,
+        "title": "Jouw plek in het geheel",
+        "description": "Voorbeeldworkshop om de vormgeving van het aanbod te testen. Definitieve informatie volgt later. Bestellen en aanmelden zijn niet beschikbaar.",
+        "isExample": true
+      }
+    ],
+    "documents": [
+      {
+        "id": 1,
+        "title": "Tarievenoverzicht (voorbeeld; bestand volgt)",
+        "type": "pdf",
+        "onlyForCustomers": true,
+        "isExample": true
+      }
+    ],
+    "favorites": [
+      {
+        "id": 1,
+        "userId": 2,
+        "bookId": 1
+      },
+      {
+        "id": 2,
+        "userId": 3,
+        "bookId": 2
+      }
+    ]
+  }
+}
