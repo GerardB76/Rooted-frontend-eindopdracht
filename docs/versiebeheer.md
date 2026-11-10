@@ -39,3 +39,7 @@ Git is bij deze sessie gevonden via het gebundelde hulpmiddel: versie 2.56.0.win
 ## Uitvoering bevestigd
 
 Op 10 november is de lokale repository op main aangemaakt en is het eerste startpunt vastgelegd met de bestaande auteursinstellingen. De uitsluitregels zijn door Git gecontroleerd. Alleen rootdocumenten, docs en api worden tot nu toe bijgehouden; ontwerpen volgen na afzonderlijke beoordeling. Er is geen GitHub-verbinding ingesteld.
+
+### Volgende werkstap: API-controleverslag
+
+Na het eerste startpunt zijn de handmatige API-controles uitgevoerd en verwerkt. Deze bijbehorende wijzigingen worden op de aparte branch `docs/api-controles` vastgelegd als één samenhangende commit. Dit is een documentatiestap, geen extra websitefunctie. `main` bewaart voorlopig het eerste startpunt. Omdat GitHub nog niet is ingericht, bestaat er nog geen pull request; die opleidingsvereiste wordt niet als behaald aangemerkt.

@@ -1383,3 +1383,107 @@ Letterlijk gedeeld antwoord op de begeleide uitgelogde GET /api/books-controle:
 ]
 ```
 ````
+
+### 10 november 2026 — Boekdetailcontrole bevestigd
+
+Tool: Codex met lokale logboekbewerking. Toepassing: bevestiging van code 200 en alleen Het grotere geheel bij uitgelogd GET /api/books/{id} met id 1 verwerkt in API-06 en voortgang. Volgende handmatige controle: quotes zonder inloggen.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja
+```
+
+### 10 november 2026 — Openbare quotescontrole bevestigd
+
+Tool: Codex met lokale documentbewerking. Toepassing: gebruikersbevestiging van code 200 met drie quotes bij uitgelogd GET /api/quotes verwerkt in API-07 en voortgang.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja
+```
+
+### 10 november 2026 — Openbare workshopcontrole bevestigd
+
+Tool: Codex met lokale documentbewerking. Toepassing: gebruikersbevestiging van code 200 met drie workshopvoorbeelden bij uitgelogd GET /api/workshops verwerkt in API-08 en voortgang.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja
+```
+
+### 10 november 2026 — Artikelnummer invoeren en blogdetail controleren
+
+Tool: Codex met stapsgewijze uitleg en lokale documentbewerking. Toepassing: Swagger-validatiemelding besproken, verschil tussen project-ID en artikelnummer uitgelegd, Try it out/Cancel en Execute toegelicht. Geen screenshot of uniek project-ID ontvangen. Na bediening bevestigt Gerard 200 met Het grotere geheel zien en artikelinhoud; API-09 bijgewerkt.
+
+Letterlijke gebruikersprompts in volgorde:
+
+```text
+nee, ik kan id niet invoeren en krijg onderstaande foutmelding
+
+
+
+Please correct the following validation errors and try again.
+
+- For 'id': Required field is not provided.
+```
+
+```text
+ik kan dat niet delen zonder de unieke ID te delen
+```
+
+```text
+er staat try-ouy en als ik daar op klikt verschijnt cancel
+```
+
+```text
+ik kan er nu 1 invullen, maar het invoervlak blijft geblokkeerd
+```
+
+```text
+ik had nog execute moeten invullen, nu werkt het wel
+```
+
+Letterlijk antwoord op de controle van code 200, titel en content:
+
+```text
+ja
+```
+
+### 10 november 2026 — Onbekend boek geeft 404
+
+Tool: Codex met lokale documentbewerking. Toepassing: code verduidelijkt en gebruikersbevestiging van 404 voor GET /api/books/{id}, id 999, verwerkt in API-10. Volgende controle is documentinformatie zonder inlog.
+
+Letterlijk eerste antwoord op de vraag naar de code:
+
+```text
+ja
+```
+
+Letterlijk antwoord op de verduidelijking of de werkelijke Server response 404 — Not Found is:
+
+```text
+ja klopt
+```
+
+### 10 november 2026 — Documentinformatie uitgelogd geweigerd
+
+Tool: Codex met lokale documentbewerking. Toepassing: gemelde 403 voor uitgelogd GET /api/documents vastgelegd als geslaagde weigering; ingelogde vergelijking volgt nog.
+
+Letterlijke gebruikersprompt:
+
+```text
+403
+```
+
+### 10 november 2026 — Documentinformatie ingelogd bereikbaar
+
+Tool: Codex met lokale documentbewerking en Git. Toepassing: bevestigde 200 met tarievenvoorbeeld na lezer-1-inlog verwerkt in API-11; verzamelde API-controleverslagwijzigingen samen voor een commit op docs/api-controles voorbereid. Geen werkende PDF-download of opgeloste favorietenafscherming geclaimd.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja dat lukt
+```
