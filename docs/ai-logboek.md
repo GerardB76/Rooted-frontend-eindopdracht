@@ -1487,3 +1487,263 @@ Letterlijke gebruikersprompt:
 ```text
 ja dat lukt
 ```
+
+### 10 november 2026 — Alleen login zichtbaar in Authentication
+
+Tool: Codex met lokale documentbewerking. Toepassing: gebruikersmelding over beschikbare Authentication-routes verwerkt in API-12 en voortgang. Nog geen registratieondersteuning bevestigd; geen gegokte eindpunten aangeroepen.
+
+Letterlijke verduidelijkingsvraag van Gerard:
+
+```text
+wat bedoel je precies?
+```
+
+Letterlijke melding na de uitleg over register/signup naast login:
+
+```text
+ik zie alleen /api/login hier
+```
+
+### 10 november 2026 — Favorietenprobleem samen hertesten
+
+Tool: Codex met lokale bronlezing en logboekbewerking. Toepassing: op Gerards verzoek hertest gestart met eerst expliciete controle van het actieve oefenaccount. Eerdere uitkomst nog niet gewijzigd.
+
+Letterlijke gebruikersprompt:
+
+```text
+kun je nogmaals het eerste issue samen met me testen? Misschien heb ik iets verkeerd gedaan
+```
+
+### 10 november 2026 — Lezer-1-identiteit in hertest bevestigd
+
+Tool: Codex met lokale documentbewerking. Toepassing: verse loginrespons gecontroleerd via gebruikersmelding; email lezer1@rooted.example en rol user bevestigd, geen id aanwezig volgens Gerard. Nog geen hertest van favorieten voltooid.
+
+Letterlijke gebruikersinvoer:
+
+```text
+er staat bij roles "user"
+er staat geen id in de response body
+```
+
+Letterlijk antwoord op de vraag of email precies lezer1@rooted.example is:
+
+```text
+ja
+```
+
+### 10 november 2026 — Favorietenlijst in hertest opnieuw onbeperkt
+
+Tool: Codex met lokale documentbewerking. Toepassing: verse lezer-1-login en opnieuw geautoriseerde favorietenlijst vergeleken met eerdere test. Beide records opnieuw teruggegeven volgens gebruikersbericht; API-03 bijgewerkt. Geen token ontvangen of eigen verzoek uitgevoerd.
+
+Letterlijke gebruikersprompt:
+
+````text
+code 200
+
+
+```json
+[
+  {
+    "id": 1,
+    "userId": 2,
+    "bookId": 1
+  },
+  {
+    "id": 2,
+    "userId": 3,
+    "bookId": 2
+  }
+]
+```
+````
+
+### 10 november 2026 — Detailhertest levert opnieuw andermans favoriet
+
+Tool: Codex met lokale documentbewerking. Toepassing: opnieuw gedeeld detailrecord beoordeeld na verse bevestigde lezer-1-login; eerdere bevinding blijft staan. Geen nieuwe statuscode verondersteld, geen eigen API-verzoek uitgevoerd.
+
+Letterlijke gebruikersprompt:
+
+````text
+```json
+{
+  "id": 2,
+  "userId": 3,
+  "bookId": 2
+}
+```
+````
+
+### 10 november 2026 — Twee NOVI-vragen en mailconcept
+
+Tool: Codex met tekstredactie en lokale logboekbewerking. Toepassing: mailconcept opgesteld over eigenaarscontrole van favorieten en bezoekersregistratie. Testbevindingen als vragen om juiste inrichting geformuleerd; geen onmogelijkheid of platformfout als vaststaand aangenomen. Geen mail verstuurd en geen ontvanger verzonnen.
+
+Letterlijke gebruikersprompt:
+
+```text
+kun je de twee vragen hier nog even vermelden en een nette mailtekst maken die ik kan versturen?
+```
+
+### 10 november 2026 — Afronden en morgen verder met GitHub
+
+Tool: Codex met lokale Git-statuscontrole en logboekbewerking. Toepassing: sessie 011 afgesloten, voortgang en vervolg voor 11 november vastgelegd. Geen commit, push, publicatie of herinnering uitgevoerd bij afsluiten.
+
+Letterlijke gebruikersprompt:
+
+```text
+dank je. morgen wil ik verder gaan met github
+```
+
+### 23 november 2026 — GitHub stap voor stap hervatten
+
+Tool: Codex met lokale bestandslezing, alleen-lezen Git-controles, officiële GitHub-webdocumentatie en logboekbewerking. Toepassing: actuele stand gecontroleerd en begeleiding voorbereid, eerst accountbeschikbaarheid. Geen online repository, commit of push uitgevoerd.
+
+Letterlijke gebruikersprompt:
+
+```text
+okee, laten we verdergaan met Github. Kun je me door de gewenste stappen leiden?
+```
+
+### 23 november 2026 — Meerwaarde GitHub-koppeling aan Codex
+
+Tool: Codex met OpenAI-documentatievaardigheid, pluginbeheer, officiële webdocumentatie en logboekbewerking. Toepassing: GitHub-account als aanwezig bevestigd volgens gebruiker; meerwaarde van optionele plugin tegenover lokale Git uitgelegd. Plugin gevonden als beschikbaar maar niet geïnstalleerd en een installatiesuggestie getoond; geen installatie of verbinding bevestigd, geen toegang verleend of repository gewijzigd.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja ik heb github. Is het handig om dit te koppelen aan Codex of heeft dat weinig meerwaarde?
+```
+
+### 23 november 2026 — Lege GitHub-repository koppelen
+
+Tool: Codex met officiële GitHub-handleiding uit de voorgaande stap, lokale Git-controles, netwerkcontrole en lokale documentbewerking. Toepassing: aanmaakformulier begeleid, aangeleverde repository als lege Git-bestemming gecontroleerd en origin ingesteld. Eerste main-startpunt met 22 bestanden beoordeeld voor openbare upload. Nog geen push of publicatie van lokale bestanden uitgevoerd.
+
+Letterlijke gebruikersprompt over het aanmaakscherm:
+
+```text
+kun  je me helpen met het instellen van de repository? Ik zit al in het scherm 'create a new repository'
+```
+
+Letterlijk gedeelde repository-URL:
+
+```text
+[https://github.com/GerardB76/Rooted-frontend-eindopdracht.git](https://github.com/GerardB76/Rooted-frontend-eindopdracht.git)
+```
+
+### 23 november 2026 — Werkwijze met WebStorm 2026.1
+
+Tool: Codex met officiële JetBrains-webdocumentatie en lokale documentbewerking. Toepassing: uitgelegd dat WebStorm/Codex dezelfde bestaande projectmap en Git-geschiedenis gebruiken; commit/push onderscheiden; eerst de juiste map openen. Versiespecifieke commit/push-handleiding 2026.1 daadwerkelijk gelezen; geen eigen WebStorm-venster bestuurd of gecontroleerd.
+
+Letterlijke gebruikersprompt:
+
+```text
+hoe werkt het nu vervolgens met de IDE? ik werk met webstorm 2026.1
+```
+
+### 23 november 2026 — Geopende WebStorm-map visueel controleren
+
+Tool: Codex met computerbediening (alleen appinventaris, toegankelijkheidstekst en screenshot) en lokale logboekbewerking. Toepassing: vastgesteld dat het venster de oude kluismap met Naamloos.canvas en Welkom.md toont; juiste hoofdmap een niveau hoger toegelicht. Geen IDE-project of bestanden gewijzigd.
+
+Letterlijke gebruikersprompts in volgorde:
+
+```text
+welke bestandsmap open ik nu precies?
+```
+
+```text
+ja ik heb de hoofdmap geselecteerd
+```
+
+```text
+ik krijg andere items. kun je dit zelf even checken?
+```
+
+### 23 november 2026 — Juiste project openen gelukt volgens Gerard
+
+Tool: Codex met uitleg en lokale logboekbewerking. Toepassing: uitgelegd dat alleen het geopende project vervangen wordt en geen map verwijderd hoeft te worden. Succesmelding van Gerard vastgelegd; volgende controle is de bestaande Git-geschiedenis in WebStorm herkennen.
+
+Letterlijke gebruikersvraag:
+
+```text
+moet ik eerst deze map in webstorm verwijderen?
+```
+
+Letterlijke bevestiging na de uitleg over File → Open en This Window:
+
+```text
+ok , gelukt
+```
+
+### 23 november 2026 — Git-geschiedenis in WebStorm bevestigd
+
+Tool: Codex met lokale logboekbewerking en instructie. Toepassing: gebruikersbevestiging van beide commits in Git Log vastgelegd. Volgende begeleidingsstap is de gebruiker zelf git push -u origin main in de IDE-terminal laten uitvoeren, met uitleg dat dit het gecontroleerde startpunt openbaar maakt; geen push door Codex uitgevoerd.
+
+Letterlijke gebruikersprompt op de vraag of beide commitvermeldingen zichtbaar zijn:
+
+```text
+ja
+```
+
+### 23 november 2026 — Eerste main-push geslaagd
+
+Tool: Codex met alleen-lezen Git-controles, browsercontrole en lokale logboekbewerking. Toepassing: Gerards eerste upload geverifieerd; main en origin/main gelijk en openbare GitHub-pagina toont dezelfde ae5a7d6-commit. Geen extra upload door Codex uitgevoerd.
+
+Letterlijke door Gerard gedeelde terminaluitvoer:
+
+```text
+PS C:\Users\gblom\Documents\NOVI opleiding\Leerlijn frontend develoment\Frontend eindopdracht\Eindopdracht Codex> git push -u origin main\
+Enumerating objects: 26, done.\
+Counting objects: 100% (26/26), done.\
+Delta compression using up to 12 threads\
+Compressing objects: 100% (26/26), done.\
+Writing objects: 100% (26/26), 130.61 KiB | 2.78 MiB/s, done.\
+Total 26 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)\
+To https\://github.com/GerardB76/Rooted-frontend-eindopdracht.git\
+&#x20;\* [new branch]      main -> main\
+branch 'main' set up to track 'origin/main'.
+```
+
+### 23 november 2026 — Documentatiebestanden selecteren voor commit
+
+Tool: Codex met alleen-lezen Git- en inhoudscontrole en lokale logboekbewerking. Toepassing: actieve branch docs/api-controles en zeven gewijzigde documentatiebestanden gecontroleerd, geen herkenbare echte sleutel-/tokenpatronen gevonden. Selectie en commitbericht aan Gerard uitgelegd; nog geen nieuwe commit door hem bevestigd of door Codex uitgevoerd.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja ik zie ze
+```
+
+### 23 november 2026 — Uitleg en leerdoel per stap nadrukkelijk herhaald
+
+Tool: Codex met alleen-lezen Git-statuscontrole en lokale logboekbewerking. Toepassing: begeleiding aangepast naar één betekenisvolle handeling tegelijk met uitleg vooraf van wat/waarom en achteraf een herkenbare resultaatcontrole. Geen nieuwe commit of push uitgevoerd.
+
+Letterlijke gebruikersprompt:
+
+```text
+ik wil graag dat je per stap uitlegt wat we precies gaan doen en waarom. Zodat ik hier van kan leren. 
+```
+
+### 23 november 2026 — Verschillenoverzicht geopend
+
+Tool: Codex met alleen-lezen Git-diff en lokale logboekbewerking. Toepassing: Gerard bevestigt het verschillenoverzicht te zien; inhoud van docs/api-controles.md vergeleken met de laatste commit om het doel van de wijziging toe te lichten.
+
+Letterlijke gebruikersprompt:
+
+```text
+ja ik zie het
+```
+
+### 23 november 2026 — Overige documentatie beoordelen en committen
+
+Tool: Codex met lokale inhouds-/Git-diffcontrole, documentbewerking en Git. Toepassing: opdracht voor de overige zes documentatiebestanden opgevat binnen de besproken selectie van zeven; ontwerpbestanden vallen erbuiten. Actuele statuszinnen gecorrigeerd in API-uitleg, API-verkenning en versiebeheer. Eén samenhangende lokale commit voorbereid op docs/api-controles; geen opdracht tot extra upload aangenomen.
+
+Letterlijke eerdere bevestiging dat docs/api-controles.md is aangevinkt:
+
+```text
+ja
+```
+
+Letterlijke gebruikersopdracht:
+
+```text
+okee, duidelijk laten we de andere bestanden ook goedkeuren en committen
+```

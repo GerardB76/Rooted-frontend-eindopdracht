@@ -1,6 +1,6 @@
 # Rooted — eerste API-configuratie
 
-Datum: 10 november 2026. Versie: eerste oefenopzet. **Lokaal gecontroleerd; nog niet geüpload of door NOVI geaccepteerd.**
+Bijgewerkt: 23 november 2026. Versie: eerste oefenopzet. **Lokaal gecontroleerd en door Gerard in Swagger gebruikt; de uitgevoerde API-controles staan in [het controleoverzicht](../docs/api-controles.md).** Registratie, afscherming van eigen favorieten en de feitelijke PDF-opslag zijn nog niet afgerond.
 
 Uploadbestand: [rooted-startconfig.json](rooted-startconfig.json).
 
@@ -70,17 +70,17 @@ Er is nog geen extra profielcollectie voor voornaam/achternaam. Die voegen we pa
 1. Open de [NOVI-homepagina](https://novi-backend-api-wgsgz.ondigitalocean.app/).
 2. Vul daar je eigen project-ID in.
 3. Selecteer **alleen** `rooted-startconfig.json` uit deze map en upload het bestand.
-4. Lees de melding. Bij een fout: bewaar de melding en pas het bestand gericht aan. Er is nog geen succesvolle NOVI-upload geclaimd.
+4. Lees de melding. Bij een fout: bewaar de melding en pas het bestand gericht aan. De huidige oefengegevens zijn al teruggezien in Swagger; opnieuw uploaden is geen noodzakelijke stap voor de lopende GitHub-inrichting.
 5. Open na een succesvolle upload de aangeboden Swagger UI. Dat is de testpagina waarop de beschikbare API-verzoeken staan.
 
 Je hoeft het project-ID niet in dit bestand te zetten. Het wordt apart meegestuurd bij aanvragen. Volgens Overview wordt de database dagelijks geleegd; bewaar dit bestand om de startgegevens opnieuw te kunnen laden. Opnieuw uploaden behandelen we als opnieuw vullen: testgegevens die je na de vorige upload hebt gewijzigd of toegevoegd kunnen daarbij verloren gaan; de precieze uploadwerking moet nog worden gecontroleerd.
 
 ## Daarna controleren in Swagger
 
-Doe dit samen stap voor stap; deze lijst is nog niet uitgevoerd:
+Gebruik deze lijst om controles te plannen of te herhalen. De al uitgevoerde controles en hun precieze bewijs staan in [docs/api-controles.md](../docs/api-controles.md); onderstaande lijst is geen aanvullende claim dat alles geslaagd is:
 
 1. Zonder inloggen de bloglijst ophalen: verwacht tien artikelen.
-2. Met lezer 1 inloggen via `POST /api/login` en het echte antwoord bekijken, inclusief gebruikers-ID en token.
+2. Met lezer 1 inloggen via `POST /api/login` en de e-mail, rollen en het token in het echte antwoord bekijken. Volgens Gerard bevat dit antwoord geen gebruikers-ID; die dus niet als bevestigd responsveld aannemen.
 3. Dezelfde controle met lezer 2; daarna eigen favorieten en afscherming tegen lezen/toevoegen/verwijderen voor een andere eigenaar testen.
 4. Documentinformatie proberen zonder en met inlog. De PDF zelf kan nog niet getest worden.
 5. In de gegenereerde API zoeken naar ondersteunde bezoekersregistratie; automatisch inloggen blijft daarvan afhankelijk.
@@ -88,6 +88,8 @@ Doe dit samen stap voor stap; deze lijst is nog niet uitgevoerd:
 ## Wat is lokaal gecontroleerd?
 
 ### Handmatige Swagger-controle — 10 november 2026
+
+Hertest: Gerard heeft op eigen verzoek de login opnieuw uitgevoerd en expliciet email lezer1@rooted.example en rol user bevestigd. Daarna de nieuwe tokenautorisatie gebruikt. De favorietenlijst geeft opnieuw 200 met beide gebruikers en GET /api/favorites/2 levert opnieuw het record van userId 3 op (detailstatus in de hertest niet apart meegedeeld). Deze hertest heeft de eerdere ongewenste toegang niet weerlegd. De vraag over ondersteunde eigenaarcontrole blijft bij NOVI/docent open.
 
 Vervolg: met dezelfde begeleide lezer-1-autorisatie geeft GET `/api/favorites/2` volgens Gerards gedeelde antwoord ook 200 met `userId: 3, bookId: 2`. Dus ook de directe leescontrole op andermans favoriet is niet geslaagd. Rollen en permissies opnieuw gelezen; daarin geen expliciete instelregel voor eigenaarsbeperking gevonden. De juiste ondersteuning/inrichting bij NOVI navragen vóórdat we dit als persoonlijke gegevensopslag presenteren. Geen DELETE- of POST-eigenaarscontrole uitgevoerd; daarover is nog geen testuitspraak mogelijk.
 
