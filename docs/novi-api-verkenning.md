@@ -1,8 +1,8 @@
 # NOVI Dynamic API — eerste verkenning voor Rooted
 
-Datum: 10 november 2026. Status: documentatie gelezen en lokale startconfiguratie gemaakt; nog geen upload of API-acties getest.
+Opgesteld: 10 november 2026. Bijgewerkt: 23 november 2026. Status: documentatie gelezen, startconfiguratie gemaakt en handmatige Swagger-controles met Gerard uitgevoerd. De precieze resultaten en bewijsgrenzen staan in [het controleoverzicht](api-controles.md).
 
-Aanvulling: Gerard bevestigt dat zijn project-ID is aangevraagd en dat nog geen JSON is geüpload. De eerste oefenconfiguratie staat in [api/rooted-startconfig.json](../api/rooted-startconfig.json), met [uitleg en uploadstappen](../api/LEESMIJ.md). Collecties, Velden, Afbeeldingen, Data toevoegen en het volledige bibliotheekvoorbeeld zijn hiervoor aanvullend gelezen. JSON en startgegevens lokaal gecontroleerd; acceptatie, authenticatie en rechten bij NOVI nog niet getest. `reference:users` volgt de eerder gelezen gebruikers-/permissiedocumentatie; dit bewijst nog geen afgedwongen eigenaarschap.
+De eerste oefenconfiguratie staat in [api/rooted-startconfig.json](../api/rooted-startconfig.json), met [uitleg en uploadstappen](../api/LEESMIJ.md). Bij de voorbereiding had Gerard een project-ID en nog geen JSON geüpload. Inmiddels zijn de voorbeeldgegevens in Swagger teruggezien en is inloggen met lezer 1 bevestigd. Collecties, Velden, Afbeeldingen, Data toevoegen en het bibliotheekvoorbeeld zijn voor de configuratie gelezen. `reference:users` volgt de gebruikers-/permissiedocumentatie, maar de controles tonen geen afgedwongen beperking tot eigen favorieten. Bezoekersregistratie en feitelijke PDF-beveiliging blijven open.
 
 Gerard geeft aan deze API te kunnen gebruiken. Dit sluit aan op de eerder gekozen NOVI Dynamic API. Onderstaande bevindingen komen uit de daadwerkelijk geopende documentatie; zij bewijzen nog niet dat onze eigen configuratie correct werkt.
 
@@ -24,6 +24,10 @@ Volgens Overview wordt de database dagelijks geleegd en zijn er geen back-ups. D
 Dit is een echte platformbeperking om later in de handleiding en verantwoording te noemen. Zij vervangt de gewenste gebruikerswerking niet stilzwijgend.
 
 ## Nog onderzoeken voordat we de koppelingen bouwen
+
+Hertest op Gerards verzoek: verse login uitgevoerd met volgens zijn bevestiging email lezer1@rooted.example en rol user. Na nieuwe autorisatie geeft de lijst opnieuw 200 met beide startfavorieten, en de detailaanvraag levert opnieuw het record van userId 3 op. De detailstatus is in de hertest niet opnieuw gedeeld. De eerdere eigenaarsbevinding blijft dus staan. Geen bewijs van persoonlijke bedieningsfout en geen conclusie dat de API deze beperking nooit kan ondersteunen; de juiste ondersteunde instelling blijft een vraag voor NOVI/docent.
+
+Registratiecontrole in de eigen Swagger: Gerard meldt op 10 november dat onder Authentication alleen /api/login staat en geen andere POST-regel zichtbaar is. Dus nog geen bevestigde bezoekersregistratie of automatische inlog na accountaanmaak. Vraag NOVI/docent welke ondersteunde route of voorziening voor registratie bedoeld is. Alleen vooraf oefenaccounts in users instellen vervangt de vereiste registratiefunctie niet. Geen eindpunten gegokt of registratieverzoeken verstuurd.
 
 Vervolg op de lijstcontrole: ook rechtstreeks GET /api/favorites/2 geeft volgens Gerard 200 met het record van userId 3, onder de begeleide autorisatie van lezer 1. De beperking tot eigen gegevens faalt voor zowel lijst als detail. De pagina Rollen en permissies op 10 november opnieuw gelezen; de rolarrays en reference:users-koppeling bevatten geen aangetroffen expliciete eigenaarinstelling. Een gerichte openbare zoekopdracht leverde geen aanvullende bron op. Dit bewijst niet dat de dienst eigenaarscontrole onmogelijk maakt. Vraag NOVI/docent welke ondersteunde configuratie of verzoekroute daarvoor bedoeld is. Lezen, toevoegen met vervalste eigenaar en verwijderen van andermans favoriet moeten uiteindelijk elk worden afgedwongen; alleen de twee leesgevallen zijn nu getest.
 
