@@ -1,0 +1,59 @@
+.about-section {
+    background-color: var(--color-sage);
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2xl);
+}
+
+.about-intro,
+.about-faq {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-faq h3 {
+    margin-bottom: var(--space-sm);
+}
+
+.about-faq details {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.about-faq summary {
+    min-height: 44px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.about-faq summary:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.about-faq summary:focus-visible {
+    outline: 2px solid var(--color-green);
+    outline-offset: 3px;
+}
+
+.about-faq details p {
+    margin-top: var(--space-sm);
+}
+
+.about-faq ul {
+    margin: 0 0 var(--space-md);
+    padding-left: var(--space-lg);
+}
+
+@media (max-width: 800px) {
+    .about-content {
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+    .about-faq {
+        width: 100%;
+    }
+}

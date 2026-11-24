@@ -1,0 +1,22 @@
+.article-card-image {
+    width: 100%;
+    aspect-ratio: 8 / 3;
+    object-fit: cover;
+    margin-bottom: var(--space-md);
+}
+
+.article-card-topic {
+    margin-bottom: var(--space-sm);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.article-card-title {
+    margin-bottom: var(--space-md);
+}
+
+.article-card-intro {
+    margin: 0;
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,27 @@
+.home-articles-list {
+    display: flex;
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.home-articles-list > .article-card {
+    flex: 1;
+    min-width: 0;
+}
+
+.home-articles-list > .article-card + .article-card {
+    border-left: 1px solid var(--color-border);
+    padding-left: var(--space-lg);
+}
+
+@media (max-width: 800px) {
+    .home-articles-list {
+        flex-direction: column;
+    }
+
+    .home-articles-list > .article-card + .article-card {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+        padding: var(--space-lg) 0 0;
+    }
+}
