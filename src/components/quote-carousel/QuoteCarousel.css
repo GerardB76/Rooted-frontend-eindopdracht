@@ -31,7 +31,8 @@
     font-size: 14px;
 }
 
-.quote-source {
+.quote-translation {
+    display: block;
     margin-top: var(--space-xs);
 }
 

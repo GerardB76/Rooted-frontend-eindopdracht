@@ -1,0 +1,346 @@
+.shop-intro {
+    padding: var(--space-3xl) 0;
+    background-color: var(--color-sage);
+}
+
+.shop-intro h1,
+.shop-section-heading h2 {
+    margin-bottom: var(--space-md);
+}
+
+.shop-intro p,
+.shop-section-heading p {
+    margin-bottom: 0;
+    color: var(--color-text-secondary);
+}
+
+.shop-section-heading {
+    margin-bottom: var(--space-xl);
+}
+
+.workshop-list {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.workshop-secondary {
+    flex: 1;
+    min-width: 0;
+}
+
+.workshop-secondary .workshop-card + .workshop-card {
+    margin-top: var(--space-xl);
+}
+
+.workshop-card {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+    min-width: 0;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.workshop-featured {
+    flex: 1.25;
+    padding: var(--space-lg);
+    border-top: 0;
+    background-color: var(--color-sage);
+}
+
+.workshop-photo {
+    order: 1;
+    flex: 0 0 220px;
+    width: 220px;
+    height: 164px;
+    object-fit: cover;
+    object-position: 50% 45%;
+}
+
+.workshop-secondary .workshop-photo {
+    object-position: 20% 45%;
+}
+
+.workshop-secondary .workshop-card:last-child .workshop-photo {
+    object-position: 80% 50%;
+}
+
+.workshop-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.workshop-order.button:disabled {
+    justify-content: flex-start;
+    min-height: 0;
+    padding: 0 0 var(--space-xs);
+    border-width: 0 0 1px;
+    border-radius: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.shop-label {
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.shop-books {
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-warm-white);
+}
+
+.shop-book-list {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.shop-book-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.shop-book-card h3,
+.workshop-card h3 {
+    margin-bottom: var(--space-sm);
+}
+
+.shop-book-author {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-secondary);
+}
+
+.shop-book-action {
+    margin-top: auto;
+}
+
+.shop-book-action a,
+.shop-back-link,
+.book-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    min-height: 44px;
+}
+
+.book-cover-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 265px;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    background-color: #e5e8d9;
+}
+
+.book-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 153px;
+    max-width: 100%;
+    min-height: 225px;
+    padding: var(--space-md);
+    background-color: #c4d1ba;
+    box-shadow: 5px 7px #a8b7a2;
+    color: var(--color-green);
+    font: 22px/1.2 var(--font-heading);
+    overflow-wrap: break-word;
+}
+
+.book-cover span {
+    font: 13px/1.4 var(--font-body);
+}
+
+.book-cover strong {
+    font-weight: normal;
+}
+
+.book-cover-area-sand {
+    background-color: #e8dfd1;
+}
+
+.book-cover-area-sand .book-cover {
+    background-color: #d8c6af;
+    box-shadow: 5px 7px #bcad9a;
+}
+
+.book-cover-area-green {
+    background-color: #dce2d5;
+}
+
+.book-cover-area-green .book-cover {
+    background-color: #b2c2ab;
+    box-shadow: 5px 7px #99aa94;
+}
+
+.shop-price {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.shop-price small {
+    display: block;
+    color: var(--color-text-secondary);
+    font: 13px/1.5 var(--font-body);
+}
+
+.shop-back-link {
+    margin-bottom: var(--space-lg);
+}
+
+.book-detail-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 8%;
+}
+
+.book-detail-visual {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+}
+
+.book-detail-visual .book-cover-area {
+    min-height: 400px;
+    margin-bottom: var(--space-sm);
+    padding: var(--space-3xl) var(--space-lg) var(--space-xl);
+}
+
+.book-detail-visual .book-cover {
+    width: 180px;
+    min-height: 270px;
+    text-align: center;
+}
+
+.book-favorite.button {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--color-warm-white);
+    font-size: 24px;
+}
+
+.book-favorite-note {
+    margin-bottom: 0;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.book-detail-copy {
+    flex: 1.15;
+    min-width: 0;
+}
+
+.book-detail h1 {
+    margin-bottom: var(--space-sm);
+    font-size: 44px;
+}
+
+.book-subtitle {
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-secondary);
+    font-family: var(--font-heading);
+    font-size: 20px;
+}
+
+.book-summary,
+.book-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-lg);
+    margin: 0 0 var(--space-md);
+}
+
+.book-summary {
+    padding: var(--space-md) 0;
+    border-block: 1px solid var(--color-border);
+}
+
+.book-summary dt,
+.book-facts dt {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.book-summary dd,
+.book-facts dd {
+    margin: 0;
+}
+
+.book-detail-section {
+    margin-top: var(--space-xl);
+}
+
+.book-detail-section h2 {
+    margin-bottom: var(--space-md);
+    font-size: 28px;
+}
+
+.book-detail-section h3 {
+    margin: var(--space-lg) 0 var(--space-sm);
+    font-size: 21px;
+}
+
+.book-order {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.book-order .shop-price {
+    font: 25px/1.4 var(--font-heading);
+}
+
+@media (max-width: 1000px) {
+    .workshop-card {
+        flex-direction: column;
+    }
+
+    .workshop-photo {
+        order: 0;
+        flex: 0 0 auto;
+        width: min(220px, 100%);
+        height: auto;
+        aspect-ratio: 220 / 164;
+    }
+}
+
+@media (max-width: 700px) {
+    .shop-intro {
+        padding: var(--space-2xl) 0;
+    }
+
+    .workshop-list,
+    .shop-book-list,
+    .book-detail-layout {
+        flex-direction: column;
+        gap: var(--space-xl);
+    }
+
+    .book-detail-visual {
+        width: 100%;
+    }
+
+    .book-detail-visual .book-cover-area {
+        min-height: 340px;
+    }
+
+    .book-detail h1 {
+        font-size: 36px;
+    }
+}

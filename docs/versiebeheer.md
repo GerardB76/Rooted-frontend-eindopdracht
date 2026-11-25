@@ -8,7 +8,7 @@ Opgesteld: 10 november 2026. Bijgewerkt: 23 november 2026.
 
 Een **branch** is een aparte werklijn voor een verandering. `main` is de hoofdlijn. Later maken we bijvoorbeeld een aparte branch voor de homepage. Via een **pull request** op GitHub laten we zien wat er op zo’n branch is veranderd voordat het wordt samengevoegd met main.
 
-**GitHub** is de online dienst waarop onze repository staat. Git lokaal gebruiken publiceert op zichzelf niets. Het eerste startpunt op main is op 23 november geüpload; de eerste pull request moet nog worden gemaakt.
+**GitHub** is de online dienst waarop onze repository staat. Git lokaal gebruiken publiceert op zichzelf niets. Het eerste startpunt op main is op 23 november geüpload; de eerste documentatie-pull-request is aangemaakt en staat open (#1).
 
 ## Eerste inrichting
 
@@ -50,14 +50,27 @@ Op 10 november is de lokale repository op main aangemaakt en is het eerste start
 
 ### Volgende werkstap: API-controleverslag
 
-Na het eerste startpunt zijn de handmatige API-controles uitgevoerd en verwerkt. Een eerste controleverslag is op `docs/api-controles` vastgelegd in commit b25145d. De latere hertest en GitHub-voortgang vormen de volgende documentatie-update op dezelfde branch. Dit zijn documentatiestappen, geen extra websitefuncties. `main` bewaart voorlopig het eerste startpunt. Er bestaat nog geen pull request; die opleidingsvereiste wordt niet als behaald aangemerkt.
+Na het eerste startpunt zijn de handmatige API-controles uitgevoerd en verwerkt. Een eerste controleverslag is op `docs/api-controles` vastgelegd in commit b25145d. De latere hertest en GitHub-voortgang vormen de volgende documentatie-update op dezelfde branch. Dit zijn documentatiestappen, geen extra websitefuncties. `main` bewaart voorlopig het eerste startpunt. PR #1 staat open; de opleidingsvereiste voor samengevoegde feature-pull-requests is daarmee nog niet behaald.
 
 ### GitHub-koppeling — 23 november 2026
 
-**Uitvoering eerste upload bevestigd:** Gerard heeft in de WebStorm-terminal `git push -u origin main` uitgevoerd. main en origin/main wijzen lokaal naar ae5a7d6. De openbare GitHub-pagina is bekeken en toont diezelfde eerste commit, main als branch en de verwachte projectbestanden. De eerste upload is geslaagd; de eerdere voorbereidingsbeschrijving hieronder is daarmee uitgevoerd. De aparte API-controlebranch en latere werkbestanden zijn nog niet geüpload. Volgende stap is die wijzigingen op de bestaande branch vastleggen en via een pull request aanbieden.
+**Uitvoering uploads bevestigd:** Gerard heeft in de WebStorm-terminal eerst `git push -u origin main` uitgevoerd. main en origin/main wijzen naar ae5a7d6; de openbare GitHub-pagina toonde dezelfde eerste commit en de verwachte projectbestanden. Daarna heeft hij `git push -u origin docs/api-controles` uitgevoerd. Deze branch en origin/docs/api-controles wijzen beide naar dbfc0be. De uploads zijn geslaagd; PR #1 is daarna op Gerards verzoek door Codex aangemaakt en staat open.
 
 Gerard heeft de repository [Rooted-frontend-eindopdracht](https://github.com/GerardB76/Rooted-frontend-eindopdracht) aangemaakt. Het lokale project kent dit adres als `origin`: de naam voor de online bestemming. De URL is na instellen gecontroleerd. De repository was bij die controle leeg; na de eerste push is main met de 22 gecontroleerde bestanden zichtbaar.
 
 Het eerste startpunt op `main` bevat 22 bestanden met projectdocumentatie en API-oefengegevens. Dit bestaande startpunt is gecontroleerd voor de eerste upload. Lesmateriaal, persoonlijke instellingen, tijdelijke bestanden en ontwerpen zitten daar niet in; de configuratie bevat alleen de gedocumenteerde fictieve oefenaccounts. De herkenbare token-/sleutelpatrooncontrole gaf geen treffers. Die controle is gericht en geen garantie voor alle toekomstige wijzigingen.
 
-De eerste `push` is afgerond. De volgende stap is de recentere documentatie op de bestaande API-controlebranch vastleggen, die branch uploaden en de verschillen via een pull request bekijken. Gewijzigde werkbestanden gaan niet automatisch mee met een push: daarvoor is eerst een nieuwe commit nodig. De API-controlebranch is nog niet geüpload en er is nog geen pull request gemaakt.
+Beide branches staan nu op GitHub. De volgende stap is een pull request met `base: main` en `compare: docs/api-controles`: daarmee vragen we de twee documentatiecommits van de aparte werklijn aan main toe te voegen. Eerst controleren we de richting en verschillen; samenvoegen volgt later. Gewijzigde lokale werkbestanden gaan niet automatisch mee met een push: daarvoor is eerst een nieuwe commit nodig.
+
+### Eerste pull request aangemaakt — 23 november 2026
+
+[PR #1: Werk API-controles en projectvoortgang bij](https://github.com/GerardB76/Rooted-frontend-eindopdracht/pull/1) is aangemaakt. Gecontroleerd op GitHub: Open, bron docs/api-controles, bestemming main, twee commits en zeven gewijzigde bestanden. Nog geen samenvoeging. Volgende stap: samenvoegen toelichten en samen de PR bekijken. Lokale gespreksnotities zijn niet extra gecommit of gepusht.
+
+### Eerste PR samengevoegd en lokaal bijgewerkt
+
+PR #1 is samengevoegd in mergecommit 2782036. Gerard heeft fetch, stash, switch main, merge --ff-only origin/main en stash apply uitgevoerd. Lokale main en origin/main zijn gelijk. De vier documentatiebestanden met latere notities zijn teruggezet zonder conflicten; de stash is nog aanwezig als reserve. Deze notities zijn nog niet gecommit. Volgende stap: op een aparte branch vastleggen. De eerste PR betreft documentatie; hiermee zijn de vereiste feature-pull-requests niet automatisch voldaan.
+
+
+## React-tussenpunt naar GitHub — 24 november 2026
+
+De React-basis en eerste homepageonderdelen zijn in commit [575f824](https://github.com/GerardB76/Rooted-frontend-eindopdracht/commit/575f824575df01fa9887bda3ca6e64681b0431fe) vastgelegd en naar codex/react-basis op GitHub gestuurd. Online commit-ID gelijk aan lokaal gecontroleerd. Eerst verder bouwen aan de homepage op deze werklijn. Voor dit tussenpunt is geen pull request gemaakt.

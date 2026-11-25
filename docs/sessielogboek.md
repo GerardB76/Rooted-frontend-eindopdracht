@@ -712,7 +712,7 @@ Volgende sessie: GitHub oppakken. Eerst huidige bestanden en Git-status controle
 
 ## Sessie 012 - 23 november 2026 - GitHub stap voor stap inrichten
 
-**Status:** lopend.
+**Status:** afgerond op verzoek van Gerard op 23 november 2026.
 
 Doel: Gerard begeleiden bij GitHub, voortbouwend op de bestaande lokale Git-geschiedenis. Werkdocument, afsluiting van sessie 011 en Git-uitleg gelezen. Alleen-lezen controles: actieve branch docs/api-controles, commits ae5a7d6 en b25145d, geen remote; dezelfde zes bestanden met latere notities gewijzigd en ontwerp niet bijgehouden. Git is nu op het gewone zoekpad gevonden (2.56.0.windows.1); GitHub CLI niet gevonden. Geen GitHub-connectortools beschikbaar. Officiële GitHub-pagina’s Creating a new repository en Hello World/Using GitHub geraadpleegd op 23 november. Voor bestaande lokale geschiedenis later een lege online repository gebruiken, zonder automatisch README/gitignore/licentie toe te voegen. Nog geen account, repository of zichtbaarheid namens Gerard ingesteld.
 
@@ -787,3 +787,391 @@ Zeven bestanden vormen de selectie: WERKDOCUMENT.md, api/LEESMIJ.md, docs/ai-log
 Bij de eerste commitpoging stopte de voorafgaande tekstcontrole op een eindspatie in Gerards letterlijk bewaarde prompt. Er was op dat moment nog geen commit gemaakt. Die prompt blijft ongewijzigd vanwege de vereiste letterlijke AI-bijlage. De controle herhaald met expliciet behoud van eindspaties/eindlege regels, maar controle op problematische inspringing behouden; geslaagd. Geen blijvende Git-controle-instelling gewijzigd. Daarna dezelfde zeven bestanden opnieuw voor de commit klaarzetten.
 
 Git-uitkomst: nieuwe lokale commit op docs/api-controles uitgevoerd met uitsluitend de zeven beoordeelde bestanden. Selectie en tekstcontrole zijn geslaagd met behoud van letterlijke prompts. Het uitvoeringsresultaat wordt direct meegenomen in hetzelfde nieuwe vastlegmoment; eerdere commits blijven behouden. main en origin/main blijven op het eerste startpunt. Ontwerpen blijven onbijgehouden; geen push of pull request uitgevoerd. Volgende stap: de API-controlebranch naar GitHub uploaden en daarna een pull request voorbereiden.
+
+### Aanvulling: eenvoudiger werkplek bespreken
+
+Gerard vraagt of alle bestanden in WebStorm nodig zijn of dat code uitwerken en op GitHub bewaren volstaat. Opleidingseisen voor losse PDF-documenten, broncode/JSON, README, Git/commits/pull requests en AI-bijlage gericht teruggelezen. Uitleg voorbereid: WebStorm toont een bestaande map, bestanden worden niet apart in de IDE opgeslagen. Niet alle planning/log-/ontwerpbestanden hoeven voor de opleiding in dezelfde repository; dat is een projectkeuze. Wel blijven de afzonderlijke opleverdocumenten, AI-prompts en voortgang nodig. GitHub is online versiegeschiedenis, meer dan alleen af en toe een back-up: de afgesproken commit-/pull-requestwerkwijze blijft gelden.
+
+Advies voor nu: tijdens programmeren alleen codebestanden openen en documentatiemappen ingeklapt laten; ondersteunende bestanden behouden op hun huidige plek totdat een eventuele mapwijziging bewust is afgesproken. Geen toestemming tot verwijderen/verplaatsen of herschrijven van Git-geschiedenis uit de vraag afgeleid. Gewijzigd: docs/ai-logboek.md en dit logboek; geen code-, map-, Git-configuratie-, commit- of pushactie uitgevoerd. Geen persoonlijke reflectie of leerbeheersing vastgesteld. Volgende stap: Gerards voorkeur afwachten als hij werkelijk een andere map-/repositoryindeling wil; anders codegericht verder op de bestaande basis. Sessie 012 loopt.
+
+### Aanvulling: mapindeling behouden en branch-upload begeleiden
+
+Gerard volgt het advies de huidige mapindeling te behouden en zich in WebStorm op de code te richten, met ondersteunende documentatiemappen ingeklapt. Geen bestanden verplaatst of verwijderd. Git-stand gelezen: actieve docs/api-controles en laatste commit dbfc0be met Werk API-hertest en GitHub-voortgang bij. Deze commit wordt niet opnieuw gemaakt voor de nieuwe gespreksnotities; die blijven lokale werkbestanden voor een volgende samenhangende stap.
+
+Volgende handeling uitgelegd: git push -u origin docs/api-controles vanuit de WebStorm-terminal uploadt de vastgelegde versies van deze branch en stelt de volgrelatie met GitHub in. main verandert daardoor niet; de vergelijking en samenvoeging volgen via pull request. Geen push uitgevoerd door Codex en nog geen succesmelding ontvangen. Gewijzigd: WERKDOCUMENT.md, docs/ai-logboek.md en dit logboek. Behandeld: mapweergave versus opslag, commit versus push en afzonderlijke branch; geen persoonlijke reflectie of leerbeheersing vastgesteld. Volgende stap: resultaat van Gerards branch-push beoordelen. Sessie 012 loopt.
+
+### Aanvulling: API-controlebranch online; pull-requestrichting voorbereiden
+
+Gerard deelt geslaagde push-uitvoer voor docs/api-controles met nieuwe online branch en ingestelde volgrelatie. Lokale controle: docs/api-controles en origin/docs/api-controles hebben exact dbfc0be787ac303d31006d7528741f296fb163e5; branch -vv toont de volgrelatie, main blijft ae5a7d6. Git log main..docs/api-controles toont twee documentatiecommits (b25145d en dbfc0be). Geen extra push door Codex uitgevoerd. WERKDOCUMENT.md en docs/versiebeheer.md bijgewerkt van uploadvoorbereiding naar werkelijke branch-upload; letterlijke uitvoer in AI-logboek toegevoegd.
+
+Volgende betekenisvolle stap uitgelegd: pull-requestformulier openen vanaf de gedeelde GitHub-link en base main / compare docs/api-controles controleren. Base is de bestemming, compare de bron van de wijzigingen. Eerst richting en inhoud bekijken, nog niet samenvoegen. Nog geen pull request aangemaakt of opleidingsvereiste voor gemergde PR afgevinkt. Behandeld: nieuwe online branch, volgrelatie, verschil tussen push en pull request; geen persoonlijke reflectie of beheersing vastgesteld. Geen online mutatie namens Gerard, geen nieuwe commit. Sessie 012 loopt.
+
+### Aanvulling: PR-vergelijking geopend en omvang controleren
+
+Gerard bevindt zich eerst op Branches; uitgelegd via Pull requests → New pull request te gaan met base main en compare docs/api-controles. Hij bevestigt de vergelijking te zien. Lokaal de gepushte refs vergeleken: twee commits en zeven documentatiebestanden (WERKDOCUMENT.md, api/LEESMIJ.md en docs/ai-logboek.md, api-controles.md, novi-api-verkenning.md, sessielogboek.md, versiebeheer.md); geen ontwerp of applicatiecode in vergelijking. Volgende betekenisvolle handeling: omvang en bestandsnamen op GitHub bekijken voordat titel/beschrijving en Create pull request volgen. Groen/rood toont tekstverschillen en zegt niets over geslaagde tests. Geen PR aangemaakt, merge uitgevoerd of nieuwe commit/push gedaan. Gewijzigd: docs/ai-logboek.md en dit logboek. Geen leerbeheersing of persoonlijke reflectie vastgesteld. Sessie 012 loopt.
+
+### Aanvulling: omvang PR klopt; titel en beschrijving invullen
+
+Gerard bevestigt twee commits en zeven gewijzigde bestanden in de GitHub-vergelijking. Titel en beschrijving voorbereid rond het uiteindelijke documentatiewerk: API-controles/hertest, actuele projectvoortgang, Git/WebStorm-uitleg en bijbehorende logboeken. Beschrijving benoemt de nog open favorietenafscherming/registratie en claimt geen applicatiefix of nieuwe tests. Begeleiding bij Title en beschrijving, daarna Create pull request. Uitgelegd dat de PR het voorstel vastlegt; main verandert pas bij samenvoegen. Nog geen aangemaakte PR of URL ontvangen, dus geen opleidingsvereiste afgevinkt. Gewijzigd: WERKDOCUMENT.md, docs/ai-logboek.md en dit logboek. Geen online actie namens Gerard uitgevoerd. Volgende stap: PR-URL ontvangen en aangemaakte richting/inhoud controleren. Sessie 012 loopt.
+
+### Aanvulling: eerste pull request door Codex aangemaakt
+
+Gerard vraagt de zojuist voorbereide PR voor hem aan te maken. De aangemelde GitHub-app gebruikt om de afgesproken titel en beschrijving in te vullen en Create pull request te gebruiken. Resultaat zelfstandig gecontroleerd: PR #1, Werk API-controles en projectvoortgang bij, Open, twee commits en zeven bestanden, van docs/api-controles naar main. URL: https://github.com/GerardB76/Rooted-frontend-eindopdracht/pull/1. De PR ook aan deze chat gekoppeld. Geen samenvoeging uitgevoerd en geen extra commit/push. Screenshot bewaard in tmp/github-pr-1.png (uitgesloten van Git).
+
+Gewijzigd: WERKDOCUMENT.md, docs/versiebeheer.md, docs/ai-logboek.md en dit logboek. Behandeld: verschil tussen een voorstel aanmaken en samenvoegen; geen persoonlijke leerbeheersing aangenomen. API-vragen blijven open. Volgende stap: PR samen bekijken en de betekenis van samenvoegen uitleggen. Sessie 012 loopt.
+
+
+### Aanvulling: online wijziging vastgesteld; lokale synchronisatie begeleiden
+
+Na de vraag of Gerard mocht samenvoegen is Merge pull request / Confirm merge uitgelegd. Hij vraagt vervolgens naar de volgende stap. Lokale status gecontroleerd: docs/api-controles actief op dbfc0be, vier gewijzigde documentatiebestanden en onbijgehouden ontwerp. Online alleen-lezen git ls-remote na netwerktoestemming toont main op 2782036f4ef2c44a1958b17a23e7c95114f8b5cc en geen docs/api-controles meer. Dit bevestigt een gewijzigd online main en ontbrekende remote branch; PR-status niet zelfstandig opnieuw gezien (webpagina kon niet worden opgehaald). Geen lokale geschiedenis of werkbestanden door Git veranderd.
+
+Volgende leerstap: Gerard git fetch origin laten uitvoeren in WebStorm. Fetch haalt online geschiedenis op zonder lokale werkbestanden te wijzigen. Daarna de geschiedenis controleren en lokale notities veilig meenemen bij overstap naar main. Geen directe pull/checkout met de vier onvastgelegde documenten voorgesteld. Gewijzigd: WERKDOCUMENT.md en beide logboeken. Sessie 012 loopt.
+
+
+### Aanvulling: fetch geslaagd en mergecommit gecontroleerd
+
+Gerard deelt succesvolle git fetch origin-uitvoer. Lokaal origin/main gecontroleerd: 2782036, merge van ae5a7d6 en dbfc0be, bericht Merge pull request #1. De PR is daarmee daadwerkelijk samengevoegd. git diff --stat HEAD origin/main is leeg: dezelfde bestandsinhoud. Lokale main loopt drie commits achter. Vier documentatiebestanden gewijzigd, ontwerp onbijgehouden. Volgende losse leerstap: git stash push -m voortgang-na-eerste-merge bewaart alleen bijgehouden wijzigingen tijdelijk; ontwerp blijft staan. Daarna main kiezen en met alleen vooruit samenvoegen bijwerken, vervolgens notities terugzetten. Geen van deze Git-mutaties namens Gerard uitgevoerd. Gewijzigd: werkdocument en beide logboeken. Behandeld: fetch versus lokale bestanden bijwerken, mergecommit en tijdelijk bewaren van werk. Sessie 012 loopt.
+
+
+### Aanvulling: lokale synchronisatie afgerond; notities teruggezet
+
+Gerard heeft achtereenvolgens stash push, switch main, merge --ff-only origin/main en stash apply uitgevoerd. Alleen-lezen controles bevestigen main en origin/main op 2782036, vier gewijzigde documentatiebestanden terug en stash voortgang-na-eerste-merge nog aanwezig. Geen conflicten gemeld of in status zichtbaar. Ontwerp blijft onbijgehouden. CRLF/LF-waarschuwingen hebben de stash niet verhinderd. Tijdelijk bewaarde letterlijke prompts verwerkt in AI-logboek; deze geschiedenis nu direct in sessie 012 opgenomen. Werkdocument en versiebeheer bijgewerkt. Geen stash verwijderd, commit of push uitgevoerd.
+
+Behandeld: online merge versus lokale synchronisatie, fetch, fast-forward en stash apply met behoud van reserve. Geen leerbeheersing aangenomen. GitHub-inrichting en eerste documentatie-PR afgerond; nieuwe logboekwijzigingen nog niet vastgelegd. Volgende stap: deze samenhangende voortgangsnotities op een aparte branch vastleggen vóór verder bouwen; daarna de bestaande ontwerpen en resterende API-vragen als uitgangspunt nemen. Sessie 012 blijft lopend.
+
+
+### Afsluiting en overdracht naar nieuwe chat
+
+Gerard vindt de Git-begeleiding te omslachtig en wil voortaan doorpakken met de website; routineversiebeheer zelfstandig afhandelen, leeruitleg richten op belangrijke programmeerstappen. Daarna vraagt hij expliciet eerst te stoppen en een nieuwe chat te openen vóór codewerk. Geen React-code, package.json of dependencies aangemaakt. Alleen bestaande ontwerpen/documentatie bekeken; homepage-bron uitgepakt naar tmp/homepage-bron.html. Figma-homepage 1:125 met screenshot/context gelezen: beeldconcept met klikgebieden, oorspronkelijke HTML blijft bouwbron. Ontwerp/figma/design-guideline.md en schermontwerpen bevatten de bestaande afspraken. Node 24.22.3 en npm 11.19.1 aanwezig. Poging branch codex/react-basis te maken faalde wegens schrijfrechten op .git; niet opnieuw geprobeerd na het stopverzoek. Actieve branch blijft main; vier gewijzigde documenten, ontwerp onbijgehouden, stash behouden. Geen code, commit, push of publicatie in deze afronding.
+
+Gewijzigd bij afsluiten: WERKDOCUMENT.md, sessielogboek en AI-logboek. GitHub-basis gereed, PR #1 samengevoegd en lokale main gelijk aan origin/main (2782036). API-vragen blijven open: registratie, eigenaarscontrole favorieten, PDF. Volgende sessie: lees deze overdracht en de ontwerpen, start de eenvoudige React-basis en homepage zodra Gerard in de nieuwe chat verder wil. Maak hiervan geen nieuwe reeks handmatige Git-instructies. Sessie 012 afgerond.
+
+## Sessie 013 — 23 november 2026 — lopend
+
+Doel: vóór programmeren de lesgerichte aanpak en Axios controleren op Gerards verzoek.
+Uitgevoerd: overdracht en afspraken gelezen; lesstof-/oefenopdrachten-index gelezen; oorspronkelijke React-Wordbron gericht uitgelezen rond Axios, requests, foutafhandeling, autorisatie en annuleren. README en relevante code van Country information, Blog part 2 en Tech it easy gelezen op vastgelegde commits (zie oefenopdrachten-index). Officiële Axios-configuratie en voorbeelden nagekeken. GitHub eerst via web benaderd; lokale netwerklezing na DNS-fout met toestemming herhaald. Python-start niet beschikbaar; Wordtekst succesvol via ingebouwde zip/XML-lezing gelezen. Geen installatie nodig.
+Controles: bestandszoekactie vindt geen package.json of website-JavaScript buiten ontwerp/tmp; er bestaat nog geen Rooted-API-implementatie om Axios-gebruik in te beoordelen. Eerdere API-controles waren handmatig via Swagger. Voorbeelden niet uitgevoerd; geen live API-test gedaan. Geen volledige audit van alle lesdocumenten of 16 repositories geclaimd.
+Besluit: beginnerniveau, eenvoudige functies en componenten, eigen CSS/Flexbox; toekomstige API-verzoeken met Axios, async/await en try/catch. Lesvoorbeelden niet blind volgen bij fouten of afwijkende versies/API-contracten. Headers correct onder headers plaatsen; detail-effect laten reageren op route-id. Geen websitecode, dependencies, Git-mutaties of publicatie.
+Gewijzigd: WERKDOCUMENT.md, docs/lesstof-index.md, docs/oefenopdrachten-index.md, docs/ai-logboek.md en dit sessielogboek.
+Leeronderwerpen: Axios als hulpmiddel voor API-communicatie; Swagger-controle tegenover implementatie; response.data, wachten op een antwoord en foutafhandeling. Geen beheersing of persoonlijke reflectie aangenomen.
+Open: registratie, eigenaarcontrole en PDF-beveiliging blijven onveranderd. Volgende stap: eenvoudige React-basis en bestaande goedgekeurde homepage bouwen zodra Gerard verder wil.
+
+### Aanvulling — uitgebreid gezamenlijk bouwplan
+
+Gerard vraagt het voorgestelde programmeerplan uit te breiden met de belangrijke tussenstappen. Projecteisen en relevante functioneel-ontwerppassages nagelezen; tien bouwfasen met controles, leeronderwerpen, doorlopende administratie en open NOVI-afhankelijkheden toegevoegd aan docs/projectplan.md. Geen nieuwe functionaliteiten toegezegd buiten bestaande afspraken. Zes ophaalfuncties en zes herbruikbare componenten, authenticatie/Context/Router, eigenaarcontrole, tarievenbescherming en opleverproducten expliciet meegenomen. Geen code, installatie, commit of test uitgevoerd. Gewijzigd: projectplan, WERKDOCUMENT.md, beide logboeken. Volgende concrete stap blijft uitsluitend React-basis klaarzetten en lokaal starten, met uitleg in WebStorm. Sessie 013 loopt.
+
+### Afsluiting — 23 november 2026
+
+Gerard sluit af met: 'okee dank je! Laten we morgen gaan bouwen'. Sessie 013 afgerond. Lesgerichte aanpak en Axios gecontroleerd; uitgebreid bouwplan met tussenstappen vastgelegd. Geen websitecode gemaakt, dependencies geïnstalleerd, commit, push of publicatie uitgevoerd. Bij hervatten eerst actuele bestanden controleren. Volgende werkmoment door Gerard bedoeld op 24 november 2026: React-basis met JavaScript klaarzetten, lokaal starten vanuit WebStorm en main.jsx/App.jsx/CSS/package.json eenvoudig uitleggen. Geen automatische vervolgactie ingesteld.
+
+
+## Sessie 014 - 24 november 2026 - afgerond
+
+- Doel: overzicht van passende inhoud om het websiteconcept van Rooted te vullen.
+- Werk: bestaande pagina-indeling, blogthema’s en afgesproken bloggedrag vergeleken met relevante passages uit de projecteisen. In de chat een inhoudsvoorstel per onderdeel en vier artikelideeën uitgewerkt.
+- Voorstel: beginnen met vier artikelen en de kernteksten voor Home. Eventueel uitbreiden naar acht artikelen om het knopgedrag en gerelateerde artikelen te kunnen laten zien. Dit aantal volgt uit het bestaande ontwerp en is geen opleidingseis.
+- Behandeld: verschil tussen korte introductietekst en volledig artikel, en tussen een systemische kijkvraag en een verklaring over iemands situatie.
+- Controle: het voorstel sluit aan op de bestaande pagina’s, vier voorlopige thema’s en de weergavelimiet van één uitgelicht plus zes gewone artikelen.
+- Gewijzigd: WERKDOCUMENT.md, docs/ai-logboek.md en dit sessielogboek.
+- Open: definitieve kernboodschap, artikelkeuze, boeken, quotes en concrete inhoud van het aanbod. Volgende stap: de kernboodschap en het eerste artikel samen uitwerken.
+
+
+
+### Aanvulling - eerste inhoudelijke artikel in websiteopmaak
+
+- Doel: Gerards eigen artikelidee over Tolle’s pijnlichaam uitwerken en verbeelden, inclusief homepage-intro en verwijzing naar het boek in de Shop.
+- Gemaakt: vijf nieuwe, aan elkaar gelinkte HTML-ontwerpversies in ontwerp/schermontwerpen (homepage-pijnlichaam.html, blogoverzicht-pijnlichaam.html, blogartikel-pijnlichaam.html, shop-pijnlichaam.html en boekdetail-de-kracht-van-het-nu.html) en ontwerp/beeldmateriaal/pijnlichaam-familieopstelling.png. Daarnaast WERKDOCUMENT.md en beide logboeken bijgewerkt.
+- Keuzes: het nieuwe artikel voorlopig uitgelicht onder Systemisch werk. Eén fictieve familiesituatie verbindt Tolles spirituele concept met kijken naar relaties en opstellen met figuren. Gekozen voor de Nederlandse paperback bij AnkhHermes (2023, ISBN 9789020220827) en een eigen titelkaart als omslagvlak.
+- Behandeld: verschil tussen een kaartintro en volledige artikeltekst, bronvermelding en hoe Home, Blog, Shop en boekdetail via koppelingen samenhangen.
+- Gecontroleerd: hoofdstukverwijzing, Tolles toelichting en boekgegevens bij de bronnen; de vijf HTML-bestanden gecontroleerd op JavaScript-syntaxis en aanwezigheid van lokale linkdoelen; artikel-, blog-, shop- en boekmark-up met een kleine JavaScript-controle opgebouwd; bestandsformaat en afmetingen van het beeld gecontroleerd. De lokale browservertoning was geblokkeerd, dus de mobiele en visuele weergave zijn nog niet geverifieerd.
+- Open en volgende stap: artikelredactie en omslag beoordelen, dan de inhoud meenemen bij de volgende websitebouwstap. Geen Figma-, React- of NOVI-wijzigingen.
+
+
+
+### Aanvulling - artikel over geweldloze communicatie
+
+- Doel: Gerards idee over de brug tussen familieopstellingen en geweldloze communicatie inhoudelijk uitwerken.
+- Uitgevoerd: eerste artikel in de chat weergegeven. Na positieve reactie een tweede artikel uitgewerkt met een fictief familievoorbeeld, gevoelens en vervulde of onvervulde behoeften, de vier onderdelen van Rosenberg, een concreet verzoek en luisteren naar de ander.
+- Besluit: artikelen eerst inhoudelijk bespreken in de chat; verwerking in conceptschermen volgt later.
+- Gecontroleerd: de vier onderdelen en het verband met gevoelens en behoeften geraadpleegd bij PuddleDancer Press en het Center for Nonviolent Communication; Nederlandse boektitel bij Lemniscaat.
+- Gewijzigd: WERKDOCUMENT.md, docs/ai-logboek.md en dit sessielogboek.
+- Volgende stap: het conceptartikel inhoudelijk beoordelen met Gerard.
+
+
+Gerard heeft ook de tekst van het artikel over geweldloze communicatie goedgekeurd. De plaatsing in het websiteconcept volgt later.
+
+
+### Aanvulling - ideeën bij Vonken van verlangen
+
+Gerard vraagt om korte artikelideeën om er samen één te kiezen. Boektitel, auteurs en beschreven thema’s gecontroleerd bij Phoenix Opleidingen en Plata Opleidingen. Vier redactionele invalshoeken met herkenbare voorbeelden voorbereid; keuze en uitwerking volgen. Behandeld: boekthema vertalen naar een eigen Rooted-invalshoek. Gewijzigd: sessie- en AI-logboek. Volgende stap: gekozen idee uitwerken in de chat.
+
+
+
+### Aanvulling - artikel over zorgen voor je ouders
+
+Gerard kiest optie 3. In de chat een conceptartikel uitgewerkt rond een fictief telefoontje op vakantie, met aandacht voor concrete zorg, een vertrouwde familierol en verlangen naar tijd voor jezelf. Het artikel verwijst naar Vonken van verlangen als inspiratie. Behandeld: onderscheid tussen praktische zorgafspraken en wat iemand uit gewoonte op zich neemt. Gewijzigd: sessie- en AI-logboek. Volgende stap: Gerards inhoudelijke reactie op het concept.
+
+
+
+### Aanvulling - ideeën bij Brieven van mijn ziel
+
+Gerard vraagt om suggesties geïnspireerd op de trilogie van Chantal van den Brink. De auteurswebsite en Bureau ISBN geraadpleegd. Vier invalshoeken voor Rooted voorbereid, met per idee een herkenbaar vertrekpunt. Gewijzigd: sessie- en AI-logboek. Volgende stap: het gekozen idee uitwerken in de chat.
+
+
+
+### Aanvulling - introducties en foto's voor de eerste drie artikelen
+
+- Doel: de huidige drie artikelen aanhouden en de twee resterende homepagekaarten voorbereiden.
+- Pijnlichaam: de bestaande introductie en afbeelding gelden voor de eerste kaart.
+- Geweldloze communicatie begint bij voelen wat er in je leeft. Intro: Je zegt dat het prima is, terwijl het je vanbinnen raakt. Een familieopstelling kan helpen ontdekken welk gevoel en welke behoefte aandacht vragen. Met geweldloze communicatie kun je daar woorden aan geven en horen wat er bij de ander speelt.
+- Foto bij geweldloze communicatie: twee kopjes op een houten tafel, shche_ team, https://unsplash.com/photos/two-cups-of-coffee-on-a-table-Z5Xq4egaTGo (Unsplash License).
+- Wanneer zorgen voor je ouders vanzelfsprekend voelt. Intro: Zelfs op vakantie bel je elke avond naar huis. Je doet het graag, maar als je een keer overslaat, word je onrustig. Hoe merk je of je belt omdat je dat wilt, of omdat zorgen voor je ouders zo vertrouwd voelt?
+- Foto bij zorgen voor je ouders: telefoon en kop koffie op een houten tafel buiten, Karolina Grabowska, https://www.pexels.com/photo/mobile-phone-apple-coffee-on-the-wooden-table-6455/ (Pexels License).
+- Controle: bronpagina’s, fotografen en voorwaarden voor websitegebruik geraadpleegd. Plaatsing, uitsnede in het ontwerp en lokaal downloaden zijn nog niet afgerond.
+- Gewijzigd: WERKDOCUMENT.md, sessie- en AI-logboek. Volgende stap: introducties en foto's meenemen bij de websiteplaatsing.
+
+
+
+### Aanvulling - een brief die je voor jezelf schrijft
+
+- Doel: optie 3 bij Brieven van mijn ziel uitwerken tot een Rooted-artikel met een concrete schrijfoefening.
+- Uitgevoerd: artikel en korte intro in de chat uitgewerkt, met een fictief familievoorbeeld, een ongestuurde brief, tijdsindicatie, voorbeeldzinnen en een korte terugblik.
+- Bronnen en keuzes: eerder gecontroleerde auteursinformatie over schrijven in deel drie als inspiratie gebruikt; de oefening is voor Rooted uitgewerkt.
+- Gewijzigd: WERKDOCUMENT.md, sessie- en AI-logboek. Volgende stap: tekst inhoudelijk beoordelen met Gerard.
+
+
+
+### Aanvulling - foto bij de ongestuurde brief
+
+Fotokeuze voor ‘Een brief die je voor jezelf schrijft’: een hand schrijft een brief aan een houten tafel, met een notitieboek en koffie, cottonbro studio, https://www.pexels.com/photo/a-person-composing-a-personal-letter-6830868/. Bronpagina, liggend formaat en Pexels-licentie gecontroleerd. Voorgestelde alt-tekst: ‘Een hand schrijft een brief aan een houten tafel.’ Gewijzigd: sessie- en AI-logboek. Plaatsing volgt bij de websitebouw.
+
+
+
+### Aanvulling - huidige homepageteksten geïnventariseerd
+
+De introductie, drie dienstteksten en drie FAQ’s letterlijk uit de bestaande homepage en de pijnlichaamvariant gehaald en vergeleken. De gevraagde onderdelen hebben in beide varianten dezelfde tekst. De vierde FAQ, ‘Moet ik mijn familie meenemen?’, staat nog niet in de concepttekst. Gewijzigd: sessie- en AI-logboek. Volgende stap: de teksten desgewenst in de chat uitwerken.
+
+
+
+### Aanvulling - online inventarisatie FAQ familieopstellingen
+
+- Doel: online nagaan welke vragen relevant zijn voor beginnende Rooted-bezoekers.
+- Bronnen: FAQ’s van Bert Hellinger Instituut Nederland, Instituut voor Systemisch Werk, Bonding Communicatie, JA! Instituut en UNLP plus een openbare draad op Ouders.nl; onderzoeksoverzicht geraadpleegd voor de vraag naar bewijs.
+- Bevinding: vragen over het verloop, familie meenemen, deelnemen in een groep of individueel, voorbereiding, privacy, nazorg en praktische informatie. De bronnen geven thema’s, geen meting van de populariteit van iedere vraag.
+- Voorstel: vier vragen voor Home over verloop, familie, deelnamevorm en voorbereiding. Volgende stap: na inhoudelijke keuze de antwoorden voor Rooted schrijven. Gewijzigd: sessie- en AI-logboek.
+
+
+
+### Aanvulling - vier FAQ-antwoorden voor Rooted
+
+Vier conceptantwoorden voor de homepage uitgewerkt in de chat. Vervolgvragen over representanten, ervaringen na afloop, familieleden, groepsdeelname, vertrouwelijkheid en voorbereiding ondergebracht bij de bijbehorende hoofdvraag. Aangesloten op de eerder geraadpleegde FAQ’s. Aanbodspecifieke afspraken over meekijken, nazorg en vertrouwelijkheid zijn nog te bepalen. Gewijzigd: sessie- en AI-logboek. Volgende stap: inhoud beoordelen en later in het websiteconcept plaatsen.
+
+
+
+Op verzoek van Gerard vervangt ‘Hoe lang duurt een familieopstelling en wat kost het?’ in de FAQ-concepttekst de vraag over ervaring en voorbereiding. Opgegeven tarieven en tijden: groepssessie vier uur voor € 75; individuele sessie twee uur voor € 100. Vastgelegd in sessie- en AI-logboek. Volgende stap: meenemen bij plaatsing van de FAQ.
+
+
+De derde FAQ vermeldt nu expliciet dat Rooted zowel individuele familieopstellingen als groepssessies aanbiedt.
+
+
+### Afsluiting - 24 november 2026
+
+Gerard rondt het inhoudswerk voorlopig af; extra artikelen kunnen later. Vier artikelteksten met introducties en fotokeuzes verzameld en de vier FAQ-antwoorden voorbereid, met bevestigde vormen, duur en tarieven. Verdergaan kan vanaf de homepage-introductie en dienstteksten, of met een nieuw artikel. Werkdocument en sessielogboek bijgewerkt. Sessie 014 afgerond.
+
+
+Aanvulling na afsluiting, 24 november 2026: Gerard bevestigt dat de overige teksten op de homepage goed zijn. De introductie, uitleg en dienstteksten gelden als akkoord. Werkdocument en logboeken bijgewerkt.
+
+
+## Sessie 015 - 24 november 2026 - lopend
+
+- Doel: korte citaten verzamelen voor de Rooted-carrousel rond systemisch werk, mindfulness, communicatie en luisteren, met nadruk op Nederlandse auteurs.
+- Uitgevoerd: kandidaatcitaten gezocht bij opleiders, auteurs, uitgevers, interviews en transcripties. De tekst en toeschrijving van de selectie gecontroleerd aan de hand van de bronnen. Nederlandse weergaven van Engelstalige fragmenten worden als eigen vertaling vermeld.
+- Behandeld: verschil tussen voorbeeldtekst, letterlijk citaat en eigen vertaling. In de chat een voorstel gedaan voor de eerste drie citaten.
+- Gewijzigd: sessie- en AI-logboek. Open: Gerards selectie en latere verwerking in Home en de NOVI-gegevens. Volgende stap: de citaten kiezen die op de homepage komen.
+
+
+
+### Aanvulling - twee citaten gekozen en vijftig extra kandidaten
+
+- Bevestigd voor Rooted: Gabor Maté, ‘Trauma is een onzichtbare kracht die ons leven vormgeeft’ (eigen vertaling, https://drgabormate.com/trauma/) en Thich Nhat Hanh, ‘Diep luisteren is een manier van luisteren die het lijden van een ander kan verzachten’ (eigen vertaling, interview bij https://plumvillage.org/about/thich-nhat-hanh/interviews-with-thich-nhat-hanh/oprah-talks-to-thich-nhat-hanh).
+- Uitgevoerd: vijftig aanvullende, genummerde citaten of herkenbaar gelabelde fragmenten met bronverwijzing in de chat opgenomen. Nederlandse auteurs en opleiders, systemisch werk, mindfulness, compassie, communicatie en luisteren komen aan bod. Engelstalige bronnen in Nederlandse eigen vertaling weergegeven.
+- Gecontroleerd: de selectie gekoppeld aan auteurswebsites, boeken, transcripties, uitgevers en interviews. Plaatsing op de homepage volgt na de verdere selectie.
+- Gewijzigd: WERKDOCUMENT.md, sessie- en AI-logboek. Volgende stap: Gerards verdere selectie op basis van de nummers.
+
+
+Gerard kiest kandidaten 1, 7, 29, 30, 33, 40 en 44. Samen met de eerder gekozen citaten van Gabor Maté en Thich Nhat Hanh in docs/rooted-citaten.md opgenomen. Gecontroleerd: zeven aanvullingen en negen unieke auteurs in totaal, met bronlinks. Gewijzigd: citatenlijst, werkdocument en beide logboeken. Volgende stap: de selectie verwerken bij de websitebouw.
+
+Drie intro’s voor de Shop geschreven: De kracht van het Nu, Geweldloze communicatie en Vonken van verlangen. Laatstgenoemde uitgewerkt als boekdetail met samenvatting, doelgroep, uitgavegegevens, prijs, omslagbron en verwijzing naar het Rooted-artikel over zorgen voor je ouders. De vijfde druk, ISBN en prijs gecontroleerd bij de Bibliotheek en Phoenix. De samenvatting is gebaseerd op de beschikbare boekbeschrijvingen. Gewijzigd: docs/rooted-boekteksten.md, werkdocument en beide logboeken. Volgende stap: teksten meenemen bij uitwerking van de Shop.
+
+Ook De kracht van het Nu en Geweldloze communicatie uitgewerkt als volledige boekdetailtekst in docs/rooted-boekteksten.md, met samenvatting, doelgroep, editiegegevens, uitgeversprijs, omslagbron en passend Rooted-artikel. Gecontroleerd bij AnkhHermes, Lemniscaat en de Bibliotheek en met de uitgeversfragmenten. Voor Rosenberg is de achtste druk van 2021 gekozen, omdat de omvang per druk onder hetzelfde ISBN kan verschillen. Gewijzigd: boekteksten, werkdocument en beide logboeken. Volgende stap: boekgegevens en teksten verwerken in de Shop.
+
+## Sessie 016 — 24 november 2026 — lopend — technische startcontrole
+
+Nieuw werkmoment in de programmeerchat; inhoudssessie 015 niet aangepast of afgesloten.
+Doel: passende versies voor de lesstof en Gerards computer controleren, vóór installatie.
+Uitgevoerd/gecontroleerd: node --version v24.22.3; npm --version 11.19.1; Node meldt win32/x64 en C:\Program Files\nodejs\node.exe. WebStorm 2026.3 (build 263.7307.202) aangetroffen via lokaal product-info.json, naast oudere installatiemappen. Geen draaiend webstorm64-proces gevonden via proceslezing; actieve IDE-versie en ingestelde Node-interpreter niet gecontroleerd. Windows-editie via CIM niet leesbaar; geen wijziging of escalatie nodig voor deze deelvraag. Geen package.json/React-project aangetroffen buiten ontwerp/tmp. Git-status alleen gelezen; bestaande inhoudswijzigingen behouden.
+Bronnen: op 23 november gecontroleerde NOVI-commits gebruiken React 18.2.0, Vite 4.3.9, plugin-react 4.0.0, Router 6.16.0 en Axios 1.5.1/1.6.2 waar van toepassing. Actuele officiële Vite-guide/registry: Vite 8.3.8, Node ^20.19.0 || >=22.12.0; Node 24 voldoet. Node-releasepagina vermeldt 24 als LTS. React 18.3.1 registry gecontroleerd; React-versiepagina noemt inmiddels 19.3 als nieuwste hoofdversie. Router 6.30.6 officiële documentatie aanwezig; huidige hoofdversie is hoger. Axios-registry latest 1.21.1. Sommige metadata (plugin-react, react-dom, Router npm) en versiespecifieke JetBrains-pagina konden via web niet worden opgehaald.
+Voorstel: Node/npm behouden; aanwezige WebStorm 2026.3 gebruiken; React + react-dom 18.3.1 en Router 6.30.6 voor herkenbaarheid lescode; Vite 8.3.8 als recente bouwtool; Axios 1.21.1 later bij API-stap. Bij installatie bijpassende React-plugin exact controleren en dependencycontrole/start/build uitvoeren. Dit is compatibiliteit op documentatiebasis, geen bewezen werkende installatie of veiligheidsgarantie. React 18 en Router 6 zijn bewust oudere hoofdversies, niet als nieuwste voorgesteld. Geen installatie of websitecodewijziging.
+Leeronderwerpen: Node voert ontwikkelhulpmiddelen uit, npm beheert packages, Vite start/bouwt, React maakt interface; hoofdversie versus correctieversie. Geen beheersing aangenomen.
+Gewijzigd: WERKDOCUMENT.md, sessielogboek, AI-logboek en keuzes-en-reflecties.md. Volgende stap: React-basis met gecontroleerde plugin/dependencyversies klaarzetten, daarna lokaal starten en uitleggen. IDE-interpreter bij gebruik nog verifiëren.
+
+### React-basis aangelegd — 24 november 2026
+
+Gerard geeft opdracht de basis met Vite neer te zetten. Branch codex/react-basis na schrijfrechtenfout met toestemming aangemaakt. Bestaande wijzigingen en ontwerpen behouden. Minimale basis gericht samengesteld in bestaande map (geen generator over bestaande documenten): index.html, package.json, package-lock.json, vite.config.js, src/main.jsx, App.jsx, index.css en App.css. Eenvoudige technische startpagina, geen nieuw homepageontwerp. React/DOM 18.3.1, Vite 8.3.8 en plugin-react 6.3.0. Plugincompatibiliteit met Vite 8/Node gecontroleerd in officiële GitHub-packagebron. README aangevuld met installatie/start/build/preview, bestandsuitleg en tijdelijke systeem-CA-instelling.
+Installatie: normale npm-verbinding faalde eerst op DNS binnen beperking en daarna op certificaatcontrole met netwerktoestemming. Installatie met node --use-system-ca en npm-cli.js geslaagd; 21 packages toegevoegd, audit meldt 0 kwetsbaarheden op dit moment. Certificaatcontrole niet uitgeschakeld, geen permanente npm-instelling gewijzigd. npm ls --depth=0 toont vier bedoelde packages zonder conflicten. npm run build geslaagd (16 modules). npm run dev -- --host 127.0.0.1 meldt ready en http://127.0.0.1:5173/. Automatische HTTP-controle vanuit beperkte omgeving kreeg EACCES; controle met toestemming geprobeerd. Nog geen visuele browsercontrole of controle in WebStorm zelf. Geen werkende homepage/API/authenticatie geclaimd. Geen commit/push/PR in deze stap.
+Leeronderwerpen toegelicht: index.html bevat root, main.jsx koppelt React en App, App.jsx levert zichtbare inhoud, globale/lokale CSS. Geen beheersing aangenomen. Gewijzigd: genoemde basisbestanden/README, werkdocument, sessie-/AI-logboek en technische keuzes. Volgende stap: Gerard opent WebStorm-terminal, start met npm run dev en bekijkt het gemelde lokale adres; daarna App.jsx samen lezen en een tekstwijziging proberen. Sessie 016 loopt.
+
+Aanvullende eindcontrole: ook de directe lokale verbinding met toestemming eindigde in timeout; geen HTTP-succes of browserweergave bevestigd. De testserver is na de startcontrole gestopt, zodat Gerard de server zelf vanuit WebStorm kan starten. Build en dependencycontrole blijven geslaagd.
+
+### Tijdelijke startinhoud verwijderd — 24 november 2026
+
+Gerard vraagt de eenvoudige voorbeeldinhoud uit de map te halen. Huidige src-bestanden eerst gelezen; App.jsx bevatte inmiddels de tekst 'De React-basis werkt goed'. Startkop/-tekst en uitsluitend daarvoor gebruikte App.css plus import verwijderd. App.jsx retourneert een leeg main-element. Algemene index.css en React/Vite-basis behouden. README aangepast. npm run build opnieuw geslaagd (15 modules). Geen browsercontrole uitgevoerd; leeg browservenster verwacht tot homepagebouw. Gewijzigd: src/App.jsx, src/App.css verwijderd, README.md en voortgang/logboeken. Volgende stap: bestaande homepage opbouwen, beginnend met basisvormgeving en bovenkant. Sessie 016 loopt.
+
+### Basisvormgeving en HTML-structuur — 24 november 2026
+
+Gerard vraagt kleuren/lettertypen, maximale inhoudsbreedte/witruimte, algemene tekst-/link-/knopstijlen en header/main/footer volgens Figma-concepten. Lokale goedgekeurde ontwerp/figma/design-guideline.md gelezen; homepage-versie-1.0.html geïnspecteerd (verpakt iframe-document). Geen live Figma-bestand gelezen of gewijzigd. Guideline gebruikt als concrete waardebron: groen/crème/warmwit/salie/zand, Arial 16/26, Georgia 56/36/26, knoptekst 14/22, 46px knophoogte en 1238px inhoudsbreedte. Geen externe fonts nodig.
+Uitgevoerd: src/index.css bevat centrale kleur-/font-/ruimtevariabelen, algemene koppen/tekst/links, zichtbare toetsenbordfocus, primaire/secundaire/inactieve knopstijlen, schaalbare afbeeldingen, content-container en section-spacing. Onder 600px kleinere koppen/zijmarges/sectieruimte als eenvoudige responsieve projectkeuze. src/App.jsx bevat lege header/main/footer binnen site-layout en containers; App.css regelt verticale Flexbox-indeling en groeiende main. Geen tijdelijke voorbeeldinhoud toegevoegd. Geen logo/menu/homepagesecties vooruitgebouwd. Inactieve knop met echte disabled-toestand, geen gesimuleerde beveiliging.
+Controle: npm run build geslaagd, 16 modules. Kleurcontrast berekend: groen/crème 9.40:1, secundaire tekst/crème 6.38:1, crème/groen 9.40:1, secundaire tekst/salie 5.42:1. Geen volledige toegankelijkheidsaudit, browserlayout- of toetsenbordcontrole uitgevoerd; lege structuur toont vooral crème achtergrond. Maxbreedte bij 1440px geeft 101px zijruimte, kleinere schermen 24px en onder 600px 16px.
+Leeronderwerpen: CSS-variabelen als herbruikbare benoemde waarden; globale CSS tegenover App-opmaak; semantische header/main/footer; max-width en Flexbox. Geen beheersing of persoonlijke reflectie aangenomen. Gewijzigd: src/index.css, App.jsx, App.css en werkdocument/keuzes/sessie-/AI-logboek. Volgende stap: logo en navigatie volgens bestaande ontwerp opbouwen. Sessie 016 loopt. Geen commit/push/publicatie.
+
+### Logo en hoofdnavigatie — 24 november 2026
+
+Gerard vraagt homepage te starten met logo en menu. Huidige App/CSS, lokale homepagebron en latere guideline-/functioneel-ontwerpafspraken gelezen. Oude HTML bevat Contact; latere guideline is leidend: Home, Diensten, Blog, Shop en Inloggen, geen Contact. Oorspronkelijke embedded logo-PNG uit tmp/homepage-bron.html ongewijzigd gekopieerd naar src/assets/rooted-logo.png en visueel bekeken; oorspronkelijke ontwerpen intact.
+Uitgevoerd: herbruikbaar Header-component met eigen CSS, logo als homelink, semantische nav/ul/li, actieve Home-link. Overige nog ongebouwde bestemmingen expliciet disabled-knoppen, geen neplinks. Zodra diensten/routes worden gebouwd omzetten naar echte links. Desktop Flexbox met 180x60 logo en 14px navigatietekst; onder 800px 150x50 logo, Menu/Sluiten-knop en verticale lijst. useState bewaart open/dicht; aria-expanded/aria-controls communiceren toestand en relatie. Geen Router-installatie, authenticatie of andere homepage-inhoud toegevoegd.
+Controle: npm run build geslaagd (19 modules, logo als asset). Logo zelf bekeken; geen browserlayout-, mobiele interactie- of toetsenbordtest uitgevoerd. Geen functies als getest geclaimd. Gewijzigd: App.jsx, src/components/header/Header.jsx/Header.css, logo-asset en werkdocument/keuzes/sessie-/AI-logboek. Leeronderwerpen: component/import, useState, klikhandler, conditionele class/tekst, Flexbox en mediaquery. Geen beheersing aangenomen. Volgende stap: Gerard controleert bovenbalk breed/smal en Menu; daarna introductiegedeelte volgens goedgekeurd ontwerp. Sessie 016 loopt; geen commit/push/publicatie.
+
+### Contact toegevoegd aan hoofdmenu — 24 november 2026
+
+Gerard wil Contact opnemen in het hoofdmenu. De gedeelde lijst in src/components/header/Header.jsx aangevuld tussen Shop en Inloggen, voor desktop en mobiel. Contact is voorlopig inactief zoals andere nog ongebouwde bestemmingen. De lokale Design Guideline, het functioneel ontwerp, WERKDOCUMENT.md en het AI-logboek bijgewerkt. De bestemming van Contact blijft open. Behandeld: één menulijst wordt op beide schermformaten gebruikt. npm run build geslaagd. Browserweergave niet apart gecontroleerd. Sessie 016 loopt. Eerstvolgende bouwstap blijft de introductie, na eventuele verdere feedback op de bovenbalk.
+
+### Bosfoto, titel en pay-off — 24 november 2026
+
+Gerard vraagt om de grote foto in de header met titel en pay-off. Actuele React-bestanden, homepageconcepten, lokale Figma-export en de hero in beide HTML-ontwerpversies geraadpleegd. De exacte JPEG uit het bestaande concept (242.233 bytes) als src/assets/rooted-bos.jpg opgenomen. Hero-component met het h1-element Rooted en de pay-off ‘alles over systemisch werk’ direct onder de navigatie, als eerste sectie in main. Lokale CSS houdt de foto schermbreed en plaatst crèmekleurige tekst boven een verlopende donkere laag. Op smallere schermen blijft het tekstvlak donkerder en zijn titel en fotovlak kleiner. Voor deze stap alleen de foto, titel en pay-off gebouwd.
+
+Tijdens de brede browsercontrole bleek de mobiele menuknop zichtbaar naast het gewone menu. De algemene .button-regel ging voor op .menu-toggle. Beide weergaveregels specifieker gemaakt met .site-header .menu-toggle. Daarna in de lokale browser op 1440 en 375 pixels de foto, titel en pay-off visueel gecontroleerd. Paginabreedte was steeds gelijk aan de schermbreedte. Mobiele knop verborgen op 1440 en zichtbaar op 375. npm run build na de correctie geslaagd. Geen formele contrastmeting op de foto uitgevoerd. De door Codex gestarte controleserver op 5174 gestopt. Controle vond plaats op de al bereikbare server op 5173.
+
+Gewijzigd: src/App.jsx, src/components/hero/Hero.jsx en Hero.css, src/assets/rooted-bos.jpg, src/components/header/Header.css, WERKDOCUMENT.md, keuzes-en-reflecties.md en beide logboeken. Behandeld: apart component, h1 versus alinea, achtergrond in CSS, dubbele achtergrondlaag en specifiekere CSS-regel. Geen beheersing of persoonlijke reflectie aangenomen. Sessie 016 loopt. Volgende stap: de resterende introductie uit het bestaande ontwerp afmaken en de doorklik toevoegen zodra het doelonderdeel aanwezig is.
+
+### Introductietekst en link toegevoegd — 24 november 2026
+
+Gerard vraagt om de extra tekst en de knop onder de pay-off. De bestaande introductiezin uit het lokale homepageontwerp overgenomen en de crèmekleurige knop ‘Ontdek systemisch werk’ geplaatst. Het ontwerp verwijst daarmee naar de uitleg op dezelfde pagina. Daarom de bestaande kop ‘Je staat niet op jezelf.’ en de bijbehorende alinea in een saliegroene sectie toegevoegd als werkende bestemming. De knop is een link met href="#systemisch-werk". De sectie draagt dezelfde id. Lokale Hero.css gebruikt de algemene knopstijl en past kleur en focusrand aan op de bosfoto.
+
+Controle: npm run build geslaagd. De introductie en knop visueel gecontroleerd op 1440 en 375 pixels. Klik op desktop en Enter bij 375 pixels brachten de uitlegtitel in beeld en wijzigden het adres naar #systemisch-werk. Beide breedtes zonder horizontale overloop. Gewijzigd: src/App.jsx, src/App.css, src/components/hero/Hero.jsx en Hero.css, WERKDOCUMENT.md en beide logboeken. Behandeld: een link naar een sectie koppelt href en id, terwijl CSS de opmaak verzorgt. Geen beheersing aangenomen. Sessie 016 loopt. Volgende stap: het uitlegblok verder afwerken met de afgesproken FAQ, of het volgende homepageonderdeel volgens het bouwplan.
+
+### Drie artikelen direct onder het openingsbeeld — 24 november 2026
+
+Gerard wil de blokvolgorde uit Figma behouden en de ontwikkelde teksten en foto's gebruiken. De bestaande homepage-export en de selectie uit sessie 014 gebruikt. Volgorde in App.jsx: openingsfoto, Nieuwe perspectieven met drie kaarten, daarna Je staat niet op jezelf. Titels en intro's letterlijk overgenomen voor het pijnlichaam, geweldloze communicatie en zorgen voor je ouders. De bestaande foto met figuren gekopieerd en de specifiek gekozen Unsplash- en Pexels-foto's gedownload na toestemming. Bronnen staan bij de technische keuze. Thema-aanduiding Communicatie gekozen voor kaart twee. De vierde tekst hoort bij de latere bloguitwerking. De kaart- en overzichtslinks volgen bij de bijbehorende React-pagina's.
+
+Uitgevoerd: HomeArticles bewaart de drie artikelen in een lijst en geeft ze via props door aan herbruikbare ArticleCard-componenten. Flexbox plaatst de kaarten gelijk breed met verticale lijnen op desktop. Vanaf 800 pixels breed en smaller staan de kaarten onder elkaar met horizontale lijnen. De foto's laden wanneer ze in de buurt van het zichtbare gebied komen en hebben alt-teksten.
+
+Gecontroleerd: npm run build geslaagd. Browser op 1440 en 375 pixels gecontroleerd op werkelijke blokvolgorde, drie geladen foto's, goed leesbare titels en intro's, kaarten naast/onder elkaar en geen horizontale overloop. De startknop Ontdek systemisch werk springt ook met het nieuwe tussenblok naar de uitleg. Gewijzigd: App.jsx, HomeArticles.jsx/CSS, ArticleCard.jsx/CSS, drie assets, WERKDOCUMENT.md, keuzes-en-reflecties.md en beide logboeken. Behandeld: een array van objecten, map, props en Flexbox. Geen persoonlijke reflectie of beheersing aangenomen. Sessie 016 loopt. Volgende stap: het uitlegblok verder afwerken met de afgesproken FAQ.
+
+### Uitleg en FAQ afgewerkt — 24 november 2026
+
+Gerard vraagt de uitleg over Rooted en systemisch werk en de FAQ af te maken. De goedgekeurde homepage-uitleg behouden. De exacte vier laatste FAQ-antwoorden opgezocht in de inhoudschat Websitecontent samenstellen en overgenomen, inclusief beide vormen en Gerards bevestigde duur en tarieven. Een korte alinea toegevoegd over wat bezoekers bij Rooted vinden, gebaseerd op het functioneel ontwerp. Kop Veelgestelde vragen toegevoegd. De uitleg blijft onder de artikelkaarten en behoudt het doel #systemisch-werk van de openingsknop. Flexbox toont uitleg en vragen naast elkaar op desktop en onder elkaar op smalle schermen. De browser regelt openen, sluiten en maximaal één open antwoord via details, summary en de gedeelde name-waarde.
+
+Controle: npm run build geslaagd. Browserweergave bekeken op 1440 en 375 pixels. Gecontroleerd dat alle vier vragen standaard dicht zijn, een klik een antwoord opent, een andere vraag het vorige antwoord sluit en dezelfde vraag weer kan sluiten. Op mobiel met Enter het antwoord over duur en kosten geopend; groepssessie vier uur voor € 75 en individueel twee uur voor € 100 gecontroleerd. De focusrand was zichtbaar. Beide weergaven zonder horizontale overloop. Gewijzigd: App.jsx en App.css, AboutSection.jsx en AboutSection.css, werkdocument, keuzes en beide logboeken. Behandeld: semantische HTML, gedeelde name-waarde, Flexbox en toetsenbordbediening. Geen beheersing of persoonlijke reflectie aangenomen. Sessie 016 loopt. Volgende stap volgens het Figma-concept: de quote-strook.
+
+### Quote-strook Zachte strook gebouwd — 24 november 2026
+
+Gerard vraagt het quote-gedeelte te bouwen met zijn selectie van vandaag. De lokale citatenlijst en homepageconcepten geraadpleegd. Beige strook meteen onder uitleg en FAQ toegevoegd met alle negen teksten, auteurs en bronlinks in de vastgelegde volgorde. Bij Nederlandse vertalingen staat ‘eigen vertaling’. Auteurskolom staat rechts op desktop en onder het citaat op mobiel. Teller, Pauze/Afspelen en vorige/volgende komen uit het concept. Zeven seconden behouden uit het gekozen concept. Het functioneel ontwerp noemt acht seconden als voorstel. Geen extra Animatie toegevoegd. Citaten zijn voor deze stap lokaal opgeslagen.
+
+Uitgevoerd: QuoteCarousel maakt met useState de huidige positie en pauzestand zichtbaar en gebruikt useEffect met setInterval en clearInterval. Handmatig bladeren pauzeert. De timer pauzeert tijdelijk bij aanwijzen met een muis. Toetsenbordfocus bij het betreden van de strook pauzeert en een voorkeur voor minder beweging geeft een gepauzeerde start. De automatische wisseling is stil voor schermlezers. Bij handmatig bladeren kan de wijziging rustig worden aangekondigd.
+
+Gecontroleerd: alle negen teksten, auteurs en links exact vergeleken met docs/rooted-citaten.md. npm run build geslaagd. Browsercontrole op 1440 en 375 pixels zonder horizontale overloop. Automatisch wisselen, pauze langer dan één interval, hervatten, volgende/vorige met muis en toetsenbord, teruglopen van 1 naar 9 en doorlopen naar 1 gecontroleerd. De systeemvoorkeur voor minder beweging is geïmplementeerd en niet afzonderlijk in de browser omgeschakeld. Gewijzigd: src/App.jsx, QuoteCarousel.jsx/CSS, quotes.js, WERKDOCUMENT.md, keuzes-en-reflecties.md en beide logboeken. Behandeld: lijstpositie, timer starten/opruimen met useEffect, toetsenbordlabels en Flexbox. Geen beheersing of persoonlijke reflectie aangenomen. Sessie 016 loopt. Volgende stap volgens het bestaande ontwerp: de diensten en het tarievenblok.
+
+### Afsluiting en tussenpunt op GitHub — 24 november 2026
+
+Gerard vraagt de homepagebouw op GitHub vast te leggen om morgen verder te kunnen. Op codex/react-basis alleen de 27 gecontroleerde bestanden van de React-app, gebruikte beelden, pakketconfiguratie en README vastgelegd. README bijgewerkt met actuele status en fotobronnen. Losse ontwerpen, werknotities, lesmateriaal en lokale instellingen zijn buiten die selectie gebleven. npm run build geslaagd, gerichte scan op herkenbare geheime waarden zonder treffers en git diff --cached --check geslaagd na weghalen van een lege slotregel in de README.
+
+Commit 575f824 (Bouw React-basis en eerste onderdelen van de homepage) naar origin/codex/react-basis gestuurd. GitHub leverde vervolgens dezelfde volledige commit-ID terug, 575f824575df01fa9887bda3ca6e64681b0431fe. Commit-URL: https://github.com/GerardB76/Rooted-frontend-eindopdracht/commit/575f824575df01fa9887bda3ca6e64681b0431fe. Geen pull request of merge voor dit tussenpunt. Samenwerking: commit als lokaal tussenpunt en push als upload naar GitHub kort toegelicht. Geen persoonlijke reflectie of beheersing aangenomen. Gewijzigd: README, werkdocument, beide logboeken en versiebeheernotitie. Programmeersessie 016 afgerond. Volgende bouwstap: op dezelfde branch verder met de diensten en het tarievenblok volgens het bestaande ontwerp.
+
+## Sessie 017 — 25 november 2026 — lopend
+
+Gerard vraagt waarom de React-app nog geen Button-component heeft. WERKDOCUMENT.md, de afsluiting van sessie 016, projecteis APP-10 en de huidige knoppen in Header, Hero en QuoteCarousel bekeken. Uitgelegd: .button hergebruikt de opmaak. De echte HTML-knoppen staan momenteel in hun eigen onderdelen. Een gedeeld Button-component kan de herhaalde HTML en opmaak samenbrengen met props voor tekst, stijl en klikfunctie. De hero verwijst naar een sectie en gebruikt daarom een link. APP-10 vraagt minimaal zes herbruikbare componenten, zonder Button specifiek te verplichten. Geen websitecode gewijzigd of test uitgevoerd. Gewijzigd: beide logboeken. Volgende geplande bouwstap blijft de diensten en het tarievenblok. Een Button-component is een voorstel voor de herhaalde actieknoppen. Geen persoonlijke reflectie of beheersing aangenomen.
+
+### Herbruikbare knop voor later — 25 november 2026
+
+Gerard vraagt of een Button-component later wenselijk is. Advies: een eenvoudig gedeeld component maken wanneer we formulieren en andere herhaalde actieknoppen bouwen. Beperk het tot bestaande behoeften, zoals tekst, klikfunctie en uitgeschakelde toestand. Links houden hun HTML-link en kunnen dezelfde stijl gebruiken. Besluit als voorstel in het werkdocument vastgelegd. Alleen documentatie bijgewerkt. Volgende bouwstap blijft diensten en het tarievenblok. Sessie 017 loopt.
+
+### Dienstenblokken met Flexbox — 25 november 2026
+
+Gerard vraagt om de dienstenblokken en Flexbox voor mobiel. Bestaande lokale homepage-export en eerdere afspraak over Diensten nagelezen. ServicesSection onder de citaten gezet met de kop Verkennen op jouw manier en de afgesproken korte teksten voor Individuele begeleiding, Familieopstellingen en Workshops. De dienstenlijst rendert drie artikelen met dezelfde structuur. Flexbox verdeelt ze gelijk op brede schermen en stapelt ze bij 800 pixels en smaller, in lijn met de andere homepageonderdelen. Menulink Diensten geactiveerd met #diensten als bestemming. Mobiele menu sluit bij het kiezen van die link en het toetsenbord springt mee naar de sectie. Geen aparte dienstenpagina. Tarievenblok is de eerstvolgende bouwstap.
+
+Gecontroleerd: npm run build geslaagd. In de browser op 1440 en 375 pixels de drie blokken, hun breedte en volgorde, en de afwezigheid van horizontale overloop gecontroleerd. Klik op desktop en Enter op mobiel springen naar #diensten. Op mobiel is de menuknop daarna ingeklapt en de focus staat op de sectie. De lokale Vite-testserver was pas bereikbaar na opnieuw starten met toestemming. Gewijzigd: App.jsx, Header.jsx, ServicesSection.jsx en ServicesSection.css, het werkdocument, keuzes en beide logboeken. Behandeld: flex-direction, flex: 1 en een link naar een sectie op dezelfde pagina. Geen persoonlijke reflectie of beheersing aangenomen. Sessie 017 loopt.
+
+### Zichtbare bronlinks uit de citatenstrook gehaald — 25 november 2026
+
+Gerard vraagt de bronlinks per citaat weg te halen. De zichtbare link uit QuoteCarousel.jsx verwijderd en de opmaak in QuoteCarousel.css vereenvoudigd. Auteur en toepasselijke vertaalvermelding blijven staan. Bronnen blijven vastgelegd in docs/rooted-citaten.md en als gegevens bij de citaten. Controle: npm run build geslaagd. In de component gecontroleerd dat geen linkelement voor bronweergave overblijft. Geen nieuwe browsercontrole uitgevoerd. Behandeld: verschil tussen zichtbare weergave en brongegevens. Gewijzigd: beide componentbestanden, werkdocument en beide logboeken. Volgende stap: tarievenblok volgens het bestaande ontwerp. Sessie 017 loopt.
+
+### Tarievenblok en herbruikbaar Button-component — 25 november 2026
+
+Gerard vraagt het tarievenblok en een React-component voor de knop. Het blok volgens het lokale homepageconcept onder de drie diensten geplaatst, met de tekst over toegang na inloggen. Bij drukken op Bekijk tarieven verschijnt de tijdelijke uitleg ‘Inloggen is nog in ontwikkeling.’ Een tweede druk verbergt die. De echte inlogroute en PDF-koppeling volgen bij de afgeschermde functies. Button.jsx hergebruikt de bestaande basisstijl en geeft eigenschappen zoals onClick, disabled en ARIA-kenmerken door aan HTML. De bestaande Inloggen-knop gebruikt nu dezelfde component en blijft voorlopig uitgeschakeld. De klikactie en open toestand horen bij RatesBlock. Flexbox zet knop en uitleg naast elkaar op desktop en onder elkaar op mobiel. De open melding begint op een eigen regel.
+
+Controle: npm run build geslaagd na opmaakcorrectie. Lokale browser op 1440 en 375 pixels getest. Melding eerst verborgen, met muis geopend en gesloten, met Enter op mobiel bediend. aria-expanded wisselt mee. Desktopmelding staat onder de knoprij. Geen horizontale overloop. Inloggen gecontroleerd als uitgeschakeld. Gewijzigd: Button.jsx, RatesBlock.jsx en RatesBlock.css, Header.jsx, ServicesSection.jsx, werkdocument, keuzes en beide logboeken. Behandeld: componenthergebruik, props, klikfunctie, useState, zichtbare status en Flexbox. Geen persoonlijke reflectie of beheersing aangenomen. Sessie 017 loopt. Volgende homepageonderdeel: footer volgens het ontwerp.
+
+### Footer gebouwd — 25 november 2026
+
+Gerard vraagt de footer te maken. De lokale homepageversie, de eerdere Figma-export en de contactafspraak als uitgangspunt genomen. Footer.jsx vervangt de lege footer in App.jsx. Het bestaande Rooted-logo is een link naar Home en de tekst ‘Met aandacht voor het geheel.’ staat ernaast. Een dunne scheidingslijn begrenst de footer. Flexbox stapelt logo en tekst bij 600 pixels en smaller. De contactbestemming blijft open. De footer volgt de weergave van het huidige ontwerp met logo en tekst.
+
+Controle: npm run build geslaagd. Op 1440 en 375 pixels visueel gecontroleerd. Het logo is geladen, de tekst is leesbaar en er is geen horizontale overloop. Enter op de logolink brengt de bezoeker terug naar Home, bovenaan de pagina. Gewijzigd: App.jsx, Footer.jsx, Footer.css, werkdocument en beide logboeken. Behandeld: semantische footer, herbruikbare componenten, Flexbox en navigatie met een link. Geen persoonlijke reflectie of beheersing aangenomen. Sessie 017 loopt. De basisindeling van de homepage is nu gebouwd. Volgende stap volgens het bouwplan: de overige pagina’s en routes voorbereiden. Blog, Shop, Contact en inloggen zijn vervolgstappen.
+
+### Bediening en bestemmingen nagelopen — 25 november 2026
+
+Gerard wil samen de menuverwijzingen, contactlinks en knoppen nalopen. Werkdocument, paginaoverzicht, functie-eisen en huidige React-code vergeleken. Diensten verwijst nu expliciet naar /#diensten zodat Home onderdeel van de bestemming is. Op de uitlegsectie tabIndex=-1 gezet om bij Ontdek systemisch werk ook de toetsenbordfocus naar de uitleg te verplaatsen. Home en de twee logo’s verwijzen naar /. Dienstenblokken blijven informatief. Blog en Alle artikelen gaan straks naar het blogoverzicht en elke artikelkaart naar het eigen volledige artikel. Shop en Inloggen wachten op eigen pagina’s. Bij gewoon inloggen is Mijn account de vervolgbestemming. Bekijk tarieven toont nu de tijdelijke uitleg, straks volgt inloggen en daarna het tarievenbestand. Contact heeft nog geen afgesproken bestemming. Het menu-item is inactief en in de footer is geen actieve contactlink opgenomen.
+
+Gecontroleerd: npm run build geslaagd. Browserbediening getest bij 1440 en 390 pixels. Klik op Diensten en Home, Enter naar de uitleg en op mobiel van Menu naar Diensten, menu sluit en focus gaat naar het passende onderdeel. FAQ gecontroleerd op één open antwoord, quote-pijltjes op volgende/vorige en pauzestand. Tarievenmelding en Footer-logo terug naar Home getest met Enter. Uitgeschakelde menu-items vastgesteld. Toekomstige routes alleen met de afspraken vergeleken. Gewijzigd: Header.jsx, AboutSection.jsx, WERKDOCUMENT.md en beide logboeken. Behandeld: bestemmingen in href, een sectielink en toetsenbordfocus, verschil tussen navigeren en een actie uitvoeren. Geen persoonlijke reflectie of beheersing aangenomen. Sessie 017 loopt. Volgende stap: bestemming van Contact afstemmen en React Router met de overige pagina’s voorbereiden.
+
+### Contact voorlopig inactief — 25 november 2026
+
+Gerard bevestigt dat Contact voorlopig inactief blijft. Het menu-item is al uitgeschakeld. De footer bevat voorlopig alleen het logo en de afsluitende tekst. Geen contactpagina, e-maillink of formulier toegevoegd. Alleen de afspraak vastgelegd in het werkdocument en beide logboeken. Geen codewijziging of nieuwe controle. Volgende bouwstap is het voorbereiden van de overige pagina’s en routes. Sessie 017 loopt.
+
+### Basis voor blogoverzicht en artikelpagina’s — 25 november 2026
+
+Gerard vraagt om het blogoverzicht en blogartikel. Lokale Figma-exports en HTML-concepten voor beide blogschermen, het paginaoverzicht, huidige React-componenten en de voorbereide teksten uit de inhoudschat gelezen. Blogpagina Inzicht en inspiratie toont het uitgelichte artikel over het pijnlichaam boven de twee andere kaarten. Home en Blog gebruiken dezelfde lijst en ArticleCard. De drie volledige teksten en foto’s zijn beschikbaar op afzonderlijke openbare webadressen. De detailpagina zet kop, intro en foto naast elkaar op desktop en stapelt ze op mobiel. Lees het artikel, Alle artikelen, Blog in het menu en de teruglink zijn aangesloten. Onbekende adressen krijgen een duidelijke melding en teruglink. Zoeken, themafilter, gerelateerde artikelen, paginering en NOVI-data zijn vervolgstappen. Het vierde schrijfartikel blijft buiten deze eerste set.
+
+Geïnstalleerd: react-router-dom 7.18.7. De geplande 6.30.6 probeerversie had twee gematigde meldingen in npm audit. De bijgewerkte 7.18.7 geeft bij installatie nul meldingen en ondersteunt de lesgerichte imports BrowserRouter, Routes, Route, Link en useParams. Bron: https://api.reactrouter.com/v7/modules/react-router-dom.html. Exacte versie in package.json en package-lock.json. Route /blog/:articleId selecteert via useParams het artikel. De hashnavigatie is aangepast nadat Diensten vanaf een artikel wel het adres veranderde maar zonder de beoogde sprong. App zet focus en scrolt naar de sectie zodra die op Home is weergegeven.
+
+Controle: npm run build na de correctie geslaagd en geïnstalleerde versie teruggelezen. Browser op 1440 en 390 pixels gecontroleerd. Alle drie kaarten vanuit Blog geopend en titels, volwaardige tekst, afbeeldingen en teruglink gecontroleerd. Detail rechtstreeks geopend en ververst. Vanaf Home kaart en Alle artikelen getest. Mobiel Blog via Enter geopend en menu sluit. Terugknop, Diensten vanuit Blog, bestaande Home-uitleglink en meldingen voor onbekende pagina en onbekend artikel gecontroleerd. Geen horizontale overloop in de gecontroleerde weergaven. Externe leeslinks bij de artikelen niet doorgeklikt. Geen persoonlijke reflectie of beheersing aangenomen. Gewijzigd: README, pakketbestanden, main.jsx, App.jsx, Header, ArticleCard, HomeArticles, nieuwe pagina’s en lokale artikelgegevens, werkdocument, keuzes en beide logboeken. Sessie 017 loopt. Volgende stap: blogzoekveld en themafilter volgens de bestaande afspraken, of de andere pagina’s opbouwen in de afgesproken volgorde.
+
+### Shop en boekdetails — 25 november 2026
+
+Gerard vraagt om de Shop en boekdetails volgens de ontwerpen. Het goedgekeurde lokale Shop-ontwerp 1.1, boekdetailvariant Rustig naast elkaar, typografische uitwerking voor De kracht van het Nu, drie uitgewerkte boekteksten en React Fundamentals §7.5 over dynamische routes gebruikt. De openbare Shop opent vanuit het hoofdmenu. Workshops en trainingen staan boven de boeken. De drie trainingen en workshops zijn voorbeelden, met de foto uit het ontwerp en zonder voorbeeldprijzen. Alle drie de ontwikkelde boeken staan op de Shop en delen een React-detailpagina met boekgegevens, uitgeversprijs met peildatum en een link naar het bijbehorende Rooted-artikel. Het artikel linkt terug naar het boek. De omslagen zijn typografische voorbeelden. Bestellen en favorieten bewaren staan uitgeschakeld. Geen gegevensverzoeken, nieuwe pakketten of publicatie.
+
+Controle: de build is geslaagd. In de lokale browser op 1440 en 390 pixels gecontroleerd, met aanvullende breedtechecks op 320, 700, 1000 en 1020 pixels. Foto’s laden, hebben op breed scherm de afgesproken maat en verplaatsen zich bij kleinere breedte boven de tekst. Boekkaarten stapelen op mobiel. De gecontroleerde schermbreedtes hebben geen horizontale overloop. Drie boeklinks en ISBN’s, uitgeschakelde knoppen, Shop als actief menu-item, terugfocus op Boeken, mobiele menulink met Enter, rechtstreeks openen en verversen van een detail, onbekend boek en links in beide richtingen tussen boeken en artikelen gecontroleerd. Lange artikellinks hebben na een klikcontrole een eigen regel gekregen. De uitgeverslinks zijn niet doorgeklikt.
+
+Gewijzigd: App.jsx, Header.jsx, article-content.jsx, books.js, ShopPage.jsx, BookDetailPage.jsx, BookCover.jsx, Shop.css, README, werkdocument, keuzes en beide logboeken. Behandeld: dynamisch adres met useParams, boek zoeken met find, delen van gegevens en componenten, Flexbox en het onderscheid tussen navigatielink en knop. Geen persoonlijke reflectie of beheersing aangenomen. Sessie 017 loopt. Volgende stap: basis van Inloggen, Registreren en Mijn account. Bij aansluiting van favorieten volgt de terugkeer naar het betreffende boek.
+
+### Verder lezen vereenvoudigd — 25 november 2026
+
+Gerard wil onder de artikelen alleen een link naar het bijbehorende boek. De twee externe leeslinks bij Het pijnlichaam zijn verwijderd en de boeklink staat nu in een gewone alinea. In de code gecontroleerd dat elk van de drie artikelen precies één link heeft en dat het adres overeenkomt met het bijbehorende boek. De build is geslaagd. Gewijzigd: article-content.jsx, werkdocument en beide logboeken. Behandeld: een interne React Router-link als verwijzing naar het boek. Sessie 017 loopt. Volgende stap blijft de basis van Inloggen, Registreren en Mijn account.
+
+### Vierde artikel en Meer artikelen laden — 25 november 2026
+
+Gerard vraagt het vierde artikel in Blog op te nemen en de knop alvast te plaatsen. De definitieve tekst van ‘Een brief die je voor jezelf schrijft’ is door Gerard aangeleverd. De eerste alinea is de intro, de vier schrijfstappen staan in een genummerde lijst en de eerder gekozen Pexels-foto is lokaal toegevoegd. De externe links zijn weggelaten volgens de vorige afspraak. Brieven van mijn ziel heeft nu geen boekdetail in de Shop. Het artikel staat onder Zelfreflectie op Blog. De drie homekaarten zijn behouden. De bestaande Button verschijnt uitgeschakeld onder de lijst. Het afgesproken klikgedrag volgt wanneer de lijst wordt uitgebreid.
+
+Controle: npm run build geslaagd. In de browser bij 1440 en 390 pixels vier kaarten, plaatsing en inactieve toestand van de knop gecontroleerd. Op mobiel stapelen de gewone kaarten. Het artikel opent via de kaart en met Enter. De foto is geladen, de intro verschijnt één keer, de oefening heeft vier stappen en het artikel bevat geen externe links. De gecontroleerde weergaven hebben geen horizontale overloop. Home toont nog drie kaarten. Gewijzigd: articles.js, article-content.jsx, BlogPage.jsx, Blog.css, een-brief-voor-jezelf.jpg, werkdocument, keuzes en beide logboeken. Behandeld: hergebruik van kaart en route, HTML-nummering en uitgeschakelde Button. Sessie 017 loopt. Volgende stap voor Blog: zoeken, themafilter en later meer resultaten tonen.
+
+### Blogkaarten uitgelijnd — 25 november 2026
+
+Gerard noemt de uitlijning van de artikelen Geweldloze communicatie en Een brief die je voor jezelf schrijft. In het overzicht begon de intro van de korte titel op 1440 pixels 31 pixels eerder en stonden leeslinks op verschillende hoogtes. Blog.css geeft titels per breedte een gedeelde minimale hoogte en laat Flexbox onder de intro de resterende ruimte opvullen. De opmaak is beperkt tot de drie gewone blogkaarten naast elkaar. Bij gestapelde kaarten geldt de natuurlijke hoogte van de inhoud.
+
+Controle: npm run build geslaagd. Op tien breedtes tussen 801 en 1440 pixels beginnen intro’s en leeslinks op dezelfde hoogte. Op 390 pixels stapelen de kaarten zonder vaste titelruimte. In de gecontroleerde weergaven is geen horizontale overloop. De leeslink naar het briefartikel is met Enter getest. Gewijzigd: Blog.css, werkdocument, keuzes en beide logboeken. Behandeld: CSS per schermbreedte, minimale hoogte en automatische marge in Flexbox. Sessie 017 loopt. Volgende stap voor Blog blijft zoeken en filteren.
+
+### Kortere regels op de artikelpagina’s — 25 november 2026
+
+Gerard verduidelijkt dat de regels in Geweldloze communicatie en Een brief die je voor jezelf schrijft te lang doorlopen. De algemene paginabreedte kreeg voorrang boven de bedoelde artikelbreedte. Blog.css begrenst nu de volledige leeskolom met een specifiekere selector en maakt ook de intro smaller. Normale regelafbreking past zich aan het beschikbare scherm aan. Lange woorden mogen zo nodig afbreken.
+
+Controle: beide artikelen in de browser bij 1440, 1024, 768, 390 en 320 pixels gemeten, zonder horizontale overloop. Op 1440 pixels daalde de breedte van de eerste alinea van 623 naar 534 pixels. De beschikbare breedte van de lijstregels daalde van 1198 naar 494 pixels. De eerste lijststap ging bij Geweldloze communicatie van één naar twee regels en bij het briefartikel van één naar drie. Gewijzigd: Blog.css, werkdocument, keuzes en beide logboeken. Behandeld: welke CSS-regel voorrang krijgt, maximale leesbreedte en regelafbreking. Sessie 017 loopt. Volgende stap voor Blog blijft zoeken en filteren.
+
+### Formulieren voor Inloggen en Registreren — 25 november 2026
+
+Gerard vraagt de formulieren volgens de conceptschetsen. De lokale HTML en bijbehorende beelden van ‘Natuur naast je’ en ‘Rustig en centraal’ gebruikt. Inloggen toont e-mailadres en wachtwoord met de originele bosfoto ernaast op desktop. Registreren toont voornaam, achternaam, e-mailadres, wachtwoord en herhaal wachtwoord in een kolom van maximaal 405 pixels. De hoofdmenulink, registratieverwijzing en teruglink zijn aangesloten. Beide pagina’s zijn als oefenformulier herkenbaar. Invoer wordt lokaal gecontroleerd. Geldige invoer geeft een melding en wordt uit de velden gehaald. Er is geen verzendverzoek, account of inlogsessie.
+
+Controle: npm run build geslaagd. Op desktop de twee gelijke inlogkolommen en de gecentreerde registratiekolom gecontroleerd. Met oefeninvoer de lege velden, het onjuiste e-mailadres, de ongelijke wachtwoorden, focus op het eerste foutieve veld, de meldingen bij geldige invoer en de gewiste velden gecontroleerd. Op mobiel bij 390 pixels komen foto en inlogformulier onder elkaar, Registreren blijft op vijf velden en de menu- en kruislinks werken met Enter. Een rechtstreeks geladen registratiepagina en afwezigheid van horizontale overloop op de gecontroleerde mobiele pagina’s getest, inclusief Inloggen bij 320 pixels.
+
+Gewijzigd: AccountPage.jsx, AccountForm.jsx, Account.css, App.jsx, Header.jsx, README, werkdocument, keuzes en beide logboeken. Behandeld: React Fundamentals §5.6, useState voor invoer, onChange, onSubmit en foutmeldingen bij het veld. Sessie 017 loopt. Volgende stap voor accountfuncties: NOVI-login via Axios en inlogstatus via React Context, gevolgd door de afgesproken bestemmingen. Werkende bezoekersregistratie heeft nog geen bevestigd NOVI-eindpunt.
+
+### Voortgang vastleggen voor GitHub — 25 november 2026
+
+Gerard vraagt de gebouwde voortgang naar GitHub te sturen. Geselecteerd voor het tussenpunt op codex/react-basis: de overige homepage-onderdelen, Blog en artikelpagina’s, Shop en boekdetails, de inlog- en registratieformulieren, de benodigde code, afbeeldingen en pakketten, en de bijbehorende projectnotities. Lokale ontwerpen en lesbestanden staan buiten deze selectie. De build slaagt. De gerichte controle van de te delen werkbestanden levert geen herkenbare sleutel-, token- of persoonlijke e-mailpatronen op. Behandeld: commit als lokaal tussenpunt en push als upload naar de werkbranch. Sessie 017 loopt. Volgende bouwstap blijft de NOVI-inlog.

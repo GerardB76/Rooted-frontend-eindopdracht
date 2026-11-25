@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link, NavLink} from 'react-router-dom';
 import logo from '../../assets/rooted-logo.png';
 import './Header.css';
 
@@ -30,12 +31,12 @@ function Header() {
                     aria-label="Hoofdnavigatie"
                 >
                     <ul className="navigation-list">
-                        <li><a className="navigation-link" href="/" aria-current="page">Home</a></li>
-                        <li><button className="navigation-link" type="button" disabled>Diensten</button></li>
-                        <li><button className="navigation-link" type="button" disabled>Blog</button></li>
-                        <li><button className="navigation-link" type="button" disabled>Shop</button></li>
+                        <li><NavLink className="navigation-link" to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+                        <li><Link className="navigation-link" to="/#diensten" onClick={() => setMenuOpen(false)}>Diensten</Link></li>
+                        <li><NavLink className="navigation-link" to="/blog" onClick={() => setMenuOpen(false)}>Blog</NavLink></li>
+                        <li><NavLink className="navigation-link" to="/shop" onClick={() => setMenuOpen(false)}>Shop</NavLink></li>
                         <li><button className="navigation-link" type="button" disabled>Contact</button></li>
-                        <li><button className="button" type="button" disabled>Inloggen</button></li>
+                        <li><NavLink className="button" to="/inloggen" onClick={() => setMenuOpen(false)}>Inloggen</NavLink></li>
                     </ul>
                 </nav>
             </div>

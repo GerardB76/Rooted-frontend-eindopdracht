@@ -4,111 +4,11 @@ Bijgewerkt: 23 november 2026.
 
 ## Huidige fase
 
-23 november, documentatiereview voor commit: Gerard geeft opdracht de overige documentatiebestanden te beoordelen en samen te committen. De zeven bestanden op docs/api-controles gecontroleerd. Achterhaalde actuele zinnen over nog niet geüploade API-data, nog niet ingericht GitHub en Git dat alleen via het hulpmiddel bereikbaar zou zijn bijgewerkt naar de werkelijk gecontroleerde stand. API-beperkingen en bewijsgrenzen blijven behouden; historische sessies en letterlijke prompts niet herschreven. Deze zeven bestanden zijn lokaal vastgelegd op docs/api-controles met bericht Werk API-hertest en GitHub-voortgang bij. De commitselectie is gecontroleerd; er is in deze stap niets geüpload. Ontwerpbestanden blijven erbuiten. Upload van de API-controlebranch en de eerste pull request volgen als afzonderlijke stappen.
+Sessie 012 is afgerond op 23 november 2026. GitHub-inrichting gereed: PR #1 samengevoegd; lokale main en origin/main gelijk op 2782036. Vier documentatiebestanden bevatten nog niet gecommitte voortgang; ontwerp/ is onbijgehouden en de stash blijft als reserve. Geen React-code of dependencies aangemaakt. De poging codex/react-basis te maken mislukte op schrijfrechten; actieve branch blijft main.
 
-23 november, eerste GitHub-push voltooid: Gerard voert git push -u origin main uit in de WebStorm-terminal en deelt de succesmelding. Lokaal main en origin/main hebben exact commit ae5a7d6592c864f3551636d437c119d7406127ea. Openbare repository via browser bekeken: main, één commit met datzelfde ID, api/docs en de vijf rootbestanden zichtbaar. Eerste startpunt is dus daadwerkelijk online. Actieve lokale branch blijft docs/api-controles; zeven bijgehouden bestanden met latere notities gewijzigd, ontwerpen nog onbijgehouden. Volgende stap: die samenhangende wijzigingen in WebStorm bekijken en selecteren, lokaal vastleggen op docs/api-controles en daarna die branch uploaden voor de eerste pull request. Geen tweede push of pull request uitgevoerd.
+Gerard wil de administratie voortaan door Codex laten afhandelen en overgaan op programmeren. Op zijn verzoek eerst gestopt en overdracht naar een nieuwe chat voorbereid. Daar beginnen we met de bestaande goedgekeurde homepage als eerste React-bouwstap. Geef eenvoudige uitleg bij betekenisvolle codewijzigingen, maar laat routine-Git geen reeks losse gebruikershandelingen worden.
 
-23 november, Git in WebStorm herkend: Gerard bevestigt dat beide bestaande commits in Git Log zichtbaar zijn. Volgende begeleidingsstap: in de WebStorm-terminal git push -u origin main uitvoeren om uitsluitend het eerder gecontroleerde eerste startpunt op main naar de openbare repository te sturen. Actieve branch docs/api-controles hoeft daarvoor niet te worden gewisseld; latere werkbestanden gaan niet automatisch mee. Dit is een instructie voor Gerard, nog geen uitgevoerde push of bevestigd uploadresultaat. Daarna resultaat en online main controleren, vervolgens API-controles via pull request voorbereiden.
-
-23 november, juiste WebStorm-map volgens Gerard geopend: eerst visueel vastgesteld dat het venster de oude ondermap met .idea, .obsidian, Naamloos.canvas en Welkom.md toonde. Uitgelegd dat geen map verwijderd hoeft te worden; juiste hoofdmap via File → Open in hetzelfde venster openen. Gerard meldt daarna dat dit gelukt is; juiste nieuwe projectboom nog niet zelfstandig visueel bekeken. Volgende stap: in WebStorm Git Log openen en de twee bestaande commits herkennen. Eerste openbare push blijft nog niet uitgevoerd.
-
-23 november, WebStorm-begeleiding: Gerard gebruikt WebStorm 2026.1 en vraagt hoe de IDE in de werkwijze past. Versiespecifieke JetBrains-documentatie over commit/push gelezen. Eerst dezelfde bestaande projectmap in WebStorm openen/bevestigen; WebStorm en Codex gebruiken dan dezelfde bestanden en Git-geschiedenis. Geen clone van de lege GitHub-repository of nieuw project nodig. Geen IDE-venster gecontroleerd, commit of upload uitgevoerd. Het openbare uploadvoorstel blijft open terwijl we de IDE-werkwijze toelichten.
-
-23 november, GitHub-repository gekoppeld in sessie 012: Gerard maakte https://github.com/GerardB76/Rooted-frontend-eindopdracht aan en deelde de HTTPS-Git-URL. Via git ls-remote bevestigd dat de repository bereikbaar is en geen branches bevat. origin lokaal ingesteld op dit adres en teruggelezen; actieve branch blijft docs/api-controles. Eerste main-startpunt ae5a7d6 gecontroleerd: 22 bestanden, alleen rootdocumenten/docs/api, geen bron-/ontwerpmappen, echte sleutelpatronen of persoonlijke API-accounts aangetroffen; drie fictieve oefenaccounts aanwezig. Nog niets gepusht. Volgende stap: het concrete openbare uploadvoorstel voor main aan Gerard voorleggen; daarna aparte branch/pull request voor API-controles. Laatste notities blijven nog onvastgelegd in de werkmap. GitHub-plugin niet verbonden, niet nodig voor deze lokale koppeling.
-
-23 november, sessie 012 gestart: Gerard hervat GitHub en wil stap voor stap worden begeleid. Werkdocument en afsluiting sessie 011 gelezen; huidige Git-stand gecontroleerd. Nog twee commits, actieve branch docs/api-controles, geen remote; zes bekende bestanden met latere notities gewijzigd en ontwerpen nog niet bijgehouden. Git is nu ook via het gewone terminalzoekpad bereikbaar (2.56.0.windows.1); GitHub CLI niet gevonden. Geen GitHub-connector beschikbaar. Officiële GitHub-documentatie over repository aanmaken en branches/pull requests gelezen. Eerste vraag: heeft Gerard al een GitHub-account? Daarna een lege online repository voorbereiden, bestaande lokale geschiedenis koppelen en upload vóór publicatie controleren. Geen commit, push of openbare publicatie uitgevoerd bij hervatten. De API-vragen blijven open; naar eventuele feedback pas vragen wanneer relevant.
-
-Sessie 011 afgerond op 10 november 2026. Gerard wil morgen, 11 november, verder met GitHub. Volgende sessie: eerst de huidige Git-bestanden controleren en vragen of zijn GitHub-account al beschikbaar is; daarna de online repository en werkwijze met branches/pull requests voorbereiden. Gecontroleerde eindstand: twee lokale commits (ae5a7d6 en b25145d), actieve branch docs/api-controles, geen remote. Laatste registratie-/hertestnotities en afsluitlog zijn nog niet gecommit; ontwerpen staan nog buiten versiebeheer. Open API-vragen: eigenaarscontrole bij favorieten en bezoekersregistratie; mailconcept gemaakt, geen verzending bevestigd. Favorietenprobleem herhaald na expliciete lezer-1-login. De openbare API-controles en documentmetadata zijn vastgelegd. Geen commit, push of publicatie bij afsluiten uitgevoerd.
-
-10 november, hertest favorieten afgerond: na verse login met bevestigde email lezer1@rooted.example en rol user meldt Gerard opnieuw 200 met beide startfavorieten in de lijst. Ook voor GET /api/favorites/2 deelt hij opnieuw het record van userId 3/bookId 2; detailstatuscode niet opnieuw meegedeeld. API-03/04-uitkomsten zijn daarmee herhaald volgens gedeelde antwoorden. Geen aanwijzing gevonden dat de eerste uitkomst alleen een verkeerde login was; geen eigen headerinspectie uitgevoerd. Volgens Gerard ontbreekt een id in de loginrespons. Vraag aan NOVI/docent over eigenaarsrechten blijft nodig. Volgend bespreekpunt voor versiebeheer: of Gerard een GitHub-account heeft. Nieuwe hertestnotities zijn nog niet apart gecommit.
-
-10 november, registratiecontrole API-12: Gerard ziet in Authentication van de eigen Swagger alleen /api/login. Geen aanvraag voor bezoekersregistratie zichtbaar; bij NOVI/docent navragen hoe registratie voor de eindopdracht bedoeld is, naast de al openstaande favorietenafscherming. Geen route gegokt of nieuwe accounts aangemaakt. Inloggen met startaccounts werkt; registratie en automatische inlog na accountaanmaak blijven onbevestigd. Openbare controles en documentmetadata zijn afgerond zoals vastgelegd in docs/api-controles.md. Git heeft main met het startpunt en branch docs/api-controles met het samengevoegde controleverslag (b25145d); GitHub is nog niet gekoppeld. Volgend bespreekpunt voor versiebeheer: of Gerard al een GitHub-account heeft. Nieuwe registratienotitie is een volgende werkversie, nog niet apart gecommit.
-
-10 november, afgeronde ronde openbare API-controles: Gerard bevestigt ook ingelogd GET /api/documents met 200 en het tarievenvoorbeeld. Documentinformatie geeft uitgelogd 403 en ingelogd 200; API-11 geslaagd volgens gebruikersbevestiging. Boekdetail, quotes, workshops, blogdetail en onbekend boeknummer zijn eveneens gecontroleerd; zie docs/api-controles.md voor precieze bewijsgrenzen. Het controleverslag wordt samen vastgelegd op de aparte Git-branch docs/api-controles. Volgende stap: in Authentication van de eigen Swagger bekijken welke POST-verzoeken naast login beschikbaar zijn voor bezoekersregistratie. Favorietenafscherming en echte PDF-opslag blijven open; geen GitHub of pull request aangemaakt.
-
-10 november, API-10/11: Gerard bevestigt uitgelogd 404 — Not Found voor onbekend boeknummer 999 en meldt 403 voor GET /api/documents zonder inlog. Onbekend boek wordt correct afgehandeld en documentinformatie uitgelogd geweigerd. Volgende stap: met lezer 1 opnieuw inloggen/autoriseren en GET /api/documents herhalen om toegestane toegang te controleren. Het tarievenbestand zelf ontbreekt nog, dus dit test alleen de documentinformatie.
-
-10 november, API-vervolg: Gerard bevestigt uitgelogd GET /api/quotes met code 200 en drie quotevoorbeelden, GET /api/workshops met code 200 en drie workshopvoorbeelden, en GET /api/blogs/{id} met id 1, code 200 en Het grotere geheel zien met volledige content. API-07 t/m API-09 bijgewerkt. Swagger-bediening toegelicht: Try it out maakt invoer mogelijk, id is het artikelnummer, Execute verstuurt de aanvraag. Geen screenshot/project-ID ontvangen. Volgende controle: uitgelogd GET /api/books/{id} met id 999 voor een onbekend boek; de statuscode opvragen. Overige open punten blijven gelden.
-
-10 november, API-vervolg: Gerard bevestigt de boekdetailcontrole zonder inloggen: GET /api/books/{id} met id 1 geeft 200 en alleen Het grotere geheel. API-06 in het controleoverzicht bijgewerkt. Volgende stap: uitgelogd GET /api/quotes uitvoeren; verwacht drie quotevoorbeelden. Daarna openbare workshops en documenttoegang controleren. Favorietenafscherming blijft open; de eerste lokale Git-commit is gemaakt, deze nieuwe controlevastlegging is een volgende werkversie.
-
-10 november, Git-uitvoering bevestigd: lokale repository op main en eerste werkelijk startpunt aangemaakt met de bestaande auteursinstellingen. Rootdocumenten, docs en api vastgelegd; zeven uitsluitvoorbeelden door Git gecontroleerd. Ontwerpen nog niet bijgehouden, geen remote ingesteld. Volgende stap: ontvangen boekdetailcontrole verwerken; daarna quotes/workshops openbaar testen. Zie docs/versiebeheer.md.
-
-10 november, vervolg sessie 011: Gerard wil API-controles en versiebeheer voortzetten. Boekenlijst ontvangen bij de begeleide uitgelogde controle: drie records passen bij de startconfiguratie; code niet apart meegedeeld. Volgende API-vraag staat open: GET /api/books/{id} met id 1, code en titel controleren. [API-controleoverzicht](docs/api-controles.md) en [uitleg versiebeheer](docs/versiebeheer.md) toegevoegd. Git 2.56.0.windows.4 is beschikbaar via het gebundelde hulpmiddel; nog geen bestaande repository gevonden. Naam en e-mail staan al in Gerards Git-instellingen. Lokale eerste vastlegging voorbereid voor alleen rootdocumenten, docs en api; uitsluitlijst uitgebreid voor persoonlijke instellingen, oude kluis en lokale geheimen. Ontwerpbestanden later bewust toevoegen. Gerard meldt papieren schetsen al gemaakt te hebben; nog geen foto's/scans ontvangen of beoordeeld. Toegangsprobleem favorieten blijft open bij NOVI/docent.
-
-10 november, vervolg eigenaarscontrole: Gerard meldt ook bij GET /api/favorites/2 code 200 met userId 3/bookId 2 onder dezelfde begeleide lezer-1-autorisatie. Zowel lijst als afzonderlijk record zijn daarmee toegankelijk voor de andere oefengebruiker. Documentatie Rollen en permissies opnieuw gelezen: wel rolrechten en een voorbeeldclaim over eigen bestellingen, maar geen expliciete eigenaarinstelling aangetroffen. Geen ondersteunde oplossing vastgesteld en geen conclusie dat het platform dit definitief niet kan. Volgende stap: de precieze inrichting voor eigenaarscontrole bij NOVI/docent navragen; toegang tot eigen favorieten blijft een open eis. Geen verwijdertests of wijzigingen van rechten uitgevoerd.
-
-10 november, toegangsprobleem bevestigd in sessie 011: na vernieuwen van het inlogtoken meldt Gerard code 200 voor GET /api/favorites. Het aangeleverde antwoord bevat beide startfavorieten (userId 2/bookId 1 én userId 3/bookId 2), terwijl de begeleiding uitgaat van lezer 1 met rol user. De lijst wordt dus niet tot de eigen favorieten beperkt; NFE-04 is niet gehaald voor deze controle. Geen gebruikersfilter als beveiligingsoplossing aanmerken. Volgende gerichte controle: met dezelfde lezer-1-autorisatie GET /api/favorites/2 opvragen om directe toegang tot het andere record te controleren; daarna gedocumenteerde ondersteuning voor eigenaarsrechten onderzoeken. Alleen fictieve data gebruiken; geen rechten verruimen, data verwijderen of functionele eisen stilzwijgend afzwakken.
-
-10 november, vervolg Swagger: Gerard bevestigt dat na inloggen met lezer 1 een token en gebruikersgegevens verschijnen. Dit is een door Gerard gemeld resultaat; HTTP-code en exacte gebruikers-ID niet ontvangen. Volgende controle: in Swagger autoriseren met dit token, daarna de favorietenlijst zonder eigenaarfilter opvragen en de teruggegeven userId/bookId vergelijken. Nog niet vastgesteld dat eigenaarschap wordt afgedwongen.
-
-10 november, Swagger-controle in sessie 011: Gerard levert het blogantwoord aan. Alle tien blogobjecten komen inhoudelijk overeen met de startconfiguratie (lokaal vergeleken); de geplakte tekst mist alleen de afsluitende lijsthaak. HTTP-status en inlogcontext zijn niet meegeleverd, dus geen afzonderlijk bewijs van 200 of anonieme toegang vastgelegd. Volgende stap in de begeleiding: met lezer 1 inloggen via POST /api/login en het antwoord controleren, zonder het token te laten delen. Overige rechten, registratie en PDF nog niet getest.
-
-10 november, aanvulling sessie 011: Gerard heeft een project-ID aangevraagd en nog geen JSON geüpload. Op zijn verzoek [api/rooted-startconfig.json](api/rooted-startconfig.json) gemaakt met zes collecties, tien blogs, drie fictieve boeken, drie quotevoorbeelden, drie workshopvoorbeelden, één documentrecord zonder PDF en twee favorieten; daarnaast twee lezersaccounts en een beheeraccount. [Uitleg en uploadstappen](api/LEESMIJ.md) toegevoegd. Alleen fictieve oefengegevens; geen project-ID of persoonlijke gegevens opgenomen. Vijf aanvullende NOVI-pagina’s gelezen. Lokaal JSON, velden/types/grenzen, ID’s, verwijzingen, rollen, thema's en uitgelichte selectie gecontroleerd; nog niet door NOVI geaccepteerd of online getest. Afbeeldingen optioneel/leeg, bestand ontbreekt bewust. Eigen favorietenrechten, bezoekersregistratie en echte PDF-beveiliging blijven open. Volgende concrete stap: Gerard uploadt dit JSON-bestand bij zijn project en meldt de resultaatmelding; daarna samen de Swagger controleren. Sessie 011 loopt.
-
-10 november, sessie 011: Gerard levert de documentatielink van de NOVI Dynamic API aan. Eerste [API-verkenning](docs/novi-api-verkenning.md) vastgelegd na lezen van zeven documentatiepagina’s. Bevestigd in documentatie: configureerbare collecties/rechten, inloggen, project-ID, filteren/sorteren en een dagelijkse database-reset. Nog geen eigen project of API-werking getest. Bezoekersregistratie en automatische inlog, eigenaarschap van favorieten en bescherming van het PDF-bestand blijven te verifiëren. Voorbeelddata/oefenaccounts in JSON bewaren vanwege de dagelijkse reset. Volgende stap: vaststellen of Gerard al een project-ID heeft; daarna een kleine configuratie voorbereiden en de echte project-Swagger controleren. Sessie 011 loopt; sessie 010 had geen expliciete afsluiting.
-
-6 november, gezamenlijke verwerking in sessie 010: op Gerards verzoek eerst vragen één voor één gesteld en antwoorden verzameld; daarna samen verwerkt in het functioneel-ontwerpvoorstel (nu 0.2), paginaoverzicht en projectplan. Besluiten: voorkeur automatisch inloggen na registratie als NOVI dit ondersteunt; iedere zelfgeregistreerde gebruiker heeft na inloggen direct toegang tot tarieven; huidige dienstnamen Individuele begeleiding, Familieopstellingen en Workshops voorlopig behouden; hetzelfde uitgelichte artikel op Home en Blog; huidige voorbeeldteksten en afbeeldingen tijdens de bouw gebruiken en later vervangen. Geen definitieve inhoud of volledige goedkeuring van alle overige concept-eisen geclaimd. Volgende stap: NOVI-haalbaarheid onderzoeken (automatische inlog, eigen favorieten, beschermd tarievenbestand). Papieren schetsen en visuele bewijsstukken blijven open. Nog geen React- of Figma-wijziging. Werkwijze voor verdere inhoudelijke keuzes: eerst één vraag per keer, antwoorden verzamelen, pas na de vragenronde samen verwerken.
-
-6 november, diensten bevestigd in sessie 010: voor de opdracht blijft diensteninformatie op de homepage; geen aparte dienstenpagina. Het besproken eenvoudige voorstel geldt: menulink Diensten naar de sectie op Home (ook vanaf andere pagina’s), drie dienstenblokken met korte uitleg zonder doorklik. Functioneel-ontwerpvoorstel, paginaoverzicht en projectplan bijgewerkt; ontwerpen en applicatie nog niet aangepast. Definitieve dienstnamen/teksten blijven open. Volgend bespreekpunt: na accountregistratie eerst bevestigen en naar inloggen, of direct inloggen als de API dat ondersteunt.
-
-6 november, aanvulling sessie 010: Gerard vindt het functioneel-ontwerpvoorstel een mooie eerste uitwerking om later verder uit te werken. Hij bevestigt bij 2.5 dat informatie over trainingen en workshops openbaar moet zijn. Dit is verwerkt als afspraak in 2.5, het gegevensoverzicht, FE-18 en het paginaoverzicht. Dit is geen definitieve goedkeuring van alle overige voorstellen. Volgende stap: eventuele verdere opmerkingen bij het voorstel verwerken.
-
-6 november, sessie 010: op Gerards verzoek een [voorstel voor het functioneel ontwerp](docs/functioneel-ontwerp-voorstel.md) gemaakt. Versie 0.1 bevat probleem/oplossing, casustekst onder 250 woorden, vier user stories, vier use-case-tabellen met elk drie alternatieven, 32 functionele en 8 niet-functionele eisen, vijf bestaande desktopconceptbeelden met beschrijvingen, drie toegelichte inspiratiebronnen en een controle aan de opdracht. Oorspronkelijke opdracht-PDF (p. 5, 7, 9, 11–15), projectidee en lespassages HTML/CSS 10.3–10.6 geraadpleegd; formatbeelden van les 10.4 bekeken. Dit is een bewerkbaar Markdown-voorstel, geen definitieve PDF of bewijs dat alle opleidingseisen zijn behaald. Bestaande afspraken en nieuwe voorstellen zijn apart herkenbaar. Open: papieren wireframes, passende inspiratie-screenshots, definitieve inhoud, dienstenlinks, NOVI-haalbaarheid/toegangsrechten, actuele Figma-exports en openbare aanleverlink. Volgende stap: met Gerard hoofdstuk 2 (vier kernfuncties en afbakening) doornemen, daarna scenario’s en eisen in kleine delen beoordelen. Ontwerp en React-app niet gewijzigd. Deze actuele vervolgstap vervangt oudere vervolgstappen hieronder; die blijven als achtergrond staan.
-
-Shopconcept 1.1 op 5 november na Gerards akkoord ook in Figma gezet: het bestaande scherm 4 (Shop, 1:131) gebruikt nu de [conceptschets 1.1](ontwerp/schermontwerpen/shop-versie-1.1.html). Workshop-/trainingsfoto’s zijn 220 × 164 px (twee keer zo breed) en boekomslagen 153 × 225 px (50% groter). De nieuwe shopafbeelding is 1440 × 1944 px; het bestaande scrollbare scherm en alle bestemmingen van de zeven shoplinks zijn behouden. Klikgebieden van de drie boekkaarten aangepast aan de nieuwe maatvoering. Werkelijk in Figma gecontroleerd: workshopfoto’s en boekomslagen bekeken, naar boeken gescrold en via Bekijk boek naar het boekdetail geklikt. Tien actieve schermen blijven behouden. Rapport: ontwerp/figma/figma-shop-1.1-report.json. De conceptversie is eerder op 1440 en 390 px bekeken; het Figma-prototype blijft de desktopuitwerking. Versie 1.0 intact. Volgende stap: verdere feedback op het bijgewerkte prototype verwerken. Sessie 009 blijft lopend.
-
-Prototypevereenvoudiging uitgevoerd op 5 november na Gerards akkoord: de ingelogde knop heet **Mijn account**. Scherm 6 is het enige inlogscherm en gaat in dit prototype steeds naar scherm 8, nu **Mijn account**. Schermen 9/12/13/14/15 staan op de aparte pagina **Archief · eerdere prototypeschermen** en zijn uit de actieve klikroute gehaald. Actief: schermen 1–8 en de boektoestanden 10/11 (tien schermen, 78 onderdelen met klikacties). Controle: geen actieve verwijzingen naar de vijf archiefschermen; Home → scherm 6 → scherm 8 werkelijk afgespeeld, accounttitel en menuknop visueel gecontroleerd. Richtlijn en documentatie bijgewerkt. De oorspronkelijke websiteafspraken over terugkeer naar boek/tarieven blijven gelden; de vereenvoudiging betreft het klikmodel. De schermbeelden blijven afbeeldingen; de nieuwe accountlabels zijn losse bewerkbare tekstlagen. Echte Figma-ID’s en wijzigingen staan in ontwerp/figma/figma-simplify-report.json. Volgende stap: Gerard bekijkt de eenvoudiger versie en geeft verdere feedback. Sessie 009 loopt verder; videovergelijking blijft gestopt.
-
-5 november: vergelijking met de Vimeo-les ‘Figma 101 - De basis principes’ op Gerards verzoek gestopt nadat geen transcript of ondertiteling in de speler beschikbaar bleek. De pagina en enkele beginbeelden zijn bekeken; de gesproken uitleg en de volledige video zijn niet beoordeeld. Geen conclusie vastgelegd dat het prototype met de video overeenkomt. Geen wijzigingen in Figma uitgevoerd. De eerdere volgende stap blijft: het bestaande prototype op basis van Gerards concrete feedback verfijnen; de videovergelijking niet zelfstandig hervatten.
-
-Sessie 008 afgesloten op 3 november 2026. Gerard vindt het resultaat er goed uitzien en wil morgen, 4 november, verder verfijnen. Eerstvolgende stap: het bestaande Figma-prototype samen bekijken en zijn gewenste aanpassingen stap voor stap verwerken. Gebruik het bestaande bestand en de opgeslagen node-ID’s; geen nieuwe import. De hieronder vastgelegde beperkingen blijven open. Geen automatische vervolgactie of herinnering ingesteld.
-
-Figma-prototype en Design Guideline, 3 november: bewerken werkt na Gerards afronding van de Full-seat-melding; geen prijs of facturatie gecontroleerd. Bestand **Rooted — prototype & Design Guideline** staat in de map **frontend development eindopdracht**: https://www.figma.com/design/DO3OTTbY7K6tt32udCewIN. [Prototype starten](https://www.figma.com/proto/DO3OTTbY7K6tt32udCewIN?node-id=1-125&starting-point-node-id=1%3A125&page-id=1%3A124&scaling=scale-down). Gemaakt: vijftien schermen, vijf guidelineborden, tien componenten, zes tekststijlen en 105 onderdelen met een klikactie. Getest in Figma: Home → Blog → Artikel; Shop → Boekdetail; hartje → voorbeeld-inloggen → hetzelfde boek → zelf bewaren → Mijn verzameling → verwijderen → lege verzameling; tarievenmelding en de homepageknop naar de uitleg. Alle vijf guidelineborden visueel bekeken. Registratie en de volledige tarieveninlogroute niet afzonderlijk doorgeklikt. Zoekfunctie, filter, FAQ, quotes en echte formulierinvoer zijn niet interactief uitgewerkt. Schermen zijn beelden met klikgebieden; de guideline is wel bewerkbaar. HTML-bronnen intact. Nog geen openbare deelrechten ingesteld; FO-09/FO-11 blijven open. Bron, beperkingen en echte node-ID’s staan in [ontwerp/figma](ontwerp/figma/LEESMIJ.md). Volgende stap: Gerard bekijkt het prototype; daarna definitieve inhoud en eventuele vervolgaanpassingen bespreken en de vereiste functionele uitwerking voorbereiden. Sessie 008 blijft lopend.
-
-Figma, 3 november: ook in de nieuwe chat met Figma vermeld ontbreken rechtstreekse Figma-tools. Pluginzoeken meldt opnieuw niet beschikbaar te zijn. Het draaiende Figma-programma is via computerbediening gevonden, naar voren gehaald en visueel gecontroleerd: startscherm Recents met account gerard.blomsma. Schermbediening is beschikbaar; de accountkoppeling en bestandstoegang via de plugin blijven onbevestigd. Geen Figma-bestand aangemaakt of gewijzigd. Volgende stap: Gerard meldt welke verbindingsstatus of knop bij de Figma-plugin in Codex staat. Sessie 008 is lopend.
-
-Figma, 2 november: opnieuw gecontroleerd na Gerards vermelding van de Figma-plugin en app. Figma-vaardigheden zijn zichtbaar, maar er zijn geen Figma-tools beschikbaar. Pluginzoeken meldt opnieuw niet beschikbaar te zijn. De appinventaris leverde geen Figma-app of Figma-venster op; browserinhoud is niet gecontroleerd. De accountverbinding en bestandstoegang zijn daarom nog niet geverifieerd; dit bewijst niet dat het account niet verbonden is. Volgende praktische stap: Gerard bekijkt zelf de accountstatus bij de Figma-plugin. Nog geen Figma-bestand aangemaakt of gewijzigd. Inhoudelijke volgende stap blijft vier korte functieomschrijvingen voorbereiden.
-
-Afbakening Contact, 2 november: op Gerards verzoek voorlopig niet uitwerken. Geen contactpagina, formulier of e-maillink als te bouwen functie inplannen. Eerdere voorstellen daarvoor vervallen; bestaande Contact-links bij de ontwerpbijwerking nalopen. Volgende inhoudelijke stap: vier korte functieomschrijvingen voor het functioneel ontwerp voorbereiden vanuit het afgesproken paginaoverzicht.
-
-Leidende werkafspraak, 2 november: Gerard wil de website voorlopig heel basic houden. Kies eenvoudige oplossingen binnen de opleidingseisen en bestaande afspraken. Geen verdere reeks vragen over kleine bedieningsdetails; Codex handelt die zelf af en licht relevante keuzes kort toe. De eerdere volgende stap over de lege favorietenlijst is hiermee vervallen: een eenvoudige tekstmelding volstaat. Mijn verzameling blijft voorlopig favoriete boeken plus het afgesproken tarievenoverzicht, zonder extra functies. Volgende stap: het paginaoverzicht op hoofdlijnen afronden met eenvoudige voorstellen voor resterende onderdelen, daarna de vereiste functionele uitwerking voorbereiden.
-
-Actuele volgende stap: Mijn verzameling verder bespreken, te beginnen bij een lege favorietenlijst. Laatste verduidelijking: boeken, workshops en trainingen mogen allemaal een bestelknop tonen, maar deze wordt nog niet werkend gemaakt. De bestaande boekbestelknop hoeft dus niet verwijderd te worden. Geen echt bestel-/aanmeld-/betaalproces, winkelmandje of externe bestelverwijzing afgesproken; bij workshops/trainingen ook geen contactverwijzing. Shop blijft vooralsnog de naam. Inhoud, prijzen en duidelijke weergave van de niet-beschikbare bestelactie blijven uit te werken. Favorieten bevestigd: niet ingelogd via inloggen terug naar hetzelfde boek om het zelf te bewaren, zonder automatisch opslaan. Ingelogd bewaart klikken op een leeg hartje het boek in het eigen account en Mijn verzameling, met een gevuld hartje; opnieuw klikken verwijdert het en maakt het hartje leeg. Deze besluiten vervangen eerdere tegenstrijdige vermeldingen over bestelknoppen en open favorietenbediening. De ontwerpen en React-app zijn hiervoor nog niet aangepast of getest.
-
-Het huidige homepageontwerp is op verzoek opgeslagen als [homepage versie 1.0](ontwerp/schermontwerpen/homepage-versie-1.0.html). Dit is een zelfstandig te openen ontwerpvoorvertoning; de React-app moet nog worden gebouwd.
-
-Op 2 november bevestigt Gerard dat de besproken homepageonderdelen compleet zijn. Ook de tarievenknop is afgesproken: niet-ingelogde bezoekers gaan naar inloggen met uitleg en een registratieverwijzing; ingelogde bezoekers openen de PDF om te lezen en te downloaden. Na succesvol inloggen vanuit deze knop gaat de bezoeker meteen door naar het tarievenoverzicht. Dit is nog niet gebouwd; PDF-inhoud, opslag en toegangscontrole blijven uit te werken. Een aparte dienstenpagina blijft op Gerards verzoek open vanwege de omvang van de opdracht; deze is nog niet ontwikkeld en wordt niet als afgesproken onderdeel ingepland. De drie dienstenblokken blijven op de homepage; hun doorklikbestemming en de werking van het menu-item Diensten blijven open. Volgende bespreekpunt: de drie artikelen en overige homepagelinks. Zie het paginaoverzicht.
-
-Voor het blogoverzicht kiest Gerard de richting Uitgelicht verhaal met de titel Inzicht en inspiratie. De aangepaste versie is opgeslagen als [blogoverzicht versie 1.0](ontwerp/schermontwerpen/blogoverzicht-versie-1.0.html). Definitieve bloginhoud moet nog worden verzameld.
-
-Laatste besluiten blogoverzicht: leeg zoekveld + Enter toont weer alle artikelen; bij geen zoekresultaten verschijnt ‘Geen artikelen gevonden. Probeer een andere zoekterm.’ Gerard kiest als voorlopige thema's Systemisch werk, Familie en relaties, Werk en organisaties en Persoonlijke ontwikkeling. Namen kunnen worden aangepast als de artikelen bekend zijn. De volgorde is bevestigd: één zelfgekozen uitgelicht artikel bovenaan, daarna de overige artikelen op publicatiedatum met de nieuwste eerst, zonder dubbele vermelding. Bij zoeken/filteren verdwijnt het uitgelichte blok tijdelijk en verschijnen alleen passende resultaten, nieuwste eerst; het uitgelichte artikel kan daar als passend gewoon resultaat in voorkomen. Terug in het ongefilterde overzicht verschijnt het blok weer. Concrete artikelkeuze en gelijkheid met het homepageartikel blijven open. Nog niet gebouwd of in het ontwerp verwerkt. Eerstvolgende bespreekpunt: meer artikelen tonen.
-
-Actueel bespreekpunt: de werking van het blogoverzicht. Gerard bevestigt dat iedereen het blogoverzicht en de volledige artikelen zonder account of inloggen kan lezen. Ook afgesproken: zoeken in titel en korte introductie (niet de volledige artikeltekst), plus filteren op thema. Gerard wil deze gescheiden gebruiken: het filter toont artikelen binnen een gekozen thema; zoeken met een zoekwoord doorzoekt alle artikelen, ongeacht het thema. Zoeken gebeurt door Enter in het zoekveld; tijdens typen veranderen de resultaten niet. Bij Enter springt het thema naar ‘Alle thema’s’; bij het kiezen van een thema wordt het zoekveld leeggemaakt. Een aparte zoekknop wordt niet ingepland. Het voorstel om zoeken en thema te combineren is niet overgenomen. Deze afspraken zijn nog niet in React geïmplementeerd of getest. Open homepagekeuzes rond diensten en definitieve inhoud blijven staan.
-
-De artikelverwijzingen op de homepage zijn bevestigd: elk van de drie artikelblokken opent het bijbehorende volledige blogartikel; de knop ‘Alle artikelen’ leidt naar het blogoverzicht. Gerard kiest één zelf uitgekozen uitgelicht artikel, bijvoorbeeld over systemisch werken, gevolgd door de twee nieuwste andere artikelen op publicatiedatum (nieuwste eerst, zonder dubbel artikel). Het concrete artikel en het instellen van de keuze blijven open; geen beheerpagina afgesproken. Deze afspraak verandert het blogoverzicht niet. Nog niet gebouwd. Ook afgesproken: maximaal één FAQ-antwoord tegelijk open; bij openen van een andere vraag sluit het vorige antwoord automatisch. De ontwerpvoorvertoning is hiervoor niet aangepast of gecontroleerd. Volgende stap: resterende homepagehandelingen en toegang nalopen, daarna het blogoverzicht bespreken.
-
-Gerard koos de knop Meer artikelen met subtiele omlijning. Deze is verwerkt in het opgeslagen blogoverzicht; in de voorvertoning toont de knop drie extra voorbeeldartikelen en werkt samen met zoeken en filteren. De nu afgesproken applicatiewerking is: eerst één uitgelicht artikel plus maximaal zes overige artikelen; elke klik toont maximaal drie extra. Bij zoeken/filteren eerst maximaal zes passende resultaten zonder uitgelicht blok, daarna maximaal drie extra per klik. De knop verdwijnt als alles zichtbaar is; een nieuwe zoekopdracht of themawijziging begint weer bij maximaal zes in de lijst. Dit is niet opnieuw in de voorvertoning aangepast of getest. De hoofdafspraken voor het blogoverzicht zijn vastgelegd; actuele volgende stap is de blogartikelpagina en de selectie van gerelateerde artikelen. Inhoud, laad-/foutmeldingen en precieze zoekvergelijking blijven verder uit te werken.
-
-Voor de blogdetailpagina koos Gerard Beeld naast verhaal, met gerelateerde artikelen onderaan. De gekozen voorvertoning is opgeslagen als [blogartikel versie 1.0](ontwerp/schermontwerpen/blogartikel-versie-1.0.html). De selectie is nu afgesproken: maximaal drie andere artikelen binnen hetzelfde thema, op publicatiedatum met de nieuwste eerst; het huidige artikel uitgesloten. Bij minder passende artikelen tonen we er minder; zonder passende artikelen vervalt het onderdeel. Inhoud blijft voorlopig; deze werking is niet opnieuw in het ontwerp verwerkt of getest. Actuele volgende stap: Shop bespreken, te beginnen bij wat bestellen betekent.
-
-Voor de zes voorgestelde schermen bevestigt Gerard blogoverzicht, blogdetail, inloggen en favorieten; het boekenoverzicht krijgt de naam Shop. Workshops/trainingen en een winkelmandje zijn ideeën om verder af te bakenen; betaling en bestelproces zijn nog niet afgesproken.
-
-Gerard kiest voor de Shoprichting Uitgelicht aanbod. Deze staat als [shop versie 1.0](ontwerp/schermontwerpen/shop-versie-1.0.html) in de projectmap, met eerst workshops/trainingen en daarna boeken. Prijzen en boekgegevens zijn voorbeelden; bestelling, betaling en definitief aanbod blijven open.
-
-Voor inloggen kiest Gerard Natuur naast je, opgeslagen als [inloggen versie 1.0](ontwerp/schermontwerpen/inloggen-versie-1.0.html). Registratie en echte NOVI-authenticatie worden later verder uitgewerkt.
-
-Gerard kiest Mijn verzameling voor de [persoonlijke pagina versie 1.0](ontwerp/schermontwerpen/persoonlijke-pagina-versie-1.0.html), met voorbeeldfavorieten en een tarievenblok. Oefeningen of downloads zijn mogelijke aanvullende inhoud; winkelmandje en daadwerkelijke werking blijven open keuzes.
-
-Op verzoek is een aanvullend concept voor een boekdetailpagina gemaakt rond De fontein, vind je plek van Els van Steijn. Voor- en achterzijde zijn nog invulvakken; Gerard levert zijn eigen beschrijving en zo mogelijk boekafbeeldingen. Eerste uitgave 2016 is elders geverifieerd omdat Amazon niet bereikbaar was.
-
-Gerard kiest Rustig naast elkaar voor [boekdetail versie 1.0](ontwerp/schermontwerpen/boekdetail-versie-1.0.html), met voorbeeldprijs, favorietenhartje en bestelknop. Echte afbeeldingen, persoonlijke beschrijving, definitieve prijs, favorietenopslag en bestelproces zijn nog niet ingevuld of aangesloten.
-
-Gerard kiest Rustig en centraal voor het aanvullende [registratieontwerp versie 1.0](ontwerp/schermontwerpen/registreren-versie-1.0.html), met voornaam, achternaam, e-mailadres en wachtwoord. Adres is niet toegevoegd; de mogelijkheden voor de naamvelden en de benodigde velden en wachtwoordregels moeten we bij de NOVI API nagaan.
-
-Functioneel ontwerp in voorbereiding: het idee is volgens Gerard goedgekeurd. Homepageversie 3 is samengesteld in de gekozen redactionele stijl, met brede bosfoto, ruime secties, Diensten in het menu, FAQ, drie artikelen, drie diensten, tarievenknop en de gekozen quote-carrousel Zachte strook. Decoratieve plantelementen zijn op Gerards verzoek voorlopig weggelaten; de illustraties blijven bewaard. De carrousel wisselt automatisch en heeft auteursruimte en pauzebediening; op mobiel is een uitklapmenu toegevoegd. Zie docs/homepage-concepten.md voor de actuele voorvertoning.
-
-Volgende stap: het [paginaoverzicht](docs/paginaoverzicht.md) samen vanaf de homepage bespreken en de functies afbakenen. Dienstnamen, artikelbeelden/-teksten, quotes/auteurs en tarieven zijn nog voorlopig. Nog geen uitgewerkte use cases, 25 applicatie-eisen, papieren wireframes, Figma-ontwerpen of React-applicatie aanwezig. Kalenderplanning volgt na deadline en beschikbare tijd.
+Ontwerpbronnen: ontwerp/schermontwerpen/homepage-versie-1.0.html, ontwerp/figma/design-guideline.md en docs/functioneel-ontwerp-voorstel.md. Figma-homepage 1:125 gecontroleerd; oorspronkelijke HTML blijft bron. Node 24.22.3 en npm 11.19.1 aanwezig. Registratie, favorietenafscherming en PDF-beveiliging blijven open API-vragen. De laatste sessie bevat de volledige overdracht.
 
 ## Waar staat wat?
 
@@ -169,7 +69,7 @@ De lege mappen zijn alvast aangemaakt. De React-broncode komt later in deze proj
 
 Codex werkt na een betekenisvolle werkstap de lopende sessie bij. Zeg bij het stoppen bijvoorbeeld: 'Sluit de sessie af en werk de voortgang bij.' Dan worden relevante documenten bijgewerkt en de volgende stap vastgelegd voordat het afsluitende antwoord volgt. Alleen de app sluiten activeert geen gegarandeerde update.
 
-Bij de volgende sessie beginnen we met dit werkdocument en de laatste vermelding in het sessielogboek. Het werkdocument bevat de actuele stand; het sessielogboek bewaart de geschiedenis. Sessie 012 is lopend op 23 november 2026. GitHub wordt stap voor stap opgepakt, te beginnen bij accountbeschikbaarheid. De open API-vragen blijven apart bewaard.
+Bij de volgende sessie beginnen we met dit werkdocument en de laatste vermelding in het sessielogboek. Het werkdocument bevat de actuele stand; het sessielogboek bewaart de geschiedenis. Sessie 012 is afgerond op 23 november 2026. De volgende sessie richt zich op de React-basis en de ontworpen homepage; GitHub is ingericht. De open API-vragen blijven apart bewaard.
 
 ## Open vragen en eerstvolgende stappen
 
@@ -187,3 +87,155 @@ Op 8 oktober zijn de hoofdstukoverzichten en gerichte bronpassages inhoudelijk b
 Originele Word-bestanden blijven behouden. Een Markdown-index is nu aangemaakt; volledige omzetting is nog niet uitgevoerd. Gerichte samenvattingen kunnen tijdens het uitwerken van onderwerpen worden toegevoegd.
 
 
+
+## Aanvulling 23 november 2026 — lesgericht bouwen en Axios
+
+Gerard benadrukt opnieuw: zo veel mogelijk de aangeleverde lesstof volgen, bij ontbrekende uitleg eenvoudige algemeen bekende oplossingen kiezen en code begrijpelijk houden voor een beginnend programmeur. Axios wordt de projectkeuze voor API-verzoeken, aansluitend op React 8.2–8.4; nog niet geïnstalleerd omdat er geen React-project of API-code bestaat. De eerdere Swagger-controles vereisten geen Axios. Geen websitecode gewijzigd. Volgende stap blijft de eenvoudige React-basis en bestaande homepage, zodra Gerard wil beginnen.
+
+Het uitgebreide bouwplan met tussenstappen en controles staat onder 'Bouwvolgorde uitgewerkt — 23 november 2026' in docs/projectplan.md. Eerstvolgende uitvoeringsstap: React-basis klaarzetten en lokaal starten met leergerichte uitleg. Nog geen websitecode geïnstalleerd of gebouwd.
+
+Sessie 013 is afgerond op 23 november 2026. Gerard wil morgen, 24 november, beginnen met bouwen. Eerstvolgende stap: actuele bestanden controleren, daarna de eenvoudige React-basis klaarzetten en lokaal starten vanuit WebStorm, met uitleg van de belangrijkste bestanden. Geen websitecode of dependencies aangemaakt in deze sessie. Het uitgebreide bouwplan en de afspraak om lesgericht met Axios te werken zijn vastgelegd.
+
+
+## Aanvulling 24 november 2026 - inhoud voor Rooted
+
+Naast het bouwplan is een eerste inhoudsronde voorgesteld: korte homepageteksten, vier artikelen (één per voorlopig blogthema) en een kleine eigen boekselectie. De definitieve artikeltitels, het uitgelichte artikel en de invulling van diensten, workshops en tarieven staan nog open. Eerst de kernboodschap en het introductieartikel uitwerken. Als de eerste artikelen klaar zijn, kan de set groeien naar acht om ook gerelateerde artikelen en ‘Meer artikelen’ te demonstreren.
+
+
+
+## Aanvulling 24 november 2026 - eerste artikel in het websiteconcept
+
+Het eerste inhoudelijke artikel, ‘Het pijnlichaam: als oude pijn weer voelbaar wordt’, is verwerkt in aparte HTML-ontwerpversies. Open ontwerp/schermontwerpen/homepage-pijnlichaam.html om vanaf Home via het artikel naar het boek te gaan. Blog en Shop hebben ieder een bijpassende versie. De React-bouw blijft de volgende technische stap. De uitgelichte positie, de redactionele tekst en de vorm van het omslagvlak zijn voorstellen om samen te beoordelen.
+
+
+
+## Aanvulling 24 november 2026 - artikelen eerst redigeren
+
+Gerard wil de volgende artikelen eerst inhoudelijk bespreken in de chat. Verwerking in de conceptschermen volgt later. Het artikel over het pijnlichaam is positief ontvangen. Het tweede conceptartikel gaat over geweldloze communicatie, gevoelens en behoeften, met een familieopstelling als mogelijke aanleiding voor een gesprek en een boekverwijzing naar Marshall B. Rosenberg.
+
+
+
+## Aanvulling 24 november 2026 - drie artikelen voor de eerste inhoudsronde
+
+Voorlopige artikelset: het pijnlichaam, geweldloze communicatie en zorgen voor je ouders. De eerste introductie en foto zijn eerder gemaakt. De twee andere introducties, fotoselecties en bronverwijzingen staan in sessie 014. Volgende stap voor inhoud: de selectie beoordelen en meenemen bij plaatsing op de website.
+
+
+
+## Aanvulling 24 november 2026 - vierde artikel als tekstconcept
+
+Op verzoek van Gerard is ook ‘Een brief die je voor jezelf schrijft’ uitgewerkt, geïnspireerd op Brieven van mijn ziel. Het concept bevat een concrete schrijfoefening en staat in de chat voor inhoudelijke beoordeling.
+
+
+
+## Aanvulling 24 november 2026 - inhoudssessie afgerond
+
+Sessie 014 is afgerond. Er liggen vier artikelteksten, met korte introducties en gekozen foto's. De eerste twee teksten zijn expliciet goedgekeurd, de derde is positief ontvangen en voor het vierde artikel is het beeld bevestigd. Voor de homepage is een FAQ met vier antwoorden voorbereid. Rooted biedt individuele en groepsopstellingen aan. Groepssessie: vier uur, € 75. Individuele sessie: twee uur, € 100. De korte Rooted-introductie en de uitgebreidere dienstteksten kunnen bij een volgend inhoudsmoment worden uitgewerkt. Plaatsing van de nieuwe inhoud volgt later; het pijnlichaam staat al in aparte HTML-ontwerpversies.
+
+
+Status na de afsluiting: Gerard vindt de overige homepageteksten goed. De bestaande introductie, uitleg en dienstteksten zijn daarmee inhoudelijk akkoord. De uitgewerkte FAQ kan bij de websiteplaatsing worden meegenomen; extra artikelen zijn optioneel.
+
+
+## Aanvulling 24 november 2026 - citaten voor de homepage
+
+Gerard kiest voor de carrousel het citaat van Gabor Maté over trauma als onzichtbare kracht en het citaat van Thich Nhat Hanh over diep luisteren. In de chat is een genummerde lijst van vijftig aanvullende kandidaten met bronverwijzingen gegeven. Verdere selectie volgt vóór verwerking in de homepage en de NOVI-gegevens.
+
+
+Gerard kiest zeven aanvullende citaten. De negen gekozen teksten met auteur en bron staan in [Gekozen citaten voor Rooted](docs/rooted-citaten.md), klaar voor latere verwerking in de carrousel.
+
+De drie boekintro’s en de volledige boekdetailtekst voor Vonken van verlangen zijn beschikbaar in [Boekteksten voor Rooted](docs/rooted-boekteksten.md). De teksten staan klaar voor opname in de Shop.
+
+Alle drie de boeken hebben nu ook een volledige boekdetailtekst in docs/rooted-boekteksten.md. De inhoud is klaar voor verwerking in de Shop.
+
+## Technische startcontrole — 24 november 2026
+
+Sessie 016 (programmeerchat) loopt. Node 24.22.3 en npm 11.19.1 gecontroleerd, Windows x64. WebStorm 2026.3 aanwezig; actieve IDE/interpreter nog niet gezien. Geen React-project geïnstalleerd. Voorstel: React/react-dom 18.3.1 en Router 6.30.6 dicht bij NOVI-voorbeelden, Vite 8.3.8 met bijpassende nog te controleren React-plugin; Axios 1.21.1 bij API-stap. Node voldoet aan Vite-eisen. Start/build en volledige dependencycontrole volgen bij installatie. Volgende stap: eenvoudige React-basis klaarzetten met uitleg; bestaande ontwerpen en nieuwere goedgekeurde inhoud behouden.
+
+## React-basis aanwezig — 24 november 2026
+
+Sessie 016 loopt op codex/react-basis. React 18.3.1/Vite 8.3.8/plugin-react 6.3.0 geïnstalleerd; eenvoudige startpagina aanwezig. Installatie (met vertrouwde Windows-certificaten), dependencycontrole en build geslaagd; Vite-server meldt ready. Browserweergave en WebStorm-interpreter nog niet visueel gecontroleerd. README bevat startinstructies. Volgende stap: lokaal openen vanuit WebStorm en App.jsx uitleggen; daarna bestaande homepage bouwen. Geen Axios/Router/API toegevoegd. Geen commit of publicatie gedaan.
+
+De tijdelijke Rooted-starttekst en App.css zijn op verzoek verwijderd. App.jsx bevat nu alleen een leeg main-element; de build slaagt. Het lege scherm is verwacht. Volgende stap: bestaande homepage en guideline gebruiken voor basisvormgeving, logo en navigatie.
+
+## Basisvormgeving aanwezig — 24 november 2026
+
+Kleuren/lettertypen/ruimte en algemene tekst-/link-/knopstijlen volgen de lokale Figma-guideline. Maximaal 1238px inhoud, kleinere zijmarges en koppen op smalle schermen. App bevat lege header/main/footer met verticale Flexbox-indeling. Build geslaagd en vier gebruikte kleurcontrastcombinaties berekend boven 4,5:1. Browserweergave nog niet gecontroleerd; voorlopig vooral crème achtergrond zonder voorbeeldinhoud. Volgende stap: logo en navigatie bouwen volgens bestaande ontwerp.
+
+## Logo en navigatie gebouwd — 24 november 2026
+
+Header-component met originele logo-asset en afgesproken menu toegevoegd. Home werkt als link; Diensten/Blog/Shop/Inloggen voorlopig inactief tot bijbehorende onderdelen worden gebouwd. Mobiel onder 800px Menu/Sluiten met useState. Build geslaagd; browser-/toetsenbordcontrole nog open. Volgende stap: bovenbalk samen bekijken, daarna introductie volgens bestaande homepageconcept.
+
+Menuafspraak bijgewerkt op 24 november 2026: Contact staat tussen Shop en Inloggen in het hoofdmenu. Het item blijft voorlopig inactief. De bestemming is nog open. Build geslaagd.
+
+## Bosfoto, titel en pay-off toegevoegd — 24 november 2026
+
+De homepage toont direct onder het menu de bestaande schermbrede bosfoto met ‘Rooted’ en ‘alles over systemisch werk’. Visueel gecontroleerd op 1440 en 375 pixels. De mobiele menuknop is alleen bij een smal scherm zichtbaar na een CSS-correctie. Build geslaagd. Volgende stap: resterende introductie uit het ontwerp en de doorklik bij het doelonderdeel.
+
+De bestaande introductiezin en de knop ‘Ontdek systemisch werk’ staan onder de pay-off. De knop brengt de bezoeker naar de bestaande uitleg ‘Je staat niet op jezelf.’, nu als saliegroene sectie toegevoegd. Klik en Enter gecontroleerd in desktop- en mobiele weergave. Build geslaagd. De FAQ en de overige homepageonderdelen volgen in volgende bouwstappen.
+
+## Artikelkaarten op de homepage — 24 november 2026
+
+De homepage volgt de Figma-volgorde: openingsfoto, Nieuwe perspectieven met drie artikelen en daarna de uitleg. De drie kaarten bevatten de eerder voorbereide introducties en gekozen foto's. Desktop en mobiel gecontroleerd, evenals de sprong van de openingsknop naar de uitleg. De bloglinks volgen zodra de blogpagina's worden gebouwd. Volgende stap: het uitlegblok met de afgesproken FAQ afwerken.
+
+## Uitleg en FAQ afgewerkt — 24 november 2026
+
+Het saliegroene uitlegblok bevat de bestaande uitleg over systemisch werk, een korte Rooted-alinea en de vier uitgewerkte vragen met antwoorden. Eén antwoord tegelijk is zichtbaar. De uitleg en FAQ staan naast elkaar op desktop en onder elkaar op mobiel. Tarieven en werking met muis en toetsenbord gecontroleerd. Bouwcontrole geslaagd. Volgende stap: de quote-strook volgens het concept.
+
+## Quote-strook gebouwd — 24 november 2026
+
+Zachte strook staat direct onder uitleg en FAQ. Alle negen gekozen citaten staan in de vastgelegde volgorde, met auteur, bronlink en waar van toepassing ‘eigen vertaling’. Automatische wisseling per zeven seconden, pauze, hervatten en handmatig bladeren zijn gecontroleerd op desktop en mobiel. De bouwcontrole is geslaagd. Volgende stap: diensten en tarievenblok volgens het ontwerp.
+
+## Programmeersessie 016 afgerond — 24 november 2026
+
+De React-basis en homepage tot en met de citaten staan als commit [575f824](https://github.com/GerardB76/Rooted-frontend-eindopdracht/commit/575f824575df01fa9887bda3ca6e64681b0431fe) op GitHub, op codex/react-basis. Bouwcontrole en online commit gecontroleerd. Losse ontwerpbestanden en voortgangsnotities staan lokaal. Eerstvolgende bouwstap: diensten en het tarievenblok volgens het bestaande ontwerp. De open API-vragen over registratie, favorietenafscherming en PDF-toegang blijven van toepassing bij de latere koppelingen.
+
+Bouwkeuze voor later, 25 november 2026: een eenvoudig herbruikbaar Button-component introduceren bij de formulieren en toepassen op passende bestaande actieknoppen. Links houden hun eigen HTML-element. De volgende homepagebouwstap blijft diensten en het tarievenblok.
+
+## Dienstenblokken gebouwd — 25 november 2026
+
+De drie diensten staan na de citaten onder Verkennen op jouw manier. Flexbox maakt de kolommen gelijk breed op desktop en stapelt ze op mobiel. De menulink Diensten verwijst naar dit onderdeel. Bouwcontrole, desktop en mobiel zijn gecontroleerd. Volgende stap: tarievenblok volgens het bestaande ontwerp.
+
+Weergave citaten bijgewerkt op 25 november 2026: de strook toont de auteur en waar van toepassing ‘eigen vertaling’. Bronnen blijven beschikbaar in docs/rooted-citaten.md.
+
+## Tarievenblok gebouwd — 25 november 2026
+
+Onder de diensten staat Bekijk tarieven als herbruikbaar Button-component. De knop opent voorlopig een melding over inloggen. Inloggen in het hoofdmenu gebruikt hetzelfde component. Bouwcontrole, klik- en toetsenbordbediening en desktop- en mobiele weergave gecontroleerd. De echte inlogroute en PDF-toegang volgen later. Volgende stap op de homepage: footer volgens het ontwerp.
+
+## Footer gebouwd — 25 november 2026
+
+De footer bevat het Rooted-logo als teruglink naar Home en ‘Met aandacht voor het geheel.’. Desktop, mobiel en teruglink met Enter gecontroleerd. Bouwcontrole geslaagd. De basisindeling van de homepage is nu aanwezig. Volgende stap volgens het bouwplan: de overige pagina’s en routes voorbereiden.
+
+## Bediening homepage nagelopen — 25 november 2026
+
+Home, logo’s, Diensten, uitleg, mobiel menu, FAQ, quote-pijltjes en de tijdelijke tarievenmelding gecontroleerd. Diensten verwijst naar /#diensten en de uitleg neemt de toetsenbordfocus over. Blog, artikelkaarten, Shop en Inloggen worden aangesloten bij de bijbehorende pagina’s. Contact heeft nog geen afgesproken bestemming. Volgende stap: Contact afstemmen en de overige pagina’s en routes voorbereiden.
+
+Contactbesluit op 25 november 2026: Gerard kiest ervoor Contact voorlopig inactief te laten. De routes voor Blog, Shop en Inloggen kunnen onafhankelijk daarvan worden gebouwd.
+
+## Blogbasis gebouwd — 25 november 2026
+
+Het openbare blogoverzicht en drie artikelpagina’s werken via React Router 7.18.7. Home en Blog delen de kaartgegevens. Het pijnlichaam is uitgelicht. De bouwcontrole, desktop- en mobiele weergave, diepere adressen en teruglinks zijn gecontroleerd. Zoeken, themafilter, suggesties voor andere artikelen en de NOVI-koppeling volgen later.
+
+## Shop en boekdetails gebouwd — 25 november 2026
+
+De openbare Shop staat in het hoofdmenu. De pagina volgt ontwerp 1.1 met een uitgelichte workshop en twee voorbeelden ernaast op desktop, gevolgd door drie boeken. Workshops, beeld en prijzen voor workshops blijven inhoudelijk af te stemmen. De drie uitgewerkte boeken delen één detailpagina en hebben elk een eigen adres. Boekkaart en detail gebruiken dezelfde lokale gegevens. Het boek en het bijbehorende Rooted-artikel linken naar elkaar. De voorbeeldomslagen volgen het typografische ontwerp. Bestellen blijft buiten de opdracht. Favorieten worden later bij de inlogfunctie aangesloten.
+
+Desktop, mobiel, drie boekadressen, teruglinks en onbekend boek gecontroleerd. Volgende stap volgens het bouwplan is de basis van Inloggen, Registreren en Mijn account. Bij het koppelen van favorieten gebruiken we de bestaande afspraak over terugkeer naar hetzelfde boek.
+
+Onder ‘Verder lezen’ staat bij elk blogartikel één link naar het bijbehorende boek in de Shop.
+
+## Vierde blogartikel en knop toegevoegd — 25 november 2026
+
+‘Een brief die je voor jezelf schrijft’ staat met de gekozen foto en de volledige schrijfoefening op Blog. Het boek dat de oefening inspireerde staat niet in de Shop, dus dit artikel heeft onder ‘Verder lezen’ alleen de tekst. De eerste drie artikelen houden hun boeklink. De Blog toont alle vier de artikelen en heeft onderaan de voorlopig uitgeschakelde knop ‘Meer artikelen laden’. De afgesproken werking met zes eerste lijstresultaten en maximaal drie extra per klik volgt bij het uitbreiden van het aanbod.
+
+De kaarten onder ‘Meer artikelen’ zijn op brede schermen uitgelijnd op titel, intro en leeslink. Op mobiel behoudt elke gestapelde kaart zijn eigen hoogte.
+
+De detailpagina’s hebben een smallere intro en leeskolom. De breedte geldt ook voor de lijsten en citaten binnen een artikel. Beide genoemde artikelen zijn op desktop en mobiel gecontroleerd.
+
+## Inlog- en registratieformulieren gebouwd — 25 november 2026
+
+Inloggen opent vanuit het hoofdmenu en gebruikt de bosfoto uit het concept naast het formulier. Op mobiel staat de foto erboven. Registreren heeft een smal, gecentreerd formulier met vijf velden. Beide pagina’s verwijzen naar elkaar. Lege velden, een onjuist e-mailadres en een afwijkende wachtwoordherhaling geven uitleg bij het betreffende veld. Geldige oefeninvoer wordt gewist na een melding. Er is geen API-verzoek, accountaanmaak of inlogsessie.
+
+De bouw en beide pagina’s zijn lokaal gecontroleerd. Volgende stap voor accountfuncties: de NOVI-inlog koppelen met Axios en React Context, daarna rekening houden met de afspraken over Mijn account en terugkeer naar boek of tarieven. Voor werkende registratie is de ondersteunde NOVI-route nog te bevestigen.
+
+## Git-tussenpunt — 25 november 2026
+
+Het tussenpunt op `codex/react-basis` omvat de verdere homepage, de Blog met vier artikelen, de Shop met drie boekdetails en de twee oefenformulieren. De broncode en bijgewerkte projectnotities horen bij dit tussenpunt. Het losse ontwerparchief blijft lokaal. De build is geslaagd. De volgende accountstap is de echte NOVI-inlog.

@@ -1,0 +1,27 @@
+.services-list {
+    display: flex;
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.service-card {
+    flex: 1;
+    min-width: 0;
+    padding-top: var(--space-lg);
+    border-top: 2px solid var(--color-border);
+}
+
+.service-card h3 {
+    margin-bottom: var(--space-md);
+}
+
+.service-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 800px) {
+    .services-list {
+        flex-direction: column;
+    }
+}

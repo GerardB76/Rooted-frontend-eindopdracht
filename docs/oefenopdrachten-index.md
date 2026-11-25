@@ -46,4 +46,13 @@ Tech it easy staat in het bronbestand zowel onder JavaScript als onder React. De
 
 ## Inhoudelijk geraadpleegde voorbeelden
 
-Nog geen uitwerkingen inhoudelijk beoordeeld. Vul bij gebruik de repository, commitlink, het relevante README-onderdeel en de toepassing in ons project in. Noteer een overgenomen voorbeeld ook bij de bijbehorende technische keuze of bronvermelding wanneer van toepassing.
+Onderstaande voorbeelden zijn gericht gelezen op 23 november 2026. Niet alle repositories, branches of bestanden zijn beoordeeld; er is nog geen voorbeeldcode in Rooted overgenomen.
+
+
+| Voorbeeld en geraadpleegde commit | Gelezen | Toepassing bij het bouwen |
+| --- | --- | --- |
+| [Country information — 5a86fb2](https://github.com/hogeschoolnovi/frontend-react-country-information-uitwerkingen/tree/5a86fb203cdb0077a3c969dd3f0ec6c89e3957e9) | README opdrachten 1/2 en stappenplan, package.json, App.jsx, main.jsx, formatPopulation.js en getRegionClass.js | Direct axios.get met async/await en try/catch; response.data opslaan in state; kleine helpers en eenvoudige lijstweergave. Externe endpoints niet functioneel getest. |
+| [Blog part 2 — b3011eb](https://github.com/hogeschoolnovi/frontend-react-blog-part2-uitwerkingen/tree/b3011eba610414b7194bd75319b8e776968d8cf9) | Volledige README, package.json, App.jsx, Button/Input/ErrorMessage/Navigation/PostItem en Overview/PostDetail/NewPost | NOVI Dynamic API, headers genest in configuratie, GET/POST, state, foutmelding, useEffect en routes; pagina's/components gescheiden. Niet blind kopiëren: detail-effect moet reageren op gewijzigde id; collectieadres/velden moeten bij Rooted passen. |
+| [Tech it easy — 7458c2](https://github.com/hogeschoolnovi/frontend-react-tech-it-easy-uitwerkingen/tree/7458c2301136dc6caa2813019bacf2684e62eebf) | README deel 1/2 en bonus, package.json, App.jsx, inventory.js en helpers calculateInitialStock/calculateProductsToSell/calculateSoldProducts/createProductName | Eenvoudige functies, duidelijke variabelen en gewone JSX. Dit geraadpleegde deel gebruikt vaste data en heeft geen Axios nodig. |
+
+Alleen broncode gelezen; voorbeelden niet geïnstalleerd of uitgevoerd. Versies in voorbeeldbestanden zijn geen besluit om oude packageversies in Rooted te installeren.

@@ -48,10 +48,7 @@ function QuoteCarousel() {
                     </blockquote>
                     <figcaption className="quote-author">
                         <strong>{quote.author}</strong>
-                        <div className="quote-source">
-                            <a href={quote.source} aria-label={`Bron van het citaat van ${quote.author}`}>Bron</a>
-                            {quote.translated && <span> · eigen vertaling</span>}
-                        </div>
+                        {quote.translated && <span className="quote-translation">eigen vertaling</span>}
                     </figcaption>
                 </figure>
 

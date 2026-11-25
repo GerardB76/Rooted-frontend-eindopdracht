@@ -99,7 +99,7 @@ De homepage toont één door Gerard gekozen artikel en de twee nieuwste andere a
 
 Tarieven: een niet-ingelogde bezoeker ziet op de inlogpagina ‘Log in om het tarievenoverzicht te bekijken’. Na inloggen wordt het PDF-bestand geopend om te lezen en te downloaden. Het bestand is ook bereikbaar vanuit Mijn account. Bevestigd op 6 november: iedereen die zelf een account aanmaakt krijgt na inloggen meteen toegang; er is geen aanvullende goedkeuring of aankoop nodig. Inhoud, opslag en daadwerkelijke bestandsbeveiliging moeten nog worden uitgewerkt; alleen een knop verbergen biedt geen bestandsbeveiliging.
 
-Boeken, workshops en trainingen mogen een bestelknop tonen. Die voert geen bestelling uit en krijgt de aanduiding ‘Bestellen nog niet beschikbaar’. Er komen geen winkelmandje, betaling, externe bestelverwijzing, workshopaanmelding of contactformulier. Contact wordt voorlopig niet uitgewerkt; bestaande ontwerpverwijzingen moeten hierop worden nagelopen.
+Boeken, workshops en trainingen mogen een bestelknop tonen. Die voert geen bestelling uit en krijgt de aanduiding ‘Bestellen nog niet beschikbaar’. Er komen geen winkelmandje, betaling, externe bestelverwijzing, workshopaanmelding of contactformulier. Afspraak van 24 november 2026: Contact staat tussen Shop en Inloggen in het hoofdmenu en blijft voorlopig inactief. De bestemming is nog open.
 
 Bevestigd op 6 november: voor deze opdracht blijft de diensteninformatie op de homepage. Er komt geen aparte dienstenpagina. De menulink Diensten scrolt naar de dienstensectie op Home; vanaf een andere pagina opent die link Home bij deze sectie. De drie dienstenblokken bevatten korte uitleg en krijgen geen doorklik. De huidige dienstnamen blijven voorlopig behouden; definitieve teksten kunnen later volgen.
 

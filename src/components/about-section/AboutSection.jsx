@@ -2,7 +2,7 @@ import './AboutSection.css';
 
 function AboutSection() {
     return (
-        <section id="systemisch-werk" className="about-section section-spacing" aria-labelledby="about-title">
+        <section id="systemisch-werk" className="about-section section-spacing" aria-labelledby="about-title" tabIndex={-1}>
             <div className="content-container about-content">
                 <div className="about-intro">
                     <h2 id="about-title">Je staat niet op jezelf.</h2>

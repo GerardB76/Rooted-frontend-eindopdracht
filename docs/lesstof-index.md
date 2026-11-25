@@ -48,3 +48,9 @@ Als later volledige omzetting gewenst is: maak afzonderlijke bestanden per cursu
 - Bonusonderwerpen zoals CSS Grid, SASS/SCSS en vroegere class components zijn geen extra verplichtingen voor deze opdracht. De opdracht vraagt expliciet om Flexbox en hooks.
 - De documenten bevatten versiespecifieke voorbeelden. Controleer later de gekozen packageversies en actuele NOVI-API-documentatie voordat voorbeelden worden toegepast; de inventarisatie stelt niet vast dat elk voorbeeld ongewijzigd werkt.
 - Videolinks zijn aangetroffen, maar de video's zijn niet bekeken. Een samenvatting van een video mag daarom niet worden voorgesteld als geverifieerde lesinhoud.
+
+### Controle 23 november 2026
+
+Gericht gelezen in het oorspronkelijke React-Worddocument: passages 8.2–8.4 over requests, Axios, async/await, try/catch, response.data en verzoektypen; ook de aangetroffen passages over annuleren en autorisatie. Geen volledige herlezing van alle drie cursussen of controle van alle afbeeldingen/video's geclaimd. Axios past bij de lesaanpak en wordt gebruikt voor de toekomstige Rooted-API-code. Nog geen installatie of implementatie.
+
+Let op bij toepassing: het Axios-configuratieobject is meer dan alleen de request header; headers horen genest onder `headers`. Enkele voorbeelden in 8.4 zetten Accept/Content-Type direct op het configuratieobject. De latere autorisatievoorbeelden en het geraadpleegde NOVI-blogvoorbeeld gebruiken de juiste structuur. AbortController is een browser-API, geen Axios-specifiek object. Bij implementatie de gekozen versies en het NOVI-contract controleren. Officiële controle: https://axios-http.com/docs/req_config en https://axios-http.com/docs/example.

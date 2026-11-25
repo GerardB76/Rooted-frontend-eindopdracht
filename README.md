@@ -1,6 +1,6 @@
 # Frontend-eindopdracht over systemisch werk
 
-Rooted is een webapplicatie in ontwikkeling over systemisch werk. De homepage toont het openingsbeeld, drie artikelkaarten, de uitleg met veelgestelde vragen en negen citaten.
+Rooted is een webapplicatie in ontwikkeling over systemisch werk. De homepage introduceert het aanbod. Op Blog kunnen bezoekers vier artikelen lezen.
 
 ## Inhoud
 
@@ -10,7 +10,7 @@ Rooted is een webapplicatie in ontwikkeling over systemisch werk. De homepage to
 
 ## Projectidee
 
-De vier uitgewerkte kernfunctionaliteiten zijn registratie/inloggen, blogs vinden en lezen, boeken bekijken en favoriete boeken beheren. Tarieven downloaden blijft een aanvullende functie. De basis gebruikt JavaScript, React en Vite met eigen CSS. React Context, React Router en de NOVI Dynamic API volgen later.
+De vier uitgewerkte kernfunctionaliteiten zijn registratie/inloggen, blogs vinden en lezen, boeken bekijken en favoriete boeken beheren. Tarieven downloaden blijft een aanvullende functie. De basis gebruikt JavaScript, React en Vite met eigen CSS. React Router regelt Home, Blog en Shop, met een eigen webadres voor elk artikel en boek. Inloggen en Registreren zijn beschikbaar als oefenformulieren met lokale invoercontrole. React Context en de NOVI Dynamic API volgen later.
 
 ## Wegwijzer
 
@@ -25,7 +25,7 @@ De vier uitgewerkte kernfunctionaliteiten zijn registratie/inloggen, blogs vinde
 
 ## Installatiehandleiding in voorbereiding
 
-Gecontroleerde omgeving: Node.js 24.22.3 en npm 11.19.1 op Windows x64. Het project gebruikt React/React DOM 18.3.1, Vite 8.3.8 en de React-plugin 6.3.0.
+Gecontroleerde omgeving: Node.js 24.22.3 en npm 11.19.1 op Windows x64. Het project gebruikt React/React DOM 18.3.1, React Router DOM 7.18.7, Vite 8.3.8 en de React-plugin 6.3.0.
 
 Open deze projectmap in WebStorm. Open onderaan de terminal en installeer de packages bij de eerste start:
 
